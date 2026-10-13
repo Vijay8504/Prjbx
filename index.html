@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KisanBox - शेती बाजार | Agricultural Trading Platform</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="KisanBox - Maharashtra's trusted agricultural trading platform connecting farmers, wholesalers, and exporters. Fresh vegetables, fruits, and direct farm produce.">
+    <meta name="keywords" content="agriculture trading, Maharashtra farmers, vegetables, fruits, bulk supply, export, mandi, शेती बाजार">
+    <meta name="author" content="KisanBox">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="KisanBox - शेती बाजार | Agricultural Trading Platform">
+    <meta property="og:description" content="Maharashtra's trusted agricultural trading platform connecting farmers, wholesalers, and exporters.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="./images/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/home-extensions.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="contact-info">
+                        <span class="phone">
+                            <i class="fas fa-phone"></i>
+                            <span data-en="+91 9221591156" data-mr="+९१ ९२२१५९११५६">+91 9221591156</span>
+                        </span>
+                        <span class="email">
+                            <i class="fas fa-envelope"></i>
+                            info@kisanbox.com
+                        </span>
+                    </div>
+                    <div class="language-toggle">
+                        <button id="language-btn" class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">English</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="KisanBox Logo">
+                        <h2>
+                            <span data-en="KisanBox" data-mr="किसानबॉक्स">KisanBox</span>
+                            <small data-en="Taazgi ka Khazana" data-mr="ताजेपणाचा खजिना, शेतकऱ्याच्या हातून">ताजेपणाचा खजिना, शेतकऱ्याच्या हातून</small>
+                        </h2>
+                    </div>
+                    
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="#" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                        <li><a href="./pages/about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="./pages/services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Products" data-mr="उत्पादने">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./pages/products.html" data-en="All Products" data-mr="सर्व उत्पादने">All Products</a></li>
+                                <li><a href="./pages/products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                                <li><a href="./pages/products.html?category=fruits" data-en="Fruits" data-mr="फळे">Fruits</a></li>
+                                <li><a href="./pages/farmer-marketplace.html" data-en="Farmer Marketplace" data-mr="शेतकरी बाजार">Farmer Marketplace</a></li>
+                                <li><a href="./pages/knowledge-hub.html" data-en="Knowledge Hub" data-mr="ज्ञान केंद्र">Knowledge Hub</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./pages/blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="./pages/testimonials.html" data-en="Testimonials" data-mr="प्रशंसापत्रे">Testimonials</a></li>
+                        <li><a href="./pages/contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Dashboards" data-mr="डॅशबोर्ड">Dashboards</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./pages/dashboard/buyer.html" data-en="Buyer Dashboard" data-mr="खरेदीदार डॅशबोर्ड">Buyer Dashboard</a></li>
+                                <li><a href="./pages/dashboard/seller.html" data-en="Seller Dashboard" data-mr="विक्रेता डॅशबोर्ड">Seller Dashboard</a></li>
+                                <li><a href="./pages/dashboard/farmer.html" data-en="Farmer Dashboard" data-mr="शेतकरी डॅशबोर्ड">Farmer Dashboard</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <img src="./images/hero-farm-1.jpg" alt="Fresh Farm Produce">
+                <div class="hero-overlay">
+                    <div class="container">
+                        <div class="hero-content">
+                            <h1>
+                                <span data-en="Fresh From Farm to Market" data-mr="शेतातून बाजारापर्यंत ताजे">Fresh From Farm to Market</span>
+                            </h1>
+                            <p data-en="Connecting Maharashtra farmers with global markets. Quality produce, fair prices, trusted trading." data-mr="महाराष्ट्रातील शेतकऱ्यांना जागतिक बाजारपेठेशी जोडणे. दर्जेदार उत्पादन, योग्य दर, विश्वासू व्यापार.">
+                                Connecting Maharashtra farmers with global markets. Quality produce, fair prices, trusted trading.
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="./pages/products.html" class="btn btn-primary" data-en="Shop Now" data-mr="आता खरेदी करा">Shop Now</a>
+                                <a href="./pages/about.html" class="btn btn-primary" data-en="Learn More" data-mr="अधिक जाणा">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-slide">
+                <img src="./images/hero-market-2.jpg" alt="Agricultural Trading">
+                <div class="hero-overlay">
+                    <div class="container">
+                        <div class="hero-content">
+                            <h1>
+                                <span data-en="Empowering Farmers" data-mr="शेतकऱ्यांना सशक्त बनवणे">Empowering Farmers</span>
+                            </h1>
+                            <p data-en="Direct trading platform eliminating middlemen. Better prices for farmers, fresh produce for buyers." data-mr="मध्यस्थांना वगळून थेट व्यापार व्यासपीठ. शेतकऱ्यांसाठी चांगले दर, खरेदीदारांसाठी ताजे उत्पादन.">
+                                Direct trading platform eliminating middlemen. Better prices for farmers, fresh produce for buyers.
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="./pages/services.html" class="btn btn-primary" data-en="Our Services" data-mr="आमच्या सेवा">Our Services</a>
+                                <a href="./pages/contact.html" class="btn btn-primary" data-en="Get Started" data-mr="सुरुवात करा">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-controls">
+            <button class="hero-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="hero-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Why Choose KisanBox?" data-mr="किसानबॉक्स का निवडावे?">Why Choose KisanBox?</h2>
+                <p data-en="Your trusted partner in agricultural trading" data-mr="कृषी व्यापारात तुमचा विश्वासू साथीदार">Your trusted partner in agricultural trading</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 data-en="Direct Trading" data-mr="थेट व्यापार">Direct Trading</h3>
+                    <p data-en="Connect directly with farmers and buyers, ensuring fair prices and quality produce." data-mr="शेतकरी आणि खरेदीदारांशी थेट संपर्क, योग्य दर आणि दर्जेदार उत्पादनाची हमी.">
+                        Connect directly with farmers and buyers, ensuring fair prices and quality produce.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-en="Quality Assured" data-mr="गुणवत्तेची हमी">Quality Assured</h3>
+                    <p data-en="Rigorous quality checks ensure fresh, premium agricultural products for all customers." data-mr="कडक गुणवत्ता तपासणी सर्व ग्राहकांसाठी ताजी, उत्कृष्ट कृषी उत्पादने सुनिश्चित करते.">
+                        Rigorous quality checks ensure fresh, premium agricultural products for all customers.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 data-en="Global Reach" data-mr="जागतिक पोहोच">Global Reach</h3>
+                    <p data-en="Export assistance and international market access for Maharashtra's agricultural produce." data-mr="महाराष्ट्राच्या कृषी उत्पादनांसाठी निर्यात सहायता आणि आंतरराष्ट्रीय बाजारपेठेत प्रवेश.">
+                        Export assistance and international market access for Maharashtra's agricultural produce.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 data-en="Fast Delivery" data-mr="जलद डिलिव्हरी">Fast Delivery</h3>
+                    <p data-en="Efficient logistics network ensuring fresh produce reaches you quickly and safely." data-mr="कार्यक्षम रसद नेटवर्क ताजे उत्पादन तुमच्यापर्यंत जलद आणि सुरक्षितपणे पोहोचवते.">
+                        Efficient logistics network ensuring fresh produce reaches you quickly and safely.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Featured Products" data-mr="वैशिष्ट्यपूर्ण उत्पादने">Featured Products</h2>
+                <p data-en="Fresh, quality produce from Maharashtra's finest farms" data-mr="महाराष्ट्रातील उत्कृष्ट शेतातून ताजे, दर्जेदार उत्पादन">Fresh, quality produce from Maharashtra's finest farms</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/tomatoes.jpg" alt="Fresh Tomatoes">
+                        <div class="product-badge" data-en="Fresh" data-mr="ताजे">Fresh</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Premium Tomatoes" data-mr="प्रीमियम टमाटर">Premium Tomatoes</h3>
+                        <p class="product-price">₹40/kg</p>
+                        <p class="product-description" data-en="Farm-fresh tomatoes from Pune district" data-mr="पुणे जिल्ह्यातील शेतातले ताजे टमाटर">Farm-fresh tomatoes from Pune district</p>
+                        <a href="./pages/product-view.html?id=tomatoes" class="btn btn-sm btn-primary" data-en="View Details" data-mr="तपशील पहा">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/onions.jpg" alt="Red Onions">
+                        <div class="product-badge" data-en="Export Quality" data-mr="निर्यात दर्जा">Export Quality</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Red Onions" data-mr="लाल कांदा">Red Onions</h3>
+                        <p class="product-price">₹25/kg</p>
+                        <p class="product-description" data-en="Premium red onions from Nashik region" data-mr="नाशिक क्षेत्रातील प्रीमियम लाल कांदा">Premium red onions from Nashik region</p>
+                        <a href="./pages/product-view.html?id=onions" class="btn btn-sm btn-primary" data-en="View Details" data-mr="तपशील पहा">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/bananas.jpg" alt="Bananas">
+                        <div class="product-badge" data-en="Organic" data-mr="सेंद्रिय">Organic</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Organic Bananas" data-mr="सेंद्रिय केळी">Organic Bananas</h3>
+                        <p class="product-price">₹60/dozen</p>
+                        <p class="product-description" data-en="Naturally grown bananas from Jalgaon" data-mr="जळगावमधील नैसर्गिकरित्या उगवलेली केळी">Naturally grown bananas from Jalgaon</p>
+                        <a href="./pages/product-view.html?id=bananas" class="btn btn-sm btn-primary" data-en="View Details" data-mr="तपशील पहा">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/pomegranate.jpg" alt="Pomegranates">
+                        <div class="product-badge" data-en="Premium" data-mr="प्रीमियम">Premium</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-en="Pomegranates" data-mr="डाळिंब">Pomegranates</h3>
+                        <p class="product-price">₹180/kg</p>
+                        <p class="product-description" data-en="World-class pomegranates from Solapur" data-mr="सोलापुरातील जगदर्जेदार डाळिंब">World-class pomegranates from Solapur</p>
+                        <a href="./pages/product-view.html?id=pomegranate" class="btn btn-sm btn-primary" data-en="View Details" data-mr="तपशील पहा">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <a href="./pages/products.html" class="btn btn-outline btn-lg" data-en="View All Products" data-mr="सर्व उत्पादने पहा">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">11+</div>
+                    <div class="stat-label" data-en="Happy Farmers" data-mr="समाधानी शेतकरी">Happy Farmers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">11+</div>
+                    <div class="stat-label" data-en="Product Varieties" data-mr="उत्पादन प्रकार">Product Varieties</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">11+</div>
+                    <div class="stat-label" data-en="Districts Covered" data-mr="जिल्हे व्यापलेले">Districts Covered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">11+</div>
+                    <div class="stat-label" data-en="Export Countries" data-mr="निर्यात देश">Export Countries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Bar Section -->
+    <section class="search-bar-section">
+        <div class="container">
+            <div class="search-bar-wrapper">
+                <h2 data-en="What are you looking for?" data-mr="तुम्ही काय शोधत आहात?">What are you looking for?</h2>
+                <div class="search-bar-inner">
+                    <div class="search-input-wrap">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="home-search" class="search-input" data-placeholder-en="Search organic products, seeds, equipment..." data-placeholder-mr="सेंद्रिय उत्पादने, बियाणे, उपकरणे शोधा..." placeholder="Search organic products, seeds, equipment...">
+                        <select class="search-category-select" id="search-cat">
+                            <option value="all" data-en="All Categories" data-mr="सर्व श्रेण्या">All Categories</option>
+                            <option value="vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</option>
+                            <option value="fruits" data-en="Fruits" data-mr="फळे">Fruits</option>
+                            <option value="seeds" data-en="Seeds" data-mr="बियाणे">Seeds</option>
+                            <option value="fertilizers" data-en="Fertilizers" data-mr="खते">Fertilizers</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary search-submit" onclick="document.location='./pages/products.html?q='+document.getElementById('home-search').value+'&category='+document.getElementById('search-cat').value" data-en="Search" data-mr="शोधा">Search</button>
+                </div>
+                <div class="search-tags">
+                    <span data-en="Popular:" data-mr="लोकप्रिय:">Popular:</span>
+                    <a href="./pages/products.html?category=vegetables" data-en="Tomatoes" data-mr="टमाटर">Tomatoes</a>
+                    <a href="./pages/products.html?category=fruits" data-en="Pomegranate" data-mr="डाळिंब">Pomegranate</a>
+                    <a href="./pages/farmer-marketplace.html?category=seeds" data-en="Organic Seeds" data-mr="सेंद्रिय बियाणे">Organic Seeds</a>
+                    <a href="./pages/products.html?category=grains" data-en="Millets" data-mr="बाजरी">Millets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Grid -->
+    <section class="categories-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Shop by Category" data-mr="श्रेणीनुसार खरेदी करा">Shop by Category</h2>
+                <p data-en="Explore our wide range of organic and farm-fresh products" data-mr="आमच्या सेंद्रिय आणि ताज्या शेती उत्पादनांची विस्तृत श्रेणी एक्सप्लोर करा">Explore our wide range of organic and farm-fresh products</p>
+            </div>
+            <div class="categories-grid">
+                <a href="./pages/products.html?category=vegetables" class="category-item">
+                    <div class="category-icon"><i class="fas fa-carrot"></i></div>
+                    <span data-en="Vegetables" data-mr="भाज्या">Vegetables</span>
+                </a>
+                <a href="./pages/products.html?category=fruits" class="category-item">
+                    <div class="category-icon"><i class="fas fa-apple-alt"></i></div>
+                    <span data-en="Fruits" data-mr="फळे">Fruits</span>
+                </a>
+                <a href="./pages/products.html?category=grains" class="category-item">
+                    <div class="category-icon"><i class="fas fa-wheat-awn"></i></div>
+                    <span data-en="Millets &amp; Rice" data-mr="बाजरी आणि तांदूळ">Millets &amp; Rice</span>
+                </a>
+                <a href="./pages/products.html?category=pulses" class="category-item">
+                    <div class="category-icon"><i class="fas fa-seedling"></i></div>
+                    <span data-en="Pulses &amp; Dal" data-mr="कडधान्ये">Pulses &amp; Dal</span>
+                </a>
+                <a href="./pages/products.html?category=spices" class="category-item">
+                    <div class="category-icon"><i class="fas fa-pepper-hot"></i></div>
+                    <span data-en="Spices" data-mr="मसाले">Spices</span>
+                </a>
+                <a href="./pages/products.html?category=dairy" class="category-item">
+                    <div class="category-icon"><i class="fas fa-cheese"></i></div>
+                    <span data-en="Dairy" data-mr="दुग्धजन्य">Dairy</span>
+                </a>
+                <a href="./pages/products.html?category=honey" class="category-item">
+                    <div class="category-icon"><i class="fas fa-jar"></i></div>
+                    <span data-en="Honey" data-mr="मध">Honey</span>
+                </a>
+                <a href="./pages/products.html?category=oils" class="category-item">
+                    <div class="category-icon"><i class="fas fa-bottle-droplet"></i></div>
+                    <span data-en="Cold Pressed Oils" data-mr="कोल्ड प्रेस्ड तेल">Cold Pressed Oils</span>
+                </a>
+                <a href="./pages/products.html?category=herbs" class="category-item">
+                    <div class="category-icon"><i class="fas fa-leaf"></i></div>
+                    <span data-en="Herbs &amp; Ayurveda" data-mr="औषधी वनस्पती">Herbs &amp; Ayurveda</span>
+                </a>
+                <a href="./pages/products.html?category=dryfruits" class="category-item">
+                    <div class="category-icon"><i class="fas fa-walnut"></i></div>
+                    <span data-en="Dry Fruits" data-mr="सुका मेवा">Dry Fruits</span>
+                </a>
+                <a href="./pages/farmer-marketplace.html?category=seeds" class="category-item">
+                    <div class="category-icon"><i class="fas fa-spa"></i></div>
+                    <span data-en="Seeds" data-mr="बियाणे">Seeds</span>
+                </a>
+                <a href="./pages/farmer-marketplace.html" class="category-item category-item--highlight">
+                    <div class="category-icon"><i class="fas fa-tractor"></i></div>
+                    <span data-en="Farm Inputs" data-mr="शेती साहित्य">Farm Inputs</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Today's Best Deals" data-mr="आजचे सर्वोत्तम ऑफर">Today's Best Deals</h2>
+                <p data-en="Limited time offers — grab them before they're gone!" data-mr="मर्यादित वेळेचे ऑफर — संपण्यापूर्वी घ्या!">Limited time offers — grab them before they're gone!</p>
+            </div>
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <div class="deal-badge" data-en="30% OFF" data-mr="३०% सूट">30% OFF</div>
+                    <div class="deal-image">
+                        <img src="./images/turmeric.jpg" alt="Organic Turmeric">
+                    </div>
+                    <div class="deal-info">
+                        <h3 data-en="Organic Turmeric Powder" data-mr="सेंद्रिय हळद पावडर">Organic Turmeric Powder</h3>
+                        <div class="deal-price">
+                            <span class="deal-current">₹180/kg</span>
+                            <span class="deal-original">₹260/kg</span>
+                        </div>
+                        <div class="deal-timer" data-end="23:59:00">
+                            <i class="fas fa-clock"></i>
+                            <span class="timer-label" data-en="Ends in:" data-mr="संपते:">Ends in:</span>
+                            <span class="timer-value">--:--:--</span>
+                        </div>
+                        <a href="./pages/product-view.html?id=turmeric" class="btn btn-primary btn-sm" data-en="Buy Now" data-mr="आता खरेदी करा">Buy Now</a>
+                    </div>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge" data-en="25% OFF" data-mr="२५% सूट">25% OFF</div>
+                    <div class="deal-image">
+                        <img src="./images/rice.jpg" alt="Organic Rice">
+                    </div>
+                    <div class="deal-info">
+                        <h3 data-en="Organic Basmati Rice" data-mr="सेंद्रिय बासमती तांदूळ">Organic Basmati Rice</h3>
+                        <div class="deal-price">
+                            <span class="deal-current">₹120/kg</span>
+                            <span class="deal-original">₹160/kg</span>
+                        </div>
+                        <div class="deal-timer" data-end="23:59:00">
+                            <i class="fas fa-clock"></i>
+                            <span class="timer-label" data-en="Ends in:" data-mr="संपते:">Ends in:</span>
+                            <span class="timer-value">--:--:--</span>
+                        </div>
+                        <a href="./pages/product-view.html?id=rice" class="btn btn-primary btn-sm" data-en="Buy Now" data-mr="आता खरेदी करा">Buy Now</a>
+                    </div>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge" data-en="20% OFF" data-mr="२०% सूट">20% OFF</div>
+                    <div class="deal-image">
+                        <img src="./images/pomegranate.jpg" alt="Pomegranate">
+                    </div>
+                    <div class="deal-info">
+                        <h3 data-en="Premium Pomegranates" data-mr="प्रीमियम डाळिंब">Premium Pomegranates</h3>
+                        <div class="deal-price">
+                            <span class="deal-current">₹145/kg</span>
+                            <span class="deal-original">₹180/kg</span>
+                        </div>
+                        <div class="deal-timer" data-end="23:59:00">
+                            <i class="fas fa-clock"></i>
+                            <span class="timer-label" data-en="Ends in:" data-mr="संपते:">Ends in:</span>
+                            <span class="timer-value">--:--:--</span>
+                        </div>
+                        <a href="./pages/product-view.html?id=pomegranate" class="btn btn-primary btn-sm" data-en="Buy Now" data-mr="आता खरेदी करा">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farmer Stories -->
+    <section class="farmer-stories-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Farmer Stories" data-mr="शेतकरी कथा">Farmer Stories</h2>
+                <p data-en="Real farmers, real impact — hear their journey with KisanBox" data-mr="खरे शेतकरी, खरा प्रभाव — KisanBox सोबतचा त्यांचा प्रवास ऐका">Real farmers, real impact — hear their journey with KisanBox</p>
+            </div>
+            <div class="farmer-stories-grid">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="./images/placeholder.jpg" alt="Ramesh Patil">
+                        <div class="story-badge"><i class="fas fa-check-circle"></i> <span data-en="Verified Farmer" data-mr="सत्यापित शेतकरी">Verified Farmer</span></div>
+                    </div>
+                    <div class="story-content">
+                        <blockquote class="story-quote" data-en="KisanBox helped me sell my tomatoes directly to buyers in Pune. My income doubled in just one season!" data-mr="KisanBox ने मला थेट पुण्यातील खरेदीदारांना माझे टमाटर विकण्यास मदत केली. एकाच हंगामात माझे उत्पन्न दुप्पट झाले!">
+                            "KisanBox helped me sell my tomatoes directly to buyers in Pune. My income doubled in just one season!"
+                        </blockquote>
+                        <div class="farmer-meta">
+                            <strong data-en="Ramesh Patil" data-mr="रमेश पाटील">Ramesh Patil</strong>
+                            <span data-en="Tomato Farmer · Nashik" data-mr="टमाटर शेतकरी · नाशिक">Tomato Farmer · Nashik</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="./images/placeholder.jpg" alt="Sunita Deshmukh">
+                        <div class="story-badge"><i class="fas fa-check-circle"></i> <span data-en="Verified Farmer" data-mr="सत्यापित शेतकरी">Verified Farmer</span></div>
+                    </div>
+                    <div class="story-content">
+                        <blockquote class="story-quote" data-en="I got organic certification through KisanBox's guidance and now earn 40% more per kilogram." data-mr="KisanBox च्या मार्गदर्शनाने मला सेंद्रिय प्रमाणपत्र मिळाले आणि आता प्रति किलो ४०% जास्त कमाई होते.">
+                            "I got organic certification through KisanBox's guidance and now earn 40% more per kilogram."
+                        </blockquote>
+                        <div class="farmer-meta">
+                            <strong data-en="Sunita Deshmukh" data-mr="सुनिता देशमुख">Sunita Deshmukh</strong>
+                            <span data-en="Organic Farmer · Pune" data-mr="सेंद्रिय शेतकरी · पुणे">Organic Farmer · Pune</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="./images/placeholder.jpg" alt="Vijay Shinde">
+                        <div class="story-badge"><i class="fas fa-check-circle"></i> <span data-en="Verified Farmer" data-mr="सत्यापित शेतकरी">Verified Farmer</span></div>
+                    </div>
+                    <div class="story-content">
+                        <blockquote class="story-quote" data-en="The market price alerts save me from selling at low rates. I wait for the right time and get the best price." data-mr="बाजारभाव सूचना मला कमी दरात विकण्यापासून वाचवतात. मी योग्य वेळेची वाट पाहतो आणि सर्वोत्तम दर मिळवतो.">
+                            "The market price alerts save me from selling at low rates. I wait for the right time and get the best price."
+                        </blockquote>
+                        <div class="farmer-meta">
+                            <strong data-en="Vijay Shinde" data-mr="विजय शिंदे">Vijay Shinde</strong>
+                            <span data-en="Pomegranate Farmer · Solapur" data-mr="डाळिंब शेतकरी · सोलापूर">Pomegranate Farmer · Solapur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Section -->
+    <section class="app-section section">
+        <div class="container">
+            <div class="app-content">
+                <div class="app-text">
+                    <span class="app-label" data-en="Coming Soon" data-mr="लवकरच येत आहे">Coming Soon</span>
+                    <h2 data-en="KisanBox App — Farm at Your Fingertips" data-mr="KisanBox अॅप — शेती तुमच्या बोटांवर">KisanBox App — Farm at Your Fingertips</h2>
+                    <p data-en="Manage your farm, check market prices, get crop advisory, and buy/sell produce — all from your phone in Hindi, English, and Marathi." data-mr="तुमची शेती व्यवस्थापित करा, बाजारभाव तपासा, पीक सल्ला मिळवा आणि उत्पादन खरेदी/विक्री करा — सर्व हिंदी, इंग्रजी आणि मराठीत तुमच्या फोनवरून.">
+                        Manage your farm, check market prices, get crop advisory, and buy/sell produce — all from your phone in Hindi, English, and Marathi.
+                    </p>
+                    <ul class="app-features">
+                        <li><i class="fas fa-check-circle"></i> <span data-en="Real-time market prices" data-mr="रिअल-टाइम बाजारभाव">Real-time market prices</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-en="AI crop disease detection" data-mr="AI पीक रोग शोध">AI crop disease detection</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-en="Voice search in Marathi" data-mr="मराठीत व्हॉइस सर्च">Voice search in Marathi</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-en="UPI &amp; COD payments" data-mr="UPI आणि COD पेमेंट">UPI &amp; COD payments</span></li>
+                    </ul>
+                    <div class="app-badges">
+                        <a href="#" class="app-badge-btn">
+                            <i class="fab fa-google-play"></i>
+                            <div>
+                                <small data-en="Get it on" data-mr="येथे मिळवा">Get it on</small>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="app-badge-btn">
+                            <i class="fab fa-apple"></i>
+                            <div>
+                                <small data-en="Download on the" data-mr="येथे डाउनलोड करा">Download on the</small>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="app-visual">
+                    <div class="app-phone-mockup">
+                        <div class="phone-screen">
+                            <div class="phone-header">
+                                <span class="phone-logo">KB</span>
+                                <span data-en="KisanBox" data-mr="किसानबॉक्स">KisanBox</span>
+                            </div>
+                            <div class="phone-content">
+                                <div class="phone-price-row"><span>Tomato</span><span class="up">₹42/kg ↑</span></div>
+                                <div class="phone-price-row"><span>Onion</span><span class="down">₹28/kg ↓</span></div>
+                                <div class="phone-price-row"><span>Rice</span><span class="up">₹120/kg ↑</span></div>
+                                <div class="phone-weather">
+                                    <i class="fas fa-sun"></i>
+                                    <span>28°C · Nashik</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3 data-en="Stay Updated with Market Trends" data-mr="बाजारपेठेच्या ट्रेंडसह अपडेट रहा">Stay Updated with Market Trends</h3>
+                    <p data-en="Get the latest agricultural news, market prices, and farming tips delivered to your inbox." data-mr="नवीनतम कृषी बातम्या, बाजारभाव आणि शेतीची टिप्स तुमच्या इनबॉक्समध्ये मिळवा.">Get the latest agricultural news, market prices, and farming tips delivered to your inbox.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" data-placeholder-en="Enter your email" data-placeholder-mr="तुमचा ईमेल टाका" required>
+                        <button type="submit" class="btn btn-primary" data-en="Subscribe" data-mr="सबस्क्राइब करा">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="./images/logo.png" alt="KisanBox Logo">
+                        <h3>
+                            <span data-en="KisanBox" data-mr="किसानबॉक्स">KisanBox</span>
+                            <small data-en="Taazgi ka Khazana" data-mr="ताजेपणाचा खजिना, शेतकऱ्याच्या हातून">Taazgi ka Khazana</small>
+                        </h3>
+                    </div>
+                    <p data-en="Connecting Maharashtra farmers with global markets through trusted agricultural trading platform." data-mr="विश्वासू कृषी व्यापार व्यासपीठाद्वारे महाराष्ट्रातील शेतकऱ्यांना जागतिक बाजारपेठेशी जोडणे.">
+                        Connecting Maharashtra farmers with global markets through trusted agricultural trading platform.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-mr="द्रुत दुवे">Quick Links</h4>
+                    <ul>
+                        <li><a href="./pages/about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="./pages/services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li><a href="./pages/products.html" data-en="Products" data-mr="उत्पादने">Products</a></li>
+                        <li><a href="./pages/blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="./pages/contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Dashboards" data-mr="डॅशबोर्ड">Dashboards</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./pages/dashboard/buyer.html" data-en="Buyer Dashboard" data-mr="खरेदीदार डॅशबोर्ड">Buyer Dashboard</a></li>
+                                <li><a href="./pages/dashboard/seller.html" data-en="Seller Dashboard" data-mr="विक्रेता डॅशबोर्ड">Seller Dashboard</a></li>
+                                <li><a href="./pages/dashboard/farmer.html" data-en="Farmer Dashboard" data-mr="शेतकरी डॅशबोर्ड">Farmer Dashboard</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Categories" data-mr="श्रेण्या">Categories</h4>
+                    <ul>
+                        <li><a href="./pages/products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                        <li><a href="./pages/products.html?category=fruits" data-mr="फळे" data-en="Fruits">Fruits</a></li>
+                        <li><a href="./pages/products.html?category=grains" data-en="Grains" data-mr="धान्य">Grains</a></li>
+                        <li><a href="./pages/products.html?category=spices" data-en="Spices" data-mr="मसाले">Spices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Contact Info" data-mr="संपर्क माहिती">Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-en="123 Agriculture Market, Pune, Maharashtra 411001" data-mr="१२३ कृषी बाजार, पुणे, महाराष्ट्र ४११००१">123 Agriculture Market, Pune, Maharashtra 411001</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9221591156</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@kisanbox.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 KisanBox. <span data-en="All rights reserved." data-mr="सर्व हक्क राखीव.">All rights reserved.</span></p>
+                    <div class="footer-links">
+                        <a href="#" data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</a>
+                        <a href="#" data-en="Terms of Service" data-mr="सेवा अटी">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="./js/main.js"></script>
+    <script src="./js/language-toggle.js"></script>
+    <script>
+    // Deal countdown timers
+    (function() {
+        function updateTimers() {
+            document.querySelectorAll('.deal-timer').forEach(function(timer) {
+                var now = new Date();
+                var end = new Date(now.toDateString() + ' ' + timer.dataset.end);
+                if (end < now) end.setDate(end.getDate() + 1);
+                var diff = Math.floor((end - now) / 1000);
+                var h = Math.floor(diff / 3600);
+                var m = Math.floor((diff % 3600) / 60);
+                var s = diff % 60;
+                timer.querySelector('.timer-value').textContent =
+                    String(h).padStart(2,'0') + ':' + String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+            });
+        }
+        updateTimers();
+        setInterval(updateTimers, 1000);
+    })();
+    </script>
+</body>
+</html>
