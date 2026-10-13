@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Agricultural Blog - KisanBox | Farming Tips & Market Updates" data-mr="कृषी ब्लॉग - किसानबॉक्स | शेती टिप्स आणि बाजार अपडेट्स">Agricultural Blog - KisanBox | Farming Tips & Market Updates</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Read KisanBox blog for latest agricultural insights, farming techniques, market updates, and expert advice for Maharashtra farmers.">
+    <meta name="keywords" content="agricultural blog, farming tips, market updates, organic farming, maharashtra agriculture, crop management">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Agricultural Blog - KisanBox">
+    <meta property="og:description" content="Latest agricultural insights and farming techniques for Maharashtra farmers.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-xl);
+        }
+        
+        .blog-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-card:hover .blog-image img {
+            transform: scale(1.05);
+        }
+        
+        .blog-content {
+            padding: var(--spacing-lg);
+        }
+        
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        .blog-category {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.25rem 0.5rem;
+            border-radius: var(--border-radius-sm);
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .blog-date {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .blog-title {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .blog-title h3 {
+            font-size: 1.25rem;
+            line-height: 1.4;
+            margin: 0;
+        }
+        
+        .blog-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .blog-title a:hover {
+            color: var(--primary);
+        }
+        
+        .blog-excerpt {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .blog-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: var(--spacing-md);
+            border-top: 1px solid var(--light-gray);
+        }
+        
+        .blog-author {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        .read-more {
+            color: var(--primary);
+            font-weight: 500;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .read-more:hover {
+            color: var(--primary-dark);
+        }
+        
+        .blog-filters {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-xl);
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            background: var(--light-gray);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .featured-post {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            padding: var(--spacing-xxl);
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-xxl);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .featured-post::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+        
+        .featured-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+        
+        .featured-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .featured-title {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-md);
+            line-height: 1.3;
+        }
+        
+        .featured-excerpt {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: var(--spacing-lg);
+            opacity: 0.9;
+        }
+        
+        .featured-cta {
+            background: var(--white);
+            color: var(--primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .featured-cta:hover {
+            transform: translateY(-2px);
+        }
+        
+        .full-article {
+            padding: var(--spacing-xxl) 0;
+        }
+        
+        .article-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xxl);
+        }
+        
+        .article-category {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .article-header h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
+        }
+        
+        .article-meta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .article-body {
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+        
+        .article-body h2 {
+            color: var(--primary);
+            margin-top: var(--spacing-xxl);
+            margin-bottom: var(--spacing-lg);
+            font-size: 1.8rem;
+        }
+        
+        .article-body h3 {
+            color: var(--primary-dark);
+            margin-top: var(--spacing-xl);
+            margin-bottom: var(--spacing-md);
+            font-size: 1.4rem;
+        }
+        
+        .article-body h4 {
+            color: var(--text-primary);
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.2rem;
+        }
+        
+        .article-body ul {
+            margin: var(--spacing-md) 0;
+            padding-left: var(--spacing-xl);
+        }
+        
+        .article-body li {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .success-story-highlight {
+            border-radius: var(--border-radius);
+            margin: var(--spacing-xl) 0;
+        }
+        
+        .motivational-quote blockquote {
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .share-buttons {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+        
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .share-btn:hover {
+            background: var(--primary-dark);
+        }
+
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+            
+            .featured-title {
+                font-size: 1.5rem;
+            }
+            
+            .featured-post {
+                padding: var(--spacing-xl);
+            }
+            
+            .blog-filters {
+                justify-content: center;
+            }
+            
+            .article-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .article-meta {
+                flex-direction: column;
+                gap: var(--spacing-sm);
+            }
+            
+            .share-buttons {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="contact-info">
+                        <span class="phone">
+                            <i class="fas fa-phone"></i>
+                            <span data-en="+91 9221591156" data-mr="+९१ ९२२१५९११५६">+91 9221591156</span>
+                        </span>
+                        <span class="email">
+                            <i class="fas fa-envelope"></i>
+                            info@kisanbox.com
+                        </span>
+                    </div>
+                    <div class="language-toggle">
+                        <button id="language-btn" class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">English</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="logo">
+                        <img src="../images/logo.png" alt="KisanBox Logo">
+                        <h2>
+                            <span data-en="KisanBox" data-mr="किसानबॉक्स">KisanBox</span>
+                            <small data-en="शेती बाजार" data-mr="शेती बाजार">शेती बाजार</small>
+                        </h2>
+                    </div>
+                    
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                        <li><a href="./about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="./services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Products" data-mr="उत्पादने">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./products.html" data-en="All Products" data-mr="सर्व उत्पादने">All Products</a></li>
+                                <li><a href="./products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                                <li><a href="./products.html?category=fruits" data-en="Fruits" data-mr="फळे">Fruits</a></li>
+                                <li><a href="./farmer-marketplace.html" data-en="Farmer Marketplace" data-mr="शेतकरी बाजार">Farmer Marketplace</a></li>
+                                <li><a href="./knowledge-hub.html" data-en="Knowledge Hub" data-mr="ज्ञान केंद्र">Knowledge Hub</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="active" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="./testimonials.html" data-en="Testimonials" data-mr="प्रशंसापत्रे">Testimonials</a></li>
+                        <li><a href="./contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Dashboards" data-mr="डॅशबोर्ड">Dashboards</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./dashboard/buyer.html" data-en="Buyer Dashboard" data-mr="खरेदीदार डॅशबोर्ड">Buyer Dashboard</a></li>
+                                <li><a href="./dashboard/seller.html" data-en="Seller Dashboard" data-mr="विक्रेता डॅशबोर्ड">Seller Dashboard</a></li>
+                                <li><a href="./dashboard/farmer.html" data-en="Farmer Dashboard" data-mr="शेतकरी डॅशबोर्ड">Farmer Dashboard</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1 data-en="Agricultural Blog" data-mr="कृषी ब्लॉग">Agricultural Blog</h1>
+                    <p data-en="Expert insights, farming tips, and market updates for Maharashtra farmers" data-mr="महाराष्ट्रातील शेतकऱ्यांसाठी तज्ञांचे अंतर्दृष्टी, शेती टिप्स आणि बाजार अपडेट्स">
+                        Expert insights, farming tips, and market updates for Maharashtra farmers
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="section">
+            <div class="container">
+                <div class="featured-post">
+                    <div class="featured-content">
+                        <span class="featured-badge" data-en="Featured Article" data-mr="वैशिष्ट्यीकृत लेख">Featured Article</span>
+                        <h2 class="featured-title" data-en="Organic Farming: The Future of Sustainable Agriculture" data-mr="सेंद्रिय शेती: शाश्वत शेतीचे भविष्य">Organic Farming: The Future of Sustainable Agriculture</h2>
+                        <p class="featured-excerpt" data-en="Discover how organic farming practices can increase your crop yield while protecting the environment and commanding premium prices in the market." data-mr="जाणून घ्या की सेंद्रिय शेती पद्धती कशा प्रकारे पर्यावरणाचे संरक्षण करून आणि बाजारात प्रीमियम किंमती मिळवून तुमची पीक उत्पादनात वाढ करू शकते.">
+                            Discover how organic farming practices can increase your crop yield while protecting the environment and commanding premium prices in the market.
+                        </p>
+                        <a href="#" class="featured-cta" data-en="Read Full Article" data-mr="संपूर्ण लेख वाचा">
+                            <span>Read Full Article</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Filters -->
+        <section class="section">
+            <div class="container">
+                <div class="blog-filters">
+                    <span data-en="Filter by category:" data-mr="श्रेणीनुसार फिल्टर करा:">Filter by category:</span>
+                    <button class="filter-btn active" data-category="all" data-en="All Articles" data-mr="सर्व लेख">All Articles</button>
+                    <button class="filter-btn" data-category="farming-tips" data-en="Farming Tips" data-mr="शेती टिप्स">Farming Tips</button>
+                    <button class="filter-btn" data-category="market-updates" data-en="Market Updates" data-mr="बाजार अपडेट्स">Market Updates</button>
+                    <button class="filter-btn" data-category="organic" data-en="Organic Farming" data-mr="सेंद्रिय शेती">Organic Farming</button>
+                    <button class="filter-btn" data-category="technology" data-en="AgriTech" data-mr="कृषी तंत्रज्ञान">AgriTech</button>
+                    <button class="filter-btn" data-category="success-stories" data-en="Success Stories" data-mr="यशगाथा">Success Stories</button>
+                </div>
+
+                <!-- Blog Grid -->
+                <div class="blog-grid" id="blog-grid">
+                    <!-- Featured Article - Latest from KisanBox Blog -->
+                    <article class="blog-card" data-category="organic">
+                        <div class="blog-image">
+                            <img src="../images/blog-organic-farming-success.jpg" alt="Organic Farming Success Story" onerror="this.src='../images/placeholder-blog.jpg'">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category" data-en="Success Story" data-mr="यशगाथा">Success Story</span>
+                                <div class="blog-date">
+                                    <i class="fas fa-calendar"></i>
+                                    <span data-en="Sep 22, 2024" data-mr="सप्टें २२, २०२४">Sep 22, 2024</span>
+                                </div>
+                            </div>
+                            <div class="blog-title">
+                                <h3><a href="#" data-en="Organic Farming: Golden Opportunity for Maharashtra Farmers' Income Growth" data-mr="जैविक शेती: महाराष्ट्रातील शेतकर्‍यांच्या उत्पन्नात वाढीचा सुवर्ण संधी">जैविक शेती: महाराष्ट्रातील शेतकर्‍यांच्या उत्पन्नात वाढीचा सुवर्ण संधी</a></h3>
+                            </div>
+                            <p class="blog-excerpt" data-en="Learn from Ramesh Patil's success story from Ahmednagar - how he transformed his 3-acre farm from ₹80,000 to ₹2.5 lakh annual income through organic farming. Complete step-by-step guide included!" data-mr="अहमदनगरचे रमेश पाटील यांच्या यशगाथेतून शिका - त्यांनी जैविक शेतीमुळे 3 एकर जमिनीवरून ₹80,000 वरून ₹2.5 लाख वार्षिक उत्पन्न कसे केले. संपूर्ण step-by-step मार्गदर्शन समाविष्ट!">
+                                अहमदनगरचे रमेश पाटील यांच्या यशगाथेतून शिका - त्यांनी जैविक शेतीमुळे 3 एकर जमिनीवरून ₹80,000 वरून ₹2.5 लाख वार्षिक उत्पन्न कसे केले. संपूर्ण step-by-step मार्गदर्शन समाविष्ट!
+                            </p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <i class="fas fa-user"></i>
+                                    <span data-en="KisanBox Team" data-mr="किसानबॉक्स टीम">KisanBox Team</span>
+                                </div>
+                                <a href="#organic-farming-full" class="read-more" data-en="Read More" data-mr="अधिक वाचा">
+                                    <span>Read More</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 1 -->
+                    <article class="blog-card" data-category="farming-tips">
+                        <div class="blog-image">
+                            <img src="../images/blog-seed-treatment.jpg" alt="Seed Treatment" onerror="this.src='../images/placeholder-blog.jpg'">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category" data-en="Farming Tips" data-mr="शेती टिप्स">Farming Tips</span>
+                                <div class="blog-date">
+                                    <i class="fas fa-calendar"></i>
+                                    <span data-en="Dec 15, 2024" data-mr="डिसें १५, २०२४">Dec 15, 2024</span>
+                                </div>
+                            </div>
+                            <div class="blog-title">
+                                <h3><a href="#" data-en="Seed Treatment: Avoid Double Sowing!" data-mr="बीजप्रक्रिया करा, दुबार पेरणी टाळा!">Seed Treatment: Avoid Double Sowing!</a></h3>
+                            </div>
+                            <p class="blog-excerpt" data-en="Learn the importance of proper seed treatment to ensure better germination rates and avoid the need for re-sowing. This guide covers modern seed treatment techniques that save time and money." data-mr="चांगली उगवण दर सुनिश्चित करण्यासाठी आणि पुन्हा पेरणीची गरज टाळण्यासाठी योग्य बीज उपचाराचे महत्त्व जाणून घ्या. हा मार्गदर्शक वेळ आणि पैसा वाचवणार्‍या आधुनिक बीज उपचार तंत्रांचा समावेश करतो.">
+                                Learn the importance of proper seed treatment to ensure better germination rates and avoid the need for re-sowing. This guide covers modern seed treatment techniques that save time and money.
+                            </p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <i class="fas fa-user"></i>
+                                    <span data-en="Dr. Rajesh Patil" data-mr="डॉ. राजेश पाटील">Dr. Rajesh Patil</span>
+                                </div>
+                                <a href="#" class="read-more" data-en="Read More" data-mr="अधिक वाचा">
+                                    <span>Read More</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="blog-card" data-category="market-updates">
+                        <div class="blog-image">
+                            <img src="../images/blog-market-trends.jpg" alt="Market Trends" onerror="this.src='../images/placeholder-blog.jpg'">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category" data-en="Market Updates" data-mr="बाजार अपडेट्स">Market Updates</span>
+                                <div class="blog-date">
+                                    <i class="fas fa-calendar"></i>
+                                    <span data-en="Dec 12, 2024" data-mr="डिसें १२, २०२४">Dec 12, 2024</span>
+                                </div>
+                            </div>
+                            <div class="blog-title">
+                                <h3><a href="#" data-en="Soybean Prices Reach ₹10,000 Per Quintal!" data-mr="सोयाबीनचे दर प्रति क्विंटल ₹१०,००० पोहोचले!">Soybean Prices Reach ₹10,000 Per Quintal!</a></h3>
+                            </div>
+                            <p class="blog-excerpt" data-en="The latest market analysis shows soybean prices hitting record highs. Find out what's driving these price increases and how farmers can maximize their profits from this opportunity." data-mr="ताज्या बाजार विश्लेषणानुसार सोयाबीनचे दर विक्रमी उच्चांकावर पोहोचले आहेत. या किंमतीत वाढ कशामुळे होत आहे आणि शेतकरी या संधीचा फायदा कसा घेऊ शकतात ते जाणून घ्या.">
+                                The latest market analysis shows soybean prices hitting record highs. Find out what's driving these price increases and how farmers can maximize their profits from this opportunity.
+                            </p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <i class="fas fa-user"></i>
+                                    <span data-en="Priya Sharma" data-mr="प्रिया शर्मा">Priya Sharma</span>
+                                </div>
+                                <a href="#" class="read-more" data-en="Read More" data-mr="अधिक वाचा">
+                                    <span>Read More</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="blog-card" data-category="organic">
+                        <div class="blog-image">
+                            <img src="../images/blog-vermicompost.jpg" alt="Vermicompost" onerror="this.src='../images/placeholder-blog.jpg'">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category" data-en="Organic Farming" data-mr="सेंद्रिय शेती">Organic Farming</span>
+                                <div class="blog-date">
+                                    <i class="fas fa-calendar"></i>
+                                    <span data-en="Dec 10, 2024" data-mr="डिसें १०, २०२४">Dec 10, 2024</span>
+                                </div>
+                            </div>
+                            <div class="blog-title">
+                                <h3><a href="#" data-en="Benefits of Vermicompost for Farming" data-mr="गांडूळ खताचे शेतीसाठी फायदे">Benefits of Vermicompost for Farming</a></h3>
+                            </div>
+                            <p class="blog-excerpt" data-en="Discover how vermicompost can improve soil health, increase crop yield, and provide a sustainable farming solution. Learn the step-by-step process to create your own vermicompost at home." data-mr="गांडूळ खत मातीचे आरोग्य कसे सुधारू शकते, पीक उत्पादन वाढवू शकते आणि शाश्वत शेतीचे समाधान कसे देऊ शकते ते जाणून घ्या. घरी स्वतःचे गांडूळ खत तयार करण्याची पायरी दर पायरीची प्रक्रिया शिका.">
+                                Discover how vermicompost can improve soil health, increase crop yield, and provide a sustainable farming solution. Learn the step-by-step process to create your own vermicompost at home.
+                            </p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <i class="fas fa-user"></i>
+                                    <span data-en="Dr. Meera Desai" data-mr="डॉ. मीरा देसाई">Dr. Meera Desai</span>
+                                </div>
+                                <a href="#" class="read-more" data-en="Read More" data-mr="अधिक वाचा">
+                                    <span>Read More</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="blog-card" data-category="success-stories">
+                        <div class="blog-image">
+                            <img src="../images/blog-collective-farming.jpg" alt="Collective Farming" onerror="this.src='../images/placeholder-blog.jpg'">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category" data-en="Success Stories" data-mr="यशगाथा">Success Stories</span>
+                                <div class="blog-date">
+                                    <i class="fas fa-calendar"></i>
+                                    <span data-en="Dec 8, 2024" data-mr="डिसें ८, २०२४">Dec 8, 2024</span>
+                                </div>
+                            </div>
+                            <div class="blog-title">
+                                <h3><a href="#" data-en="Collective Farming: The Need of the Hour!" data-mr="गटशेती: ही काळाची गरज!">Collective Farming: The Need of the Hour!</a></h3>
+                            </div>
+                            <p class="blog-excerpt" data-en="Explore how collective farming initiatives are transforming rural Maharashtra. Learn from successful case studies where farmers have increased their income through cooperative farming methods." data-mr="गटशेती उपक्रम कसे ग्रामीण महाराष्ट्राचे कायापालट करत आहेत ते एक्सप्लोर करा. सहकारी शेती पद्धतींद्वारे शेतकऱ्यांनी त्यांचे उत्पन्न वाढवलेल्या यशस्वी केस स्टडीजमधून शिका.">
+                                Explore how collective farming initiatives are transforming rural Maharashtra. Learn from successful case studies where farmers have increased their income through cooperative farming methods.
+                            </p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <i class="fas fa-user"></i>
+                                    <span data-en="Sunil Jadhav" data-mr="सुनील जाधव">Sunil Jadhav</span>
+                                </div>
+                                <a href="#" class="read-more" data-en="Read More" data-mr="अधिक वाचा">
+                                    <span>Read More</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="blog-card" data-category="technology">
+                        <div class="blog-image">
+                            <img src="../images/blog-smart-farming.jpg" alt="Smart Farming" onerror="this.src='../images/placeholder-blog.jpg'">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category" data-en="AgriTech" data-mr="कृषी तंत्रज्ञान">AgriTech</span>
+                                <div class="blog-date">
+                                    <i class="fas fa-calendar"></i>
+                                    <span data-en="Dec 5, 2024" data-mr="डिसें ५, २०२४">Dec 5, 2024</span>
+                                </div>
+                            </div>
+                            <div class="blog-title">
+                                <h3><a href="#" data-en="Smart Irrigation Systems for Water Conservation" data-mr="जल संधारणासाठी स्मार्ट सिंचन प्रणाली">Smart Irrigation Systems for Water Conservation</a></h3>
+                            </div>
+                            <p class="blog-excerpt" data-en="Learn about modern irrigation technologies that can save up to 40% water while increasing crop productivity. Discover affordable smart irrigation solutions suitable for small and medium farmers." data-mr="आधुनिक सिंचन तंत्रज्ञानाबद्दल जाणून घ्या जे 40% पर्यंत पाणी वाचवू शकते आणि पीक उत्पादकता वाढवू शकते. लहान आणि मध्यम शेतकऱ्यांसाठी योग्य परवडणारे स्मार्ट सिंचन समाधान शोधा.">
+                                Learn about modern irrigation technologies that can save up to 40% water while increasing crop productivity. Discover affordable smart irrigation solutions suitable for small and medium farmers.
+                            </p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <i class="fas fa-user"></i>
+                                    <span data-en="Tech Team" data-mr="तंत्रज्ञान टीम">Tech Team</span>
+                                </div>
+                                <a href="#" class="read-more" data-en="Read More" data-mr="अधिक वाचा">
+                                    <span>Read More</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="blog-card" data-category="farming-tips">
+                        <div class="blog-image">
+                            <img src="../images/blog-crop-protection.jpg" alt="Crop Protection" onerror="this.src='../images/placeholder-blog.jpg'">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category" data-en="Farming Tips" data-mr="शेती टिप्स">Farming Tips</span>
+                                <div class="blog-date">
+                                    <i class="fas fa-calendar"></i>
+                                    <span data-en="Dec 3, 2024" data-mr="डिसें ३, २०२४">Dec 3, 2024</span>
+                                </div>
+                            </div>
+                            <div class="blog-title">
+                                <h3><a href="#" data-en="Integrated Pest Management for Healthy Crops" data-mr="निरोगी पिकांसाठी एकात्मिक कीड व्यवस्थापन">Integrated Pest Management for Healthy Crops</a></h3>
+                            </div>
+                            <p class="blog-excerpt" data-en="Discover sustainable pest control methods that protect your crops without harming the environment. Learn about biological control agents and organic pesticides that are safe and effective." data-mr="पर्यावरणाला हानी न पोहोचवता तुमच्या पिकांचे संरक्षण करणार्‍या शाश्वत कीड नियंत्रण पद्धतींचा शोध घ्या. सुरक्षित आणि प्रभावी जैविक नियंत्रण एजंट्स आणि सेंद्रिय कीटकनाशकांबद्दल जाणून घ्या.">
+                                Discover sustainable pest control methods that protect your crops without harming the environment. Learn about biological control agents and organic pesticides that are safe and effective.
+                            </p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <i class="fas fa-user"></i>
+                                    <span data-en="Agricultural Expert" data-mr="कृषी तज्ञ">Agricultural Expert</span>
+                                </div>
+                                <a href="#" class="read-more" data-en="Read More" data-mr="अधिक वाचा">
+                                    <span>Read More</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Article Section -->
+        <section class="section full-article" id="organic-farming-full" style="display: none;">
+            <div class="container">
+                <div class="article-content" style="max-width: 800px; margin: 0 auto;">
+                    <div class="article-header">
+                        <span class="article-category" data-en="Success Story" data-mr="यशगाथा">यशगाथा</span>
+                        <h1 data-en="Organic Farming: Golden Opportunity for Maharashtra Farmers' Income Growth" data-mr="जैविक शेती: महाराष्ट्रातील शेतकर्‍यांच्या उत्पन्नात वाढीचा सुवर्ण संधी">जैविक शेती: महाराष्ट्रातील शेतकर्‍यांच्या उत्पन्नात वाढीचा सुवर्ण संधी</h1>
+                        <div class="article-meta">
+                            <span><i class="fas fa-calendar"></i> सप्टेंबर २२, २०२४</span>
+                            <span><i class="fas fa-user"></i> KisanBox Team</span>
+                            <span><i class="fas fa-clock"></i> ५ मिनिट वाचन</span>
+                        </div>
+                    </div>
+                    
+                    <div class="article-body">
+                        <h2>शेतकरी भावांनो, एका यशोगाथेपासून सुरुवात...</h2>
+                        <p>अहमदनगरचे रमेश पाटील साहेब आजपासून 5 वर्षांपूर्वी फक्त chemical शेती करत होते. त्यांच्या 3 एकर जमिनीवरून वर्षभरात अवघे ₹80,000 उत्पन्न होत होते. बियाणे, खत आणि कीटकनाशकांचा खर्च इतका जास्त होता की फायदा म्हणून काहीच नव्हते!</p>
+                        
+                        <p><strong>पण आज?</strong> रमेश भाऊ जैविक शेती करून वर्षाला ₹2.5 लाख कमावत आहेत! कसे? चला जाणून घेऊया...</p>
+                        
+                        <div class="article-image">
+                            <img src="../images/organic-farming-field.jpg" alt="Organic Farming" style="width: 100%; border-radius: 8px; margin: 20px 0;" onerror="this.src='../images/placeholder-blog.jpg'">
+                        </div>
+                        
+                        <h2>जैविक शेती म्हणजे काय आणि का गरजेची</h2>
+                        <p>Organic farming म्हणजे नैसर्गिक पद्धतीने शेती करणे. रसायनं नाही, कृत्रिम खतं नाही - फक्त natural methods! हे तुमची मातीला healthy ठेवते आणि तुमचं पैकीटही भरते.</p>
+                        
+                        <h3>Step-by-Step जैविक शेतीची सुरुवात:</h3>
+                        
+                        <h4>1. मातीची तपासणी करा</h4>
+                        <ul>
+                            <li>आधी आपल्या मातीचा health check करवा</li>
+                            <li>जिल्हा कृषी कार्यालयातून मोफत तपासणी करवू शकता</li>
+                        </ul>
+                        
+                        <h4>2. Organic कंपोस्ट तयार करा</h4>
+                        <ul>
+                            <li>गोवर + कोरडी पाने + स्वयंपाकघरातील कचरा मिसळून</li>
+                            <li>3 महिन्यात तयार, खर्च फक्त ₹500 प्रति क्विंटल</li>
+                            <li>Chemical खताच्या जागी हे वापरा</li>
+                        </ul>
+                        
+                        <h4>3. Natural कीड नियंत्रण</h4>
+                        <ul>
+                            <li>कडूलिंबाच्या तेलाची फवारणी (₹200 मध्ये 1 महिन्याचं solution)</li>
+                            <li>गौमूत्र + पाणी (1:10 गुणोत्तर)</li>
+                            <li>Organic pesticides वरून हानिकारक रसायनांपासून वाचा</li>
+                        </ul>
+                        
+                        <h4>4. Crop निवड विचारपूर्वक</h4>
+                        <ul>
+                            <li>महाराष्ट्रात organic कांदे, टोमॅटो आणि द्राक्षांची खूप मागणी</li>
+                            <li>Premium दर मिळतात - 30-50% जास्त किंमत!</li>
+                        </ul>
+                        
+                        <h2>शेतकर्‍यांसाठी फायदे:</h2>
+                        
+                        <h3>💰 उत्पन्नात वाढ:</h3>
+                        <ul>
+                            <li><strong>खर्च कमी:</strong> Chemical inputs ची गरज नाही, 40% पर्यंत बचत</li>
+                            <li><strong>Premium pricing:</strong> Organic उत्पादने 30-50% महाग विकली जातात</li>
+                            <li><strong>Export संधी:</strong> आंतरराष्ट्रीय बाजारात खूप मागणी</li>
+                        </ul>
+                        
+                        <h3>🌱 आरोग्यासाठी चांगले:</h3>
+                        <ul>
+                            <li>तुमच्या कुटुंबासाठी सुरक्षित अन्न</li>
+                            <li>कामगारांचेही आरोग्य सुधारते</li>
+                            <li>Chemical exposure पासून संरक्षण</li>
+                        </ul>
+                        
+                        <h3>🏆 सरकारी मदतही मिळते:</h3>
+                        <ul>
+                            <li><strong>PKVY योजना:</strong> ₹50,000 प्रति हेक्टर अनुदान</li>
+                            <li><strong>Organic प्रमाणपत्र:</strong> मोफत मिळते</li>
+                            <li><strong>NABARD कर्जे:</strong> कमी व्याजदराने</li>
+                        </ul>
+                        
+                        <div class="success-story-highlight" style="background: #f8f9fa; padding: 20px; border-left: 4px solid #2c5530; margin: 20px 0;">
+                            <h2>यशोगाथा - प्रेरणा घ्या!</h2>
+                            <p>सातारा येथील सुनील शिंदे यांनी 2020 मध्ये organic द्राक्ष शेती सुरू केली. आज त्यांचे द्राक्ष युरोपमध्ये export होतात! उत्पन्न ₹50,000 वरून ₹4 लाख वार्षिक झाले आहे.</p>
+                            <p><strong>त्यांचा मंत्र:</strong> "धैर्य + योग्य नियोजन + सरकारी योजनांचा बरोबर वापर = यश!"</p>
+                        </div>
+                        
+                        <h2>आजच सुरुवात करा!</h2>
+                        
+                        <h3>सोप्या Action Plan:</h3>
+                        <ol>
+                            <li><strong>या महिन्यात:</strong> मातीची तपासणी करवा</li>
+                            <li><strong>पुढच्या महिन्यात:</strong> कंपोस्ट बनवण्याची सुरुवात करा</li>
+                            <li><strong>3 महिन्यानंतर:</strong> छोट्या क्षेत्रात organic trial घ्या</li>
+                            <li><strong>6 महिन्यानंतर:</strong> परिणाम पाहून क्षेत्र वाढवा</li>
+                        </ol>
+                        
+                        <div class="motivational-quote" style="text-align: center; background: linear-gradient(135deg, #2c5530, #4a7c59); color: white; padding: 30px; border-radius: 10px; margin: 30px 0;">
+                            <blockquote style="font-size: 1.2rem; font-style: italic; margin: 0;">
+                                "थेंब थेंब तळे भरे, लहान लहान बदलांमधून मोठं यश मिळतं!"
+                            </blockquote>
+                        </div>
+                        
+                        <h2>शेतकरी भावांनो, लक्षात ठेवा...</h2>
+                        <p>जैविक शेती ही फक्त एक trend नाही - हा आपल्या भविष्याचा पाया आहे. आजच्या पिढीसाठी पैसे कमावा, येणार्‍या पिढीसाठी निरोगी वातावरण सोडून द्या.</p>
+                        
+                        <p><strong>धैर्य धरा, सुरुवात करा - यश तुमची वाट पाहत आहे!</strong></p>
+                        
+                        <p>प्रश्न असल्यास स्थानिक कृषी अधिकार्‍यांना भेटा किंवा जवळच्या KVK (कृषी विज्ञान केंद्र) मध्ये जाऊन मार्गदर्शन घ्या.</p>
+                        
+                        <p style="text-align: center; font-weight: bold; color: #2c5530; font-size: 1.1rem;">जय शेतकरी! जय जवान! जय विज्ञान! 🌾</p>
+                        
+                        <div class="article-footer" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd;">
+                            <button onclick="hideFullArticle()" class="btn btn-secondary">← Back to Blog List</button>
+                            <div class="share-buttons" style="margin-top: 20px;">
+                                <span>Share this article:</span>
+                                <a href="#" class="share-btn"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="share-btn"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="share-btn"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#" class="share-btn"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Stay Updated with KisanBox" data-mr="किसानबॉक्ससह अपडेट राहा">Stay Updated with KisanBox</h2>
+                    <p data-en="Get the latest farming tips, market updates, and agricultural insights delivered to your inbox" data-mr="नवीनतम शेती टिप्स, बाजार अपडेट्स आणि कृषी अंतर्दृष्टी तुमच्या इनबॉक्समध्ये मिळवा">
+                        Get the latest farming tips, market updates, and agricultural insights delivered to your inbox
+                    </p>
+                </div>
+                <div class="newsletter-form" style="max-width: 500px; margin: 0 auto;">
+                    <form style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <input type="email" placeholder="Enter your email address" style="flex: 1; padding: 1rem; border: 1px solid #ddd; border-radius: var(--border-radius); min-width: 250px;" data-en-placeholder="Enter your email address" data-mr-placeholder="तुमचा ईमेल पत्ता टाका">
+                        <button type="submit" class="btn btn-primary" data-en="Subscribe" data-mr="सबस्क्राइब करा">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../images/logo.png" alt="KisanBox Logo">
+                        <h3>
+                            <span data-en="KisanBox" data-mr="किसानबॉक्स">KisanBox</span>
+                            <small data-en="शेती बाजार" data-mr="शेती बाजार">शेती बाजार</small>
+                        </h3>
+                    </div>
+                    <p data-en="Connecting Maharashtra farmers with global markets through trusted agricultural trading platform." data-mr="विश्वासू कृषी व्यापार व्यासपीठाद्वारे महाराष्ट्रातील शेतकऱ्यांना जागतिक बाजारपेठेशी जोडणे.">
+                        Connecting Maharashtra farmers with global markets through trusted agricultural trading platform.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-mr="द्रुत दुवे">Quick Links</h4>
+                    <ul>
+                        <li><a href="./about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="./services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li><a href="./products.html" data-en="Products" data-mr="उत्पादने">Products</a></li>
+                        <li><a href="#" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="./contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Dashboards" data-mr="डॅशबोर्ड">Dashboards</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./dashboard/buyer.html" data-en="Buyer Dashboard" data-mr="खरेदीदार डॅशबोर्ड">Buyer Dashboard</a></li>
+                                <li><a href="./dashboard/seller.html" data-en="Seller Dashboard" data-mr="विक्रेता डॅशबोर्ड">Seller Dashboard</a></li>
+                                <li><a href="./dashboard/farmer.html" data-en="Farmer Dashboard" data-mr="शेतकरी डॅशबोर्ड">Farmer Dashboard</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Categories" data-mr="श्रेण्या">Categories</h4>
+                    <ul>
+                        <li><a href="./products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                        <li><a href="./products.html?category=fruits" data-mr="फळे" data-en="Fruits">Fruits</a></li>
+                        <li><a href="./products.html?category=grains" data-en="Grains" data-mr="धान्य">Grains</a></li>
+                        <li><a href="./products.html?category=spices" data-en="Spices" data-mr="मसाले">Spices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Contact Info" data-mr="संपर्क माहिती">Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-en="123 Agriculture Market, Pune, Maharashtra 411001" data-mr="१२३ कृषी बाजार, पुणे, महाराष्ट्र ४११००१">123 Agriculture Market, Pune, Maharashtra 411001</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9221591156</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@kisanbox.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 KisanBox. <span data-en="All rights reserved." data-mr="सर्व हक्क राखीव.">All rights reserved.</span></p>
+                    <div class="footer-links">
+                        <a href="#" data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</a>
+                        <a href="#" data-en="Terms of Service" data-mr="सेवा अटी">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/main.js"></script>
+    <script src="../js/language-toggle.js"></script>
+    
+    <script>
+        // Blog filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const blogCards = document.querySelectorAll('.blog-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter blog cards
+                    blogCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Handle "Read More" clicks for full articles
+            document.querySelectorAll('a[href^="#organic-farming-full"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showFullArticle();
+                });
+            });
+        });
+        
+        function showFullArticle() {
+            document.querySelector('.blog-grid').style.display = 'none';
+            document.querySelector('.blog-filters').style.display = 'none';
+            document.querySelector('.featured-post').style.display = 'none';
+            document.querySelector('.full-article').style.display = 'block';
+            document.querySelector('.full-article').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function hideFullArticle() {
+            document.querySelector('.blog-grid').style.display = 'grid';
+            document.querySelector('.blog-filters').style.display = 'flex';
+            document.querySelector('.featured-post').style.display = 'block';
+            document.querySelector('.full-article').style.display = 'none';
+            document.querySelector('.blog-filters').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

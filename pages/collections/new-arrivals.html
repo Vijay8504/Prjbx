@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals - KisanBox | Fresh Agricultural Products | नवीन आगमन</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover the latest fresh agricultural products at KisanBox. New arrivals from trusted Maharashtra farmers with seasonal specialties and premium quality produce.">
+    <meta name="keywords" content="new arrivals, fresh products, latest produce, seasonal vegetables, new fruits, Maharashtra farming, agricultural updates">
+    <meta name="author" content="KisanBox">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="New Arrivals - KisanBox">
+    <meta property="og:description" content="Latest fresh agricultural products from trusted Maharashtra farmers.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../../images/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    
+    <!-- External CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../css/products.css">
+    <link rel="stylesheet" href="../../css/new-arrivals-minimal.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="contact-info">
+                        <span class="phone">
+                            <i class="fas fa-phone"></i>
+                            <span data-en="+91 9221591156" data-mr="+९१ ९२२१५९११५६">+91 9221591156</span>
+                        </span>
+                        <span class="email">
+                            <i class="fas fa-envelope"></i>
+                            info@kisanbox.com
+                        </span>
+                    </div>
+                    <div class="language-toggle">
+                        <button id="language-btn" class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">English</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="logo">
+                        <img src="../../images/logo.png" alt="KisanBox Logo">
+                        <h2>
+                            <span data-en="KisanBox" data-mr="किसानबॉक्स">KisanBox</span>
+                            <small data-en="शेती बाजार" data-mr="शेती बाजार">शेती बाजार</small>
+                        </h2>
+                    </div>
+                    
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="../../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                        <li><a href="../about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="../services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li class="dropdown">
+                            <a href="../products.html" class="active" data-en="Products" data-mr="उत्पादने">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../products.html" data-en="All Products" data-mr="सर्व उत्पादने">All Products</a></li>
+                                <li><a href="./best-sellers.html" data-en="Best Sellers" data-mr="बेस्ट सेलर">Best Sellers</a></li>
+                                <li><a href="./organic-certified.html" data-en="Organic Certified" data-mr="सेंद्रिय प्रमाणित">Organic Certified</a></li>
+                                <li><a href="./new-arrivals.html" data-en="New Arrivals" data-mr="नवीन आगमन">New Arrivals</a></li>
+                                <li><a href="../farmer-marketplace.html" data-en="Farmer Marketplace" data-mr="शेतकरी बाजार">Farmer Marketplace</a></li>
+                                <li><a href="../knowledge-hub.html" data-en="Knowledge Hub" data-mr="ज्ञान केंद्र">Knowledge Hub</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="../testimonials.html" data-en="Testimonials" data-mr="प्रशंसापत्रे">Testimonials</a></li>
+                        <li><a href="../contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Dashboards" data-mr="डॅशबोर्ड">Dashboards</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../dashboard/buyer.html" data-en="Buyer Dashboard" data-mr="खरेदीदार डॅशबोर्ड">Buyer Dashboard</a></li>
+                                <li><a href="../dashboard/seller.html" data-en="Seller Dashboard" data-mr="विक्रेता डॅशबोर्ड">Seller Dashboard</a></li>
+                                <li><a href="../dashboard/farmer.html" data-en="Farmer Dashboard" data-mr="शेतकरी डॅशबोर्ड">Farmer Dashboard</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1 data-en="New Arrivals From The Farm" data-mr="शेतातून नवीन आगमन">New Arrivals From The Farm</h1>
+                    <p data-en="Latest premium quality vegetables, fruits, and agricultural produce directly from Maharashtra farmers" data-mr="महाराष्ट्रातील शेतकऱ्यांकडून थेट नवीनतम प्रीमियम गुणवत्तेची भाजी, फळे आणि कृषी उत्पादने">
+                        Latest premium quality vegetables, fruits, and agricultural produce directly from Maharashtra farmers
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filters and Search -->
+        <section class="filters-section">
+            <div class="container">
+                <div class="filters-container">
+                    <div class="search-filter">
+                        <input type="text" id="product-search" placeholder="Search new arrivals..." data-placeholder-en="Search new arrivals..." data-placeholder-mr="नवीन आगमन शोधा...">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="category-filters">
+                        <button class="filter-btn active" data-category="all" data-en="All Products" data-mr="सर्व उत्पादने">All Products</button>
+                        <button class="filter-btn" data-category="vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</button>
+                        <button class="filter-btn" data-category="fruits" data-en="Fruits" data-mr="फळे">Fruits</button>
+                        <button class="filter-btn" data-category="grains" data-en="Grains" data-mr="धान्य">Grains</button>
+                        <button class="filter-btn" data-category="spices" data-en="Spices" data-mr="मसाले">Spices</button>
+                        <button class="filter-btn" data-category="dairy" data-en="Dairy Products" data-mr="दुग्धजन्य पदार्थ">Dairy Products</button>
+                        <button class="filter-btn" data-category="organic" data-en="Organic" data-mr="सेंद्रिय">Organic</button>
+                    </div>
+                    
+                    <div class="sort-filter">
+                        <select id="sort-products">
+                            <option value="featured" data-en="Featured" data-mr="वैशिष्ट्यपूर्ण">Featured</option>
+                            <option value="price-low" data-en="Price: Low to High" data-mr="किंमत: कमी ते जास्त">Price: Low to High</option>
+                            <option value="price-high" data-en="Price: High to Low" data-mr="किंमत: जास्त ते कमी">Price: High to Low</option>
+                            <option value="newest" data-en="Newest First" data-mr="नवीन प्रथम">Newest First</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="results-info">
+                    <span class="results-count" data-en="Showing 10 of 10 products" data-mr="10 पैकी 10 उत्पादने दाखवत आहे">Showing 10 of 10 products</span>
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-section">
+            <div class="container">
+                <div class="products-grid" id="products-grid">
+                    <!-- Fresh Tomatoes -->
+                    <div class="product-card" data-category="vegetables">
+                        <div class="product-image">
+                            <img src="../../images/products/tomatoes.jpg" alt="Fresh Tomatoes" loading="lazy">
+                            <div class="product-badges">
+                                <span class="badge fresh" data-en="Fresh" data-mr="ताजे">Fresh</span>
+                                <span class="badge available" data-en="New Arrival" data-mr="नवीन आगमन">New Arrival</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist" title="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="farmer-name" data-en="Ramesh Patil Farm" data-mr="रमेश पाटील फार्म">Ramesh Patil Farm</span>
+                                <span class="location" data-en="Pune, Maharashtra" data-mr="पुणे, महाराष्ट्र">Pune, Maharashtra</span>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="../../pages/product-view.html?id=tomatoes" data-en="Premium Fresh Tomatoes" data-mr="प्रीमियम ताजे टमाटर">Premium Fresh Tomatoes</a>
+                            </h3>
+                            <div class="product-description" data-en="Vine-ripened, pesticide-free tomatoes perfect for cooking and salads." data-mr="स्वयंपाक आणि सॅलडसाठी योग्य वेल-पिकलेले, कीटकनाशक मुक्त टमाटर.">
+                                Vine-ripened, pesticide-free tomatoes perfect for cooking and salads.
+                            </div>
+                            <div class="product-pricing">
+                                <span class="current-price">₹40/kg</span>
+                                <span class="original-price">₹50/kg</span>
+                                <span class="discount">20% off</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.5) 18 reviews</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1">
+                                <button class="qty-btn plus">+</button>
+                                <span class="unit">kg</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn btn-primary add-to-cart" data-en="Add to Cart" data-mr="कार्टमध्ये जोडा">Add to Cart</button>
+                                <button class="btn btn-outline contact-farmer" data-en="Contact Farmer" data-mr="शेतकऱ्याशी संपर्क साधा">Contact Farmer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Golden Turmeric -->
+                    <div class="product-card" data-category="spices organic">
+                        <div class="product-image">
+                            <img src="../../images/products/turmeric.jpg" alt="Golden Turmeric" loading="lazy">
+                            <div class="product-badges">
+                                <span class="badge organic" data-en="Organic" data-mr="सेंद्रिय">Organic</span>
+                                <span class="badge premium" data-en="New Arrival" data-mr="नवीन आगमन">New Arrival</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist" title="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="farmer-name" data-en="Sangli Spice Cooperative" data-mr="सांगली मसाला सहकारी">Sangli Spice Cooperative</span>
+                                <span class="location" data-en="Sangli, Maharashtra" data-mr="सांगली, महाराष्ट्र">Sangli, Maharashtra</span>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="../../pages/product-view.html?id=turmeric" data-en="Premium Golden Turmeric" data-mr="प्रीमियम सोनेरी हळद">Premium Golden Turmeric</a>
+                            </h3>
+                            <div class="product-description" data-en="Premium quality organic turmeric powder with rich golden color and authentic aroma." data-mr="समृद्ध सोनेरी रंग आणि अस्सल सुगंधासह प्रीमियम गुणवत्तेची सेंद्रिय हळद पावडर.">
+                                Premium quality organic turmeric powder with rich golden color and authentic aroma.
+                            </div>
+                            <div class="product-pricing">
+                                <span class="current-price">₹350/kg</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.8) 34 reviews</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1">
+                                <button class="qty-btn plus">+</button>
+                                <span class="unit">kg</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn btn-primary add-to-cart" data-en="Add to Cart" data-mr="कार्टमध्ये जोडा">Add to Cart</button>
+                                <button class="btn btn-outline contact-farmer" data-en="Contact Farmer" data-mr="शेतकऱ्याशी संपर्क साधा">Contact Farmer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sweet Pomegranate -->
+                    <div class="product-card" data-category="fruits">
+                        <div class="product-image">
+                            <img src="../../images/products/pomegranate.jpg" alt="Sweet Pomegranate" loading="lazy">
+                            <div class="product-badges">
+                                <span class="badge premium" data-en="Premium" data-mr="प्रीमियम">Premium</span>
+                                <span class="badge export" data-en="New Arrival" data-mr="नवीन आगमन">New Arrival</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist" title="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="farmer-name" data-en="Solapur Pomegranate Farms" data-mr="सोलापूर डाळिंब फार्म्स">Solapur Pomegranate Farms</span>
+                                <span class="location" data-en="Solapur, Maharashtra" data-mr="सोलापूर, महाराष्ट्र">Solapur, Maharashtra</span>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="../../pages/product-view.html?id=pomegranate" data-en="Premium Sweet Pomegranate" data-mr="प्रीमियम गोड डाळिंब">Premium Sweet Pomegranate</a>
+                            </h3>
+                            <div class="product-description" data-en="Juicy pomegranates with sweet pulp and rich antioxidants, freshly harvested." data-mr="गोड गर आणि समृद्ध अँटिऑक्सिडंट असलेले रसाळ डाळिंब, ताजे काढलेले.">
+                                Juicy pomegranates with sweet pulp and rich antioxidants, freshly harvested.
+                            </div>
+                            <div class="product-pricing">
+                                <span class="current-price">₹180/kg</span>
+                                <span class="original-price">₹220/kg</span>
+                                <span class="discount">18% off</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9) 67 reviews</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1">
+                                <button class="qty-btn plus">+</button>
+                                <span class="unit">kg</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn btn-primary add-to-cart" data-en="Add to Cart" data-mr="कार्टमध्ये जोडा">Add to Cart</button>
+                                <button class="btn btn-outline contact-farmer" data-en="Contact Farmer" data-mr="शेतकऱ्याशी संपर्क साधा">Contact Farmer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Premium Basmati Rice -->
+                    <div class="product-card" data-category="grains organic">
+                        <div class="product-image">
+                            <img src="../../images/products/rice.jpg" alt="Premium Basmati Rice" loading="lazy">
+                            <div class="product-badges">
+                                <span class="badge organic" data-en="Organic" data-mr="सेंद्रिय">Organic</span>
+                                <span class="badge available" data-en="New Arrival" data-mr="नवीन आगमन">New Arrival</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist" title="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="farmer-name" data-en="Kolhapur Rice Mills" data-mr="कोल्हापूर राईस मिल्स">Kolhapur Rice Mills</span>
+                                <span class="location" data-en="Kolhapur, Maharashtra" data-mr="कोल्हापूर, महाराष्ट्र">Kolhapur, Maharashtra</span>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="../../pages/product-view.html?id=rice" data-en="Premium Basmati Rice" data-mr="प्रीमियम बासमती तांदूळ">Premium Basmati Rice</a>
+                            </h3>
+                            <div class="product-description" data-en="Long grain organic basmati rice with aromatic fragrance and superior quality." data-mr="सुगंधी वास आणि उत्कृष्ट गुणवत्तेसह लांब दाण्याचे सेंद्रिय बासमती तांदूळ.">
+                                Long grain organic basmati rice with aromatic fragrance and superior quality.
+                            </div>
+                            <div class="product-pricing">
+                                <span class="current-price">₹120/kg</span>
+                                <span class="original-price">₹140/kg</span>
+                                <span class="discount">14% off</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.6) 89 reviews</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1">
+                                <button class="qty-btn plus">+</button>
+                                <span class="unit">kg</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn btn-primary add-to-cart" data-en="Add to Cart" data-mr="कार्टमध्ये जोडा">Add to Cart</button>
+                                <button class="btn btn-outline contact-farmer" data-en="Contact Farmer" data-mr="शेतकऱ्याशी संपर्क साधा">Contact Farmer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Whole Green Gram Moong -->
+                    <div class="product-card" data-category="grains organic">
+                        <div class="product-image">
+                            <img src="../../images/products/moong.jpg" alt="Whole Green Gram Moong" loading="lazy">
+                            <div class="product-badges">
+                                <span class="badge organic" data-en="Organic" data-mr="सेंद्रिय">Organic</span>
+                                <span class="badge available" data-en="New Arrival" data-mr="नवीन आगमन">New Arrival</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist" title="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="farmer-name" data-en="Nashik Pulse Growers" data-mr="नाशिक डाळ उत्पादक">Nashik Pulse Growers</span>
+                                <span class="location" data-en="Nashik, Maharashtra" data-mr="नाशिक, महाराष्ट्र">Nashik, Maharashtra</span>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="../../pages/product-view.html?id=moong" data-en="Whole Green Gram Moong" data-mr="संपूर्ण हरभरा मूग">Whole Green Gram Moong</a>
+                            </h3>
+                            <div class="product-description" data-en="Premium quality whole green gram moong dal, rich in protein and perfect for healthy cooking." data-mr="प्रीमियम गुणवत्तेचा संपूर्ण हरभरा मूग डाळ, प्रथिनांनी समृद्ध आणि निरोगी स्वयंपाकासाठी योग्य.">
+                                Premium quality whole green gram moong dal, rich in protein and perfect for healthy cooking.
+                            </div>
+                            <div class="product-pricing">
+                                <span class="current-price">₹95/kg</span>
+                                <span class="original-price">₹110/kg</span>
+                                <span class="discount">14% off</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.4) 42 reviews</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1">
+                                <button class="qty-btn plus">+</button>
+                                <span class="unit">kg</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn btn-primary add-to-cart" data-en="Add to Cart" data-mr="कार्टमध्ये जोडा">Add to Cart</button>
+                                <button class="btn btn-outline contact-farmer" data-en="Contact Farmer" data-mr="शेतकऱ्याशी संपर्क साधा">Contact Farmer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desi Chana Dal, Unpolished -->
+                    <div class="product-card" data-category="grains organic">
+                        <div class="product-image">
+                            <img src="../../images/products/chana-dal.jpg" alt="Desi Chana Dal Unpolished" loading="lazy">
+                            <div class="product-badges">
+                                <span class="badge organic" data-en="Organic" data-mr="सेंद्रिय">Organic</span>
+                                <span class="badge premium" data-en="New Arrival" data-mr="नवीन आगमन">New Arrival</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist" title="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="farmer-name" data-en="Aurangabad Dal Cooperative" data-mr="औरंगाबाद डाळ सहकारी">Aurangabad Dal Cooperative</span>
+                                <span class="location" data-en="Aurangabad, Maharashtra" data-mr="औरंगाबाद, महाराष्ट्र">Aurangabad, Maharashtra</span>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="../../pages/product-view.html?id=chana-dal" data-en="Desi Chana Dal, Unpolished" data-mr="देशी चणा डाळ, अनपॉलिश्ड">Desi Chana Dal, Unpolished</a>
+                            </h3>
+                            <div class="product-description" data-en="Traditional unpolished desi chana dal with natural nutrients intact, perfect for authentic Indian cooking." data-mr="नैसर्गिक पोषक तत्त्वे कायम असलेली पारंपारिक अनपॉलिश्ड देशी चणा डाळ, अस्सल भारतीय स्वयंपाकासाठी योग्य.">
+                                Traditional unpolished desi chana dal with natural nutrients intact, perfect for authentic Indian cooking.
+                            </div>
+                            <div class="product-pricing">
+                                <span class="current-price">₹85/kg</span>
+                                <span class="original-price">₹100/kg</span>
+                                <span class="discount">15% off</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.7) 38 reviews</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1">
+                                <button class="qty-btn plus">+</button>
+                                <span class="unit">kg</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn btn-primary add-to-cart" data-en="Add to Cart" data-mr="कार्टमध्ये जोडा">Add to Cart</button>
+                                <button class="btn btn-outline contact-farmer" data-en="Contact Farmer" data-mr="शेतकऱ्याशी संपर्क साधा">Contact Farmer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Waghya Rajma -->
+                    <div class="product-card" data-category="grains organic">
+                        <div class="product-image">
+                            <img src="../../images/products/waghya-rajma.jpg" alt="Waghya Rajma" loading="lazy">
+                            <div class="product-badges">
+                                <span class="badge premium" data-en="Premium" data-mr="प्रीमियम">Premium</span>
+                                <span class="badge available" data-en="New Arrival" data-mr="नवीन आगमन">New Arrival</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist" title="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="farmer-name" data-en="Satara Hills Farmers" data-mr="सातारा हिल्स शेतकरी">Satara Hills Farmers</span>
+                                <span class="location" data-en="Satara, Maharashtra" data-mr="सातारा, महाराष्ट्र">Satara, Maharashtra</span>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="../../pages/product-view.html?id=waghya-rajma" data-en="Waghya Rajma (Red Kidney Beans)" data-mr="वाघ्या राजमा (लाल राजमा)">Waghya Rajma (Red Kidney Beans)</a>
+                            </h3>
+                            <div class="product-description" data-en="Premium quality Waghya Rajma from Satara hills, perfect for traditional Maharashtrian and North Indian cuisine." data-mr="सातारा डोंगरातील प्रीमियम गुणवत्तेचा वाघ्या राजमा, पारंपारिक महाराष्ट्रीयन आणि उत्तर भारतीय पाककृतीसाठी योग्य.">
+                                Premium quality Waghya Rajma from Satara hills, perfect for traditional Maharashtrian and North Indian cuisine.
+                            </div>
+                            <div class="product-pricing">
+                                <span class="current-price">₹140/kg</span>
+                                <span class="original-price">₹160/kg</span>
+                                <span class="discount">13% off</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.6) 29 reviews</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1">
+                                <button class="qty-btn plus">+</button>
+                                <span class="unit">kg</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn btn-primary add-to-cart" data-en="Add to Cart" data-mr="कार्टमध्ये जोडा">Add to Cart</button>
+                                <button class="btn btn-outline contact-farmer" data-en="Contact Farmer" data-mr="शेतकऱ्याशी संपर्क साधा">Contact Farmer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fresh Red Onions -->
+                    <div class="product-card" data-category="vegetables">
+                        <div class="product-image">
+                            <img src="../../images/products/onions.jpg" alt="Fresh Red Onions" loading="lazy">
+                            <div class="product-badges">
+                                <span class="badge export" data-en="Export Quality" data-mr="निर्यात दर्जा">Export Quality</span>
+                                <span class="badge fresh" data-en="New Arrival" data-mr="नवीन आगमन">New Arrival</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist" title="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="farmer-name" data-en="Nashik Onion Cooperative" data-mr="नाशिक कांदा सहकारी">Nashik Onion Cooperative</span>
+                                <span class="location" data-en="Nashik, Maharashtra" data-mr="नाशिक, महाराष्ट्र">Nashik, Maharashtra</span>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="../../pages/product-view.html?id=onions" data-en="Premium Red Onions" data-mr="प्रीमियम लाल कांदा">Premium Red Onions</a>
+                            </h3>
+                            <div class="product-description" data-en="High-quality red onions from Nashik, known for their pungency and storage life." data-mr="नाशिकमधील उच्च दर्जाचे लाल कांदे, त्यांच्या तिखटपणा आणि साठवण आयुष्यासाठी प्रसिद्ध.">
+                                High-quality red onions from Nashik, known for their pungency and storage life.
+                            </div>
+                            <div class="product-pricing">
+                                <span class="current-price">₹25/kg</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(5.0) 45 reviews</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1">
+                                <button class="qty-btn plus">+</button>
+                                <span class="unit">kg</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn btn-primary add-to-cart" data-en="Add to Cart" data-mr="कार्टमध्ये जोडा">Add to Cart</button>
+                                <button class="btn btn-outline contact-farmer" data-en="Contact Farmer" data-mr="शेतकऱ्याशी संपर्क साधा">Contact Farmer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sweet Bananas -->
+                    <div class="product-card" data-category="fruits organic">
+                        <div class="product-image">
+                            <img src="../../images/products/bananas.jpg" alt="Sweet Bananas" loading="lazy">
+                            <div class="product-badges">
+                                <span class="badge organic" data-en="Organic" data-mr="सेंद्रिय">Organic</span>
+                                <span class="badge fresh" data-en="New Arrival" data-mr="नवीन आगमन">New Arrival</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist" title="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="farmer-name" data-en="Jalgaon Fruit Growers" data-mr="जळगाव फळ उत्पादक">Jalgaon Fruit Growers</span>
+                                <span class="location" data-en="Jalgaon, Maharashtra" data-mr="जळगाव, महाराष्ट्र">Jalgaon, Maharashtra</span>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="../../pages/product-view.html?id=bananas" data-en="Organic Sweet Bananas" data-mr="सेंद्रिय गोड केळी">Organic Sweet Bananas</a>
+                            </h3>
+                            <div class="product-description" data-en="Sweet organic bananas perfect for breakfast and healthy snacking." data-mr="नाश्ता आणि निरोगी नाश्त्यासाठी योग्य गोड सेंद्रिय केळी.">
+                                Sweet organic bananas perfect for breakfast and healthy snacking.
+                            </div>
+                            <div class="product-pricing">
+                                <span class="current-price">₹80/dozen</span>
+                                <span class="original-price">₹100/dozen</span>
+                                <span class="discount">20% off</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.0) 22 reviews</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1">
+                                <button class="qty-btn plus">+</button>
+                                <span class="unit">dozen</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn btn-primary add-to-cart" data-en="Add to Cart" data-mr="कार्टमध्ये जोडा">Add to Cart</button>
+                                <button class="btn btn-outline contact-farmer" data-en="Contact Farmer" data-mr="शेतकऱ्याशी संपर्क साधा">Contact Farmer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A2 Ghee -->
+                    <div class="product-card" data-category="dairy organic">
+                        <div class="product-image">
+                            <img src="../../images/products/a2-ghee.jpg" alt="A2 Ghee" loading="lazy">
+                            <div class="product-badges">
+                                <span class="badge organic" data-en="Organic" data-mr="सेंद्रिय">Organic</span>
+                                <span class="badge premium" data-en="New Arrival" data-mr="नवीन आगमन">New Arrival</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist" title="Add to Wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="action-btn quick-view" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="action-btn compare" title="Compare">
+                                    <i class="fas fa-balance-scale"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-meta">
+                                <span class="farmer-name" data-en="Traditional Dairy Co." data-mr="ट्रेडिशनल डेअरी कं.">Traditional Dairy Co.</span>
+                                <span class="location" data-en="Kolhapur, Maharashtra" data-mr="कोल्हापूर, महाराष्ट्र">Kolhapur, Maharashtra</span>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="../../pages/product-view.html?id=a2-ghee" data-en="A2 Ghee" data-mr="ए२ तूप">A2 Ghee</a>
+                            </h3>
+                            <div class="product-description" data-en="Pure A2 ghee from desi cow milk. Traditional bilona method. Rich in vitamins and natural flavor." data-mr="देशी गायीच्या दुधापासून शुद्ध ए२ तूप. पारंपरिक बिलोणा पद्धती. जीवनसत्त्वे आणि नैसर्गिक चवीने भरपूर.">
+                                Pure A2 ghee from desi cow milk. Traditional bilona method. Rich in vitamins and natural flavor.
+                            </div>
+                            <div class="product-pricing">
+                                <span class="current-price">₹850/500g</span>
+                                <span class="original-price">₹950/500g</span>
+                                <span class="discount">11% off</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.8) 156 reviews</span>
+                            </div>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1">
+                                <button class="qty-btn plus">+</button>
+                                <span class="unit">pack</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn btn-primary add-to-cart" data-en="Add to Cart" data-mr="कार्टमध्ये जोडा">Add to Cart</button>
+                                <button class="btn btn-outline contact-farmer" data-en="Contact Farmer" data-mr="शेतकऱ्याशी संपर्क साधा">Contact Farmer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination Controls -->
+                <div class="pagination-section">
+                    <div class="pagination-info">
+                        <span id="pagination-info" data-en="Showing 1-8 of 10 products" data-mr="10 पैकी 1-8 उत्पादने दाखवत आहे">
+                            Showing 1-8 of 10 products
+                        </span>
+                    </div>
+                    <div class="pagination-controls">
+                        <button class="pagination-btn" id="prev-page" data-en="Previous" data-mr="मागील" disabled>
+                            <i class="fas fa-chevron-left"></i> Previous
+                        </button>
+                        <div class="pagination-numbers" id="pagination-numbers">
+                            <button class="page-number active" data-page="1">1</button>
+                            <button class="page-number" data-page="2">2</button>
+                        </div>
+                        <button class="pagination-btn" id="next-page" data-en="Next" data-mr="पुढील">
+                            Next <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../../images/logo.png" alt="KisanBox Logo">
+                        <h3>
+                            <span data-en="KisanBox" data-mr="किसानबॉक्स">KisanBox</span>
+                            <small data-en="शेती बाजार" data-mr="शेती बाजार">शेती बाजार</small>
+                        </h3>
+                    </div>
+                    <p data-en="Connecting Maharashtra farmers with global markets through trusted agricultural trading platform." data-mr="विश्वासू कृषी व्यापार व्यासपीठाद्वारे महाराष्ट्रातील शेतकऱ्यांना जागतिक बाजारपेठेशी जोडणे.">
+                        Connecting Maharashtra farmers with global markets through trusted agricultural trading platform.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-mr="द्रुत दुवे">Quick Links</h4>
+                    <ul>
+                        <li><a href="../about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="../services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li><a href="../products.html" data-en="Products" data-mr="उत्पादने">Products</a></li>
+                        <li><a href="../blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="../contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Dashboards" data-mr="डॅशबोर्ड">Dashboards</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../dashboard/buyer.html" data-en="Buyer Dashboard" data-mr="खरेदीदार डॅशबोर्ड">Buyer Dashboard</a></li>
+                                <li><a href="../dashboard/seller.html" data-en="Seller Dashboard" data-mr="विक्रेता डॅशबोर्ड">Seller Dashboard</a></li>
+                                <li><a href="../dashboard/farmer.html" data-en="Farmer Dashboard" data-mr="शेतकरी डॅशबोर्ड">Farmer Dashboard</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Categories" data-mr="श्रेण्या">Categories</h4>
+                    <ul>
+                        <li><a href="../products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                        <li><a href="../products.html?category=fruits" data-mr="फळे" data-en="Fruits">Fruits</a></li>
+                        <li><a href="../products.html?category=grains" data-en="Grains" data-mr="धान्य">Grains</a></li>
+                        <li><a href="../products.html?category=spices" data-en="Spices" data-mr="मसाले">Spices</a></li>
+                        <li><a href="../products.html?category=dairy" data-en="Dairy Products" data-mr="दुग्धजन्य पदार्थ">Dairy Products</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Contact Info" data-mr="संपर्क माहिती">Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-en="123 Agriculture Market, Pune, Maharashtra 411001" data-mr="१२३ कृषी बाजार, पुणे, महाराष्ट्र ४११००१">123 Agriculture Market, Pune, Maharashtra 411001</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9221591156</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@kisanbox.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 KisanBox. <span data-en="All rights reserved." data-mr="सर्व हक्क राखीव.">All rights reserved.</span></p>
+                    <div class="footer-links">
+                        <a href="#" data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</a>
+                        <a href="#" data-en="Terms of Service" data-mr="सेवा अटी">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/language-toggle.js"></script>
+    <script src="../../js/products.js"></script>
+</body>
+</html>

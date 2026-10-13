@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - KisanBox | Complete Website Navigation | शेती बाजार</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="KisanBox Sitemap - Complete website navigation for Maharashtra's trusted agricultural trading platform. Find all pages, products, and services easily.">
+    <meta name="keywords" content="KisanBox sitemap, website navigation, agricultural products, Maharashtra farmers, trading platform">
+    <meta name="author" content="KisanBox">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sitemap - KisanBox">
+    <meta property="og:description" content="Complete navigation guide for KisanBox agricultural trading platform.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../images/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    
+    <!-- External CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+            color: white;
+            padding: 1rem 0 0;
+            position: relative;
+        }
+
+        .header-top {
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 1rem;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-item i {
+            color: #90c695;
+        }
+
+        .language-toggle .lang-btn {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .language-toggle .lang-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* Navigation */
+        .navbar {
+            padding: 1rem 0;
+        }
+
+        .navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo i {
+            color: #90c695;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: #90c695;
+        }
+
+        .nav-menu .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 200px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .dropdown-menu li {
+            list-style: none;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: #333;
+            border-bottom: 1px solid #eee;
+        }
+
+        .dropdown-menu a:hover {
+            background: #f8f9fa;
+            color: #2c5530;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        /* Sitemap Styles */
+        .sitemap-hero {
+            background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+            color: white;
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+
+        .sitemap-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .sitemap-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .sitemap-main {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .sitemap-section {
+            margin-bottom: 3rem;
+        }
+
+        .sitemap-section h2 {
+            color: #2c5530;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #90c695;
+            display: inline-block;
+        }
+
+        .sitemap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .sitemap-category {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .sitemap-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .sitemap-category h3 {
+            color: #2c5530;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .sitemap-category i {
+            color: #90c695;
+        }
+
+        .sitemap-links {
+            list-style: none;
+        }
+
+        .sitemap-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .sitemap-links a {
+            color: #555;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .sitemap-links a:hover {
+            color: #2c5530;
+        }
+
+        .sitemap-links a::before {
+            content: "▸";
+            color: #90c695;
+            font-size: 0.8rem;
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .newsletter-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .newsletter-form input {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            width: 300px;
+            font-size: 1rem;
+        }
+
+        .newsletter-form button {
+            background: #90c695;
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background: #7ab87f;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a3b1e;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            color: #90c695;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #90c695;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo i {
+            color: #90c695;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #90c695;
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1rem;
+            text-align: center;
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #90c695;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .sitemap-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .newsletter-form input {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sitemap-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sitemap-category {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span data-en="+91 9221591156" data-mr="+91 9221591156">+91 9221591156</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span data-en="info@kisanbox.com" data-mr="info@kisanbox.com">info@kisanbox.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-en="Maharashtra, India" data-mr="महाराष्ट्र, भारत">Maharashtra, India</span>
+                        </div>
+                    </div>
+                    <div class="language-toggle">
+                        <button id="language-btn" class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">English</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>KisanBox</span>
+                    </div>
+                    
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                        <li><a href="./about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="./services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Products" data-mr="उत्पादने">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./products.html" data-en="All Products" data-mr="सर्व उत्पादने">All Products</a></li>
+                                <li><a href="./products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                                <li><a href="./products.html?category=fruits" data-en="Fruits" data-mr="फळे">Fruits</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="./testimonials.html" data-en="Testimonials" data-mr="प्रशंसापत्रे">Testimonials</a></li>
+                        <li><a href="./contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                        <li><a href="./sitemap.html" class="active" data-en="Sitemap" data-mr="साइटमॅप">Sitemap</a></li>
+                    </ul>
+                    
+                    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="sitemap-hero">
+        <div class="container">
+            <h1 data-en="SITEMAP" data-mr="साइटमॅप">SITEMAP</h1>
+            <p data-en="Complete navigation guide for KisanBox - Your trusted agricultural trading platform" data-mr="KisanBox साठी संपूर्ण नेव्हिगेशन गाइड - आपला विश्वासार्ह कृषी व्यापार प्लॅटफॉर्म">Complete navigation guide for KisanBox - Your trusted agricultural trading platform</p>
+        </div>
+    </section>
+
+    <!-- Main Sitemap Content -->
+    <main class="sitemap-main">
+        <div class="container">
+            
+            <!-- Main Pages Section -->
+            <section class="sitemap-section">
+                <h2 data-en="Main Pages" data-mr="मुख्य पृष्ठे">Main Pages</h2>
+                <div class="sitemap-grid">
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-home"></i> <span data-en="Primary Navigation" data-mr="प्राथमिक नेव्हिगेशन">Primary Navigation</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                            <li><a href="./about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                            <li><a href="./services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                            <li><a href="./contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                            <li><a href="./product-view.html" data-en="Product View" data-mr="उत्पादन दृश्य">Product View</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-info-circle"></i> <span data-en="Company Information" data-mr="कंपनी माहिती">Company Information</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./about.html" data-en="About KisanBox" data-mr="KisanBox बद्दल">About KisanBox</a></li>
+                            <li><a href="./our-team.html" data-en="Our Team" data-mr="आमचा संघ">Our Team</a></li>
+                            <li><a href="./our-story.html" data-en="Our Story" data-mr="आमची कहाणी">Our Story</a></li>
+                            <li><a href="./careers.html" data-en="Careers" data-mr="करिअर">Careers</a></li>
+                            <li><a href="./press-media.html" data-en="Press & Media" data-mr="प्रेस आणि मीडिया">Press & Media</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Product Categories Section -->
+            <section class="sitemap-section">
+                <h2 data-en="Product Categories" data-mr="उत्पादन श्रेणी">Product Categories</h2>
+                <div class="sitemap-grid">
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-leaf"></i> <span data-en="Fresh Produce" data-mr="ताजे उत्पादन">Fresh Produce</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./products.html" data-en="All Products" data-mr="सर्व उत्पादने">All Products</a></li>
+                            <li><a href="./products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                            <li><a href="./products.html?category=fruits" data-en="Fruits" data-mr="फळे">Fruits</a></li>
+                            <li><a href="./products.html?category=leafy-greens" data-en="Leafy Greens" data-mr="पानेदार भाज्या">Leafy Greens</a></li>
+                            <li><a href="./products.html?category=seasonal" data-en="Seasonal Produce" data-mr="मोसमी उत्पादने">Seasonal Produce</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-seedling"></i> <span data-en="Grains & Pulses" data-mr="धान्य आणि डाळी">Grains & Pulses</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./products.html?category=grains" data-en="Grains" data-mr="धान्य">Grains</a></li>
+                            <li><a href="./products.html?category=pulses" data-en="Pulses" data-mr="डाळी">Pulses</a></li>
+                            <li><a href="./products.html?category=rice" data-en="Rice Varieties" data-mr="तांदळाचे प्रकार">Rice Varieties</a></li>
+                            <li><a href="./products.html?category=wheat" data-en="Wheat Products" data-mr="गव्हाची उत्पादने">Wheat Products</a></li>
+                            <li><a href="./products.html?category=millets" data-en="Millets" data-mr="बाजरी">Millets</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-pepper-hot"></i> <span data-en="Spices & Herbs" data-mr="मसाले आणि औषधी वनस्पती">Spices & Herbs</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./products.html?category=spices" data-en="Spices" data-mr="मसाले">Spices</a></li>
+                            <li><a href="./products.html?category=herbs" data-en="Fresh Herbs" data-mr="ताजी औषधी वनस्पती">Fresh Herbs</a></li>
+                            <li><a href="./products.html?category=dried-spices" data-en="Dried Spices" data-mr="सुकी मसाले">Dried Spices</a></li>
+                            <li><a href="./products.html?category=whole-spices" data-en="Whole Spices" data-mr="संपूर्ण मसाले">Whole Spices</a></li>
+                            <li><a href="./products.html?category=spice-blends" data-en="Spice Blends" data-mr="मसाला मिश्रण">Spice Blends</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-tint"></i> <span data-en="Oils & Dairy" data-mr="तेल आणि दुग्धजन्य पदार्थ">Oils & Dairy</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./products.html?category=cooking-oils" data-en="Cooking Oils" data-mr="स्वयंपाकाची तेले">Cooking Oils</a></li>
+                            <li><a href="./products.html?category=cold-pressed-oils" data-en="Cold Pressed Oils" data-mr="थंड दाबलेली तेले">Cold Pressed Oils</a></li>
+                            <li><a href="./products.html?category=dairy" data-en="Dairy Products" data-mr="दुग्धजन्य पदार्थ">Dairy Products</a></li>
+                            <li><a href="./products.html?category=ghee" data-en="Pure Ghee" data-mr="शुद्ध तूप">Pure Ghee</a></li>
+                            <li><a href="./products.html?category=milk-products" data-en="Milk Products" data-mr="दुग्ध उत्पादने">Milk Products</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Special Collections Section -->
+            <section class="sitemap-section">
+                <h2 data-en="Special Collections" data-mr="विशेष संग्रह">Special Collections</h2>
+                <div class="sitemap-grid">
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-star"></i> <span data-en="Featured Collections" data-mr="वैशिष्ट्यपूर्ण संग्रह">Featured Collections</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./collections/best-sellers.html" data-en="Best Sellers" data-mr="सर्वोत्कृष्ट विक्रेते">Best Sellers</a></li>
+                            <li><a href="./collections/new-arrivals.html" data-en="New Arrivals" data-mr="नवीन आगमन">New Arrivals</a></li>
+                            <li><a href="./collections/premium-quality.html" data-en="Premium Quality" data-mr="उत्कृष्ट गुणवत्ता">Premium Quality</a></li>
+                            <li><a href="./collections/organic-certified.html" data-en="Organic Certified" data-mr="सेंद्रिय प्रमाणित">Organic Certified</a></li>
+                            <li><a href="./collections/farm-fresh.html" data-en="Farm Fresh" data-mr="शेताजे">Farm Fresh</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-calendar-alt"></i> <span data-en="Seasonal Collections" data-mr="मौसमी संग्रह">Seasonal Collections</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./collections/monsoon-specials.html" data-en="Monsoon Specials" data-mr="पावसाळा विशेष">Monsoon Specials</a></li>
+                            <li><a href="./collections/winter-harvest.html" data-en="Winter Harvest" data-mr="हिवाळी कापणी">Winter Harvest</a></li>
+                            <li><a href="./collections/summer-essentials.html" data-en="Summer Essentials" data-mr="उन्हाळ्यातील अत्यावश्यक गोष्टी">Summer Essentials</a></li>
+                            <li><a href="./collections/festival-specials.html" data-en="Festival Specials" data-mr="उत्सव विशेष">Festival Specials</a></li>
+                            <li><a href="./collections/harvest-season.html" data-en="Harvest Season" data-mr="कापणीचा हंगाम">Harvest Season</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-heart"></i> <span data-en="Health & Wellness" data-mr="आरोग्य आणि कल्याण">Health & Wellness</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./collections/immunity-boosters.html" data-en="Immunity Boosters" data-mr="रोगप्रतिकारक शक्ती वाढवणारे">Immunity Boosters</a></li>
+                            <li><a href="./collections/diabetes-care.html" data-en="Diabetes Care" data-mr="मधुमेहाची काळजी">Diabetes Care</a></li>
+                            <li><a href="./collections/heart-healthy.html" data-en="Heart Healthy" data-mr="हृदयासाठी आरोग्यदायी">Heart Healthy</a></li>
+                            <li><a href="./collections/weight-management.html" data-en="Weight Management" data-mr="वजन व्यवस्थापन">Weight Management</a></li>
+                            <li><a href="./collections/natural-remedies.html" data-en="Natural Remedies" data-mr="नैसर्गिक उपचार">Natural Remedies</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-truck"></i> <span data-en="Bulk & Export" data-mr="मोठ्या प्रमाणात आणि निर्यात">Bulk & Export</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./collections/bulk-orders.html" data-en="Bulk Orders" data-mr="मोठ्या प्रमाणात ऑर्डर">Bulk Orders</a></li>
+                            <li><a href="./collections/export-quality.html" data-en="Export Quality" data-mr="निर्यात गुणवत्ता">Export Quality</a></li>
+                            <li><a href="./collections/wholesale-prices.html" data-en="Wholesale Prices" data-mr="घाऊक दर">Wholesale Prices</a></li>
+                            <li><a href="./collections/institutional-supply.html" data-en="Institutional Supply" data-mr="संस्थात्मक पुरवठा">Institutional Supply</a></li>
+                            <li><a href="./collections/contract-farming.html" data-en="Contract Farming" data-mr="करार शेती">Contract Farming</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business Services Section -->
+            <section class="sitemap-section">
+                <h2 data-en="Business Services" data-mr="व्यावसायिक सेवा">Business Services</h2>
+                <div class="sitemap-grid">
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-handshake"></i> <span data-en="Partnership" data-mr="भागीदारी">Partnership</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./business/farmer-registration.html" data-en="Farmer Registration" data-mr="शेतकरी नोंदणी">Farmer Registration</a></li>
+                            <li><a href="./business/supplier-onboarding.html" data-en="Supplier Onboarding" data-mr="पुरवठादार सामील करणे">Supplier Onboarding</a></li>
+                            <li><a href="./business/wholesale-inquiry.html" data-en="Wholesale Inquiry" data-mr="घाऊक चौकशी">Wholesale Inquiry</a></li>
+                            <li><a href="./business/export-services.html" data-en="Export Services" data-mr="निर्यात सेवा">Export Services</a></li>
+                            <li><a href="./business/partnership-program.html" data-en="Partnership Program" data-mr="भागीदारी कार्यक्रम">Partnership Program</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-cogs"></i> <span data-en="Trading Services" data-mr="व्यापार सेवा">Trading Services</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./services.html" data-en="All Services" data-mr="सर्व सेवा">All Services</a></li>
+                            <li><a href="./services/quality-assurance.html" data-en="Quality Assurance" data-mr="गुणवत्ता आश्वासन">Quality Assurance</a></li>
+                            <li><a href="./services/logistics-support.html" data-en="Logistics Support" data-mr="लॉजिस्टिक समर्थन">Logistics Support</a></li>
+                            <li><a href="./services/price-discovery.html" data-en="Price Discovery" data-mr="किंमत शोध">Price Discovery</a></li>
+                            <li><a href="./services/market-analysis.html" data-en="Market Analysis" data-mr="बाजार विश्लेषण">Market Analysis</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- User Account Section -->
+            <section class="sitemap-section">
+                <h2 data-en="User Account" data-mr="वापरकर्ता खाते">User Account</h2>
+                <div class="sitemap-grid">
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-user"></i> <span data-en="Account Management" data-mr="खाते व्यवस्थापन">Account Management</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./account/login.html" data-en="Login" data-mr="लॉग इन करा">Login</a></li>
+                            <li><a href="./account/register.html" data-en="Register" data-mr="नोंदणी करा">Register</a></li>
+                            <li><a href="./account/my-account.html" data-en="My Account" data-mr="माझे खाते">My Account</a></li>
+                            <li><a href="./account/profile.html" data-en="Profile" data-mr="प्रोफाइल">Profile</a></li>
+                            <li><a href="./account/order-history.html" data-en="Order History" data-mr="ऑर्डर इतिहास">Order History</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-shopping-cart"></i> <span data-en="Shopping" data-mr="खरेदी">Shopping</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./account/wishlist.html" data-en="Wishlist" data-mr="इच्छा यादी">Wishlist</a></li>
+                            <li><a href="./account/cart.html" data-en="Shopping Cart" data-mr="खरेदीची टोपली">Shopping Cart</a></li>
+                            <li><a href="./account/checkout.html" data-en="Checkout" data-mr="चेकआउट">Checkout</a></li>
+                            <li><a href="./account/track-order.html" data-en="Track Order" data-mr="ऑर्डर ट्रॅक करा">Track Order</a></li>
+                            <li><a href="./account/addresses.html" data-en="Saved Addresses" data-mr="जतन केलेले पत्ते">Saved Addresses</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Information Pages Section -->
+            <section class="sitemap-section">
+                <h2 data-en="Information & Support" data-mr="माहिती आणि समर्थन">Information & Support</h2>
+                <div class="sitemap-grid">
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-book"></i> <span data-en="Knowledge Base" data-mr="ज्ञान आधार">Knowledge Base</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                            <li><a href="./info/faq.html" data-en="FAQ" data-mr="वारंवार विचारले जाणारे प्रश्न">FAQ</a></li>
+                            <li><a href="./info/farming-tips.html" data-en="Farming Tips" data-mr="शेतीचे टिप्स">Farming Tips</a></li>
+                            <li><a href="./info/nutrition-guide.html" data-en="Nutrition Guide" data-mr="पोषण मार्गदर्शक">Nutrition Guide</a></li>
+                            <li><a href="./info/seasonal-calendar.html" data-en="Seasonal Calendar" data-mr="हंगामी कॅलेंडर">Seasonal Calendar</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-shield-alt"></i> <span data-en="Policies & Legal" data-mr="धोरणे आणि कायदेशीर">Policies & Legal</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./legal/privacy-policy.html" data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</a></li>
+                            <li><a href="./legal/terms-of-service.html" data-en="Terms of Service" data-mr="सेवा अटी">Terms of Service</a></li>
+                            <li><a href="./legal/shipping-policy.html" data-en="Shipping Policy" data-mr="शिपिंग धोरण">Shipping Policy</a></li>
+                            <li><a href="./legal/return-policy.html" data-en="Return Policy" data-mr="परतीचे धोरण">Return Policy</a></li>
+                            <li><a href="./legal/refund-policy.html" data-en="Refund Policy" data-mr="परतावा धोरण">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sitemap-category">
+                        <h3><i class="fas fa-comments"></i> <span data-en="Community & Reviews" data-mr="समुदाय आणि समीक्षा">Community & Reviews</span></h3>
+                        <ul class="sitemap-links">
+                            <li><a href="./testimonials.html" data-en="Testimonials" data-mr="प्रशंसापत्रे">Testimonials</a></li>
+                            <li><a href="./community/farmer-stories.html" data-en="Farmer Stories" data-mr="शेतकरी कथा">Farmer Stories</a></li>
+                            <li><a href="./community/success-stories.html" data-en="Success Stories" data-mr="यशोगाथा">Success Stories</a></li>
+                            <li><a href="./community/reviews.html" data-en="Customer Reviews" data-mr="ग्राहक समीक्षा">Customer Reviews</a></li>
+                            <li><a href="./community/feedback.html" data-en="Feedback" data-mr="प्रतिक्रिया">Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3 data-en="Stay Connected with KisanBox" data-mr="KisanBox सह जोडले राहा">Stay Connected with KisanBox</h3>
+                <p data-en="Subscribe for agricultural updates, market trends, and exclusive offers" data-mr="कृषी अद्यतने, बाजार ट्रेंड आणि विशेष ऑफरसाठी सबस्क्राइब करा">Subscribe for agricultural updates, market trends, and exclusive offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" data-en="Enter your email address" data-mr="आपला ईमेल पत्ता टाका" required>
+                    <button type="submit" data-en="Subscribe" data-mr="सबस्क्राइब करा">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>KisanBox</span>
+                    </div>
+                    <p data-en="Maharashtra's trusted agricultural trading platform connecting farmers with quality produce buyers across India." data-mr="महाराष्ट्राचा विश्वासार्ह कृषी व्यापार प्लॅटफॉर्म जो शेतकर्यांना संपूर्ण भारतातील गुणवत्तापूर्ण उत्पादन खरेदीदारांशी जोडतो.">Maharashtra's trusted agricultural trading platform connecting farmers with quality produce buyers across India.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-mr="द्रुत दुवे">Quick Links</h4>
+                    <ul>
+                        <li><a href="./about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="./services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li><a href="./products.html" data-en="Products" data-mr="उत्पादने">Products</a></li>
+                        <li><a href="./blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="./contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Categories" data-mr="श्रेण्या">Categories</h4>
+                    <ul>
+                        <li><a href="./products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                        <li><a href="./products.html?category=fruits" data-mr="फळे" data-en="Fruits">Fruits</a></li>
+                        <li><a href="./products.html?category=grains" data-en="Grains" data-mr="धान्य">Grains</a></li>
+                        <li><a href="./products.html?category=spices" data-en="Spices" data-mr="मसाले">Spices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Contact Info" data-mr="संपर्क माहिती">Contact Info</h4>
+                    <div class="contact-item">
+                        <p><strong data-en="Address:" data-mr="पत्ता:">Address:</strong><br>
+                        <span data-en="123 Agricultural Hub, Maharashtra, India - 411001" data-mr="123 कृषी हब, महाराष्ट्र, भारत - 411001">123 Agricultural Hub, Maharashtra, India - 411001</span></p>
+                        
+                        <p><strong data-en="Phone:" data-mr="फोन:">Phone:</strong><br>
+                        <a href="tel:+919221591156">+91 9221591156</a></p>
+                        
+                        <p><strong data-en="Email:" data-mr="ईमेल:">Email:</strong><br>
+                        <a href="mailto:info@kisanbox.com">info@kisanbox.com</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 KisanBox. <span data-en="All rights reserved." data-mr="सर्व हक्क राखीव.">All rights reserved.</span></p>
+                    <div class="footer-links">
+                        <a href="./legal/privacy-policy.html" data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</a>
+                        <a href="./legal/terms-of-service.html" data-en="Terms of Service" data-mr="सेवा अटी">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+
+        // Language Toggle
+        let currentLanguage = 'en';
+        
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'en' ? 'mr' : 'en';
+            
+            const elements = document.querySelectorAll('[data-en][data-mr]');
+            elements.forEach(element => {
+                const text = element.getAttribute(`data-${currentLanguage}`);
+                if (text) {
+                    element.textContent = text;
+                }
+            });
+            
+            // Update language button text
+            document.getElementById('current-lang').textContent = currentLanguage === 'en' ? 'English' : 'मराठी';
+        }
+
+        // Newsletter Form Submission
+        function submitNewsletter(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            
+            // Here you would typically send the email to your backend
+            alert(currentLanguage === 'en' ? 
+                'Thank you for subscribing to KisanBox newsletter!' : 
+                'KisanBox न्यूझलेटरसाठी सबस्क्राइब केल्याबद्दल धन्यवाद!');
+            
+            event.target.reset();
+        }
+
+        // Event Listeners
+        document.getElementById('mobile-menu-toggle').addEventListener('click', toggleMobileMenu);
+        document.getElementById('language-btn').addEventListener('click', toggleLanguage);
+        document.querySelector('.newsletter-form').addEventListener('submit', submitNewsletter);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

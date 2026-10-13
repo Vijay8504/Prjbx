@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Dashboard - KisanBox</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
+</head>
+<body>
+<div class="dashboard-wrapper">
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar">
+        <a href="../../index.html" class="sidebar-brand">
+            <img src="../../images/logo.png" alt="KisanBox">
+            <div>
+                <div class="sidebar-brand-name">KisanBox</div>
+                <div class="sidebar-brand-role">Buyer Portal</div>
+            </div>
+        </a>
+        <nav class="sidebar-nav">
+            <span class="nav-section-label">My Account</span>
+            <a href="#" class="nav-item active"><i class="fas fa-home"></i> Dashboard</a>
+            <a href="#" class="nav-item"><i class="fas fa-box"></i> My Orders</a>
+            <a href="#" class="nav-item"><i class="fas fa-heart"></i> Wishlist <span style="background:#e53935;color:#fff;border-radius:10px;padding:0 6px;font-size:0.7rem;margin-left:auto">4</span></a>
+            <a href="#" class="nav-item"><i class="fas fa-wallet"></i> Wallet</a>
+            <a href="#" class="nav-item"><i class="fas fa-undo"></i> Returns &amp; Refunds</a>
+            <a href="#" class="nav-item"><i class="fas fa-sync-alt"></i> Subscriptions</a>
+            <span class="nav-section-label">Settings</span>
+            <a href="#" class="nav-item"><i class="fas fa-map-marker-alt"></i> Address Book</a>
+            <a href="#" class="nav-item"><i class="fas fa-bell"></i> Notifications</a>
+            <a href="#" class="nav-item"><i class="fas fa-user"></i> Profile</a>
+            <a href="#" class="nav-item logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="sidebar-user">
+                <div class="user-avatar">RP</div>
+                <div class="user-info">
+                    <strong>Rahul Pawar</strong>
+                    <small>rahul@email.com</small>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+        <div class="dashboard-topbar">
+            <div class="dashboard-title">Dashboard</div>
+            <div class="topbar-actions">
+                <button class="topbar-icon-btn"><i class="fas fa-search"></i></button>
+                <button class="topbar-icon-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notif-badge">3</span>
+                </button>
+                <a href="../products.html" class="btn btn-primary btn-sm">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="dashboard-content">
+            <!-- Welcome Banner -->
+            <div style="background:linear-gradient(135deg,var(--primary-green),var(--secondary-green));color:#fff;border-radius:var(--radius-lg);padding:1.5rem 2rem;margin-bottom:var(--spacing-lg);display:flex;justify-content:space-between;align-items:center;">
+                <div>
+                    <h2 style="color:#fff;margin-bottom:0.3rem">Good morning, Rahul! 👋</h2>
+                    <p style="opacity:0.85;margin:0">You have 2 orders arriving this week.</p>
+                </div>
+                <div style="font-size:3rem;opacity:0.5"><i class="fas fa-shopping-basket"></i></div>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-box"></i></div>
+                    <div class="stat-body">
+                        <div class="stat-value">28</div>
+                        <div class="stat-label">Total Orders</div>
+                        <div class="stat-change">↑ 3 this month</div>
+                    </div>
+                </div>
+                <div class="stat-card accent-orange">
+                    <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                    <div class="stat-body">
+                        <div class="stat-value">2</div>
+                        <div class="stat-label">Pending Orders</div>
+                    </div>
+                </div>
+                <div class="stat-card accent-blue">
+                    <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="stat-body">
+                        <div class="stat-value">24</div>
+                        <div class="stat-label">Delivered</div>
+                    </div>
+                </div>
+                <div class="stat-card accent-purple">
+                    <div class="stat-icon"><i class="fas fa-wallet"></i></div>
+                    <div class="stat-body">
+                        <div class="stat-value">₹450</div>
+                        <div class="stat-label">Wallet Balance</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Orders -->
+            <div class="data-table-wrapper">
+                <div class="table-header">
+                    <div class="table-title">Recent Orders</div>
+                    <a href="#" class="btn btn-outline btn-sm">View All</a>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Product</th>
+                            <th>Qty</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>#KB-2024-0891</strong></td>
+                            <td>Premium Tomatoes</td>
+                            <td>5 kg</td>
+                            <td>₹200</td>
+                            <td><span class="status-badge delivered"><i class="fas fa-check"></i> Delivered</span></td>
+                            <td>Jun 20</td>
+                            <td><a href="#" class="btn btn-sm btn-outline">Review</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>#KB-2024-0892</strong></td>
+                            <td>Organic Basmati Rice</td>
+                            <td>10 kg</td>
+                            <td>₹1,200</td>
+                            <td><span class="status-badge shipped"><i class="fas fa-truck"></i> Shipped</span></td>
+                            <td>Jun 22</td>
+                            <td><a href="#" class="btn btn-sm btn-outline">Track</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>#KB-2024-0893</strong></td>
+                            <td>Red Onions (Nashik)</td>
+                            <td>25 kg</td>
+                            <td>₹625</td>
+                            <td><span class="status-badge processing"><i class="fas fa-spinner"></i> Processing</span></td>
+                            <td>Jun 24</td>
+                            <td><a href="#" class="btn btn-sm btn-outline">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>#KB-2024-0880</strong></td>
+                            <td>Organic Turmeric</td>
+                            <td>2 kg</td>
+                            <td>₹360</td>
+                            <td><span class="status-badge delivered"><i class="fas fa-check"></i> Delivered</span></td>
+                            <td>Jun 15</td>
+                            <td><a href="#" class="btn btn-sm btn-outline">Review</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>#KB-2024-0870</strong></td>
+                            <td>Pomegranates</td>
+                            <td>3 kg</td>
+                            <td>₹540</td>
+                            <td><span class="status-badge cancelled"><i class="fas fa-times"></i> Cancelled</span></td>
+                            <td>Jun 10</td>
+                            <td><a href="#" class="btn btn-sm btn-outline">Reorder</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Wishlist + Profile row -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-lg)">
+                <!-- Wishlist -->
+                <div class="section-card">
+                    <div class="section-card-header">
+                        <span class="table-title">Wishlist</span>
+                        <a href="#" class="btn btn-sm btn-outline">View All (4)</a>
+                    </div>
+                    <div class="section-card-body">
+                        <div class="mini-product-grid" style="grid-template-columns:repeat(3,1fr)">
+                            <div class="mini-product-card">
+                                <div class="mini-product-img"><img src="../../images/products/tomatoes.jpg" alt="Tomatoes"></div>
+                                <div class="mini-product-body"><h4>Tomatoes</h4><p>₹40/kg</p></div>
+                            </div>
+                            <div class="mini-product-card">
+                                <div class="mini-product-img"><img src="../../images/products/bananas.jpg" alt="Bananas"></div>
+                                <div class="mini-product-body"><h4>Bananas</h4><p>₹60/dz</p></div>
+                            </div>
+                            <div class="mini-product-card">
+                                <div class="mini-product-img"><img src="../../images/products/a2-ghee.jpg" alt="A2 Ghee"></div>
+                                <div class="mini-product-body"><h4>A2 Ghee</h4><p>₹900/L</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile -->
+                <div class="profile-section" style="flex-direction:column;gap:var(--spacing-sm)">
+                    <div style="display:flex;align-items:center;gap:var(--spacing-md)">
+                        <div class="profile-avatar">RP</div>
+                        <div>
+                            <div class="profile-info"><h3>Rahul Pawar</h3><p>Regular Buyer · Member since 2022</p></div>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline" style="margin-left:auto">Edit Profile</a>
+                    </div>
+                    <div class="profile-details">
+                        <div class="profile-detail"><i class="fas fa-phone"></i> +91 98765 43210</div>
+                        <div class="profile-detail"><i class="fas fa-envelope"></i> rahul@email.com</div>
+                        <div class="profile-detail"><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</div>
+                        <div class="profile-detail"><i class="fas fa-star"></i> Loyalty Points: 2,340</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script>
+    // Simple nav active state
+    document.querySelectorAll('.nav-item').forEach(function(item) {
+        item.addEventListener('click', function(e) {
+            if (this.classList.contains('logout')) return;
+            e.preventDefault();
+            document.querySelectorAll('.nav-item').forEach(function(i) { i.classList.remove('active'); });
+            this.classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>

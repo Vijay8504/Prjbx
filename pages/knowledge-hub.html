@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Hub - KisanBox | Farming Guides, Market Prices &amp; Crop Calendar</title>
+    <meta name="description" content="India's agricultural knowledge center. Access farming guides, live market prices, crop calendar, government schemes, and expert advice.">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/knowledge-hub.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="contact-info">
+                        <span class="phone"><i class="fas fa-phone"></i> <span>+91 9221591156</span></span>
+                        <span class="email"><i class="fas fa-envelope"></i> info@kisanbox.com</span>
+                    </div>
+                    <div class="language-toggle">
+                        <button id="language-btn" class="lang-btn"><i class="fas fa-globe"></i><span id="current-lang">English</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="logo">
+                        <img src="../images/logo.png" alt="KisanBox Logo">
+                        <h2><span data-en="KisanBox" data-mr="किसानबॉक्स">KisanBox</span><small data-en="शेती बाजार" data-mr="शेती बाजार">शेती बाजार</small></h2>
+                    </div>
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                        <li><a href="./about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="./services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li class="dropdown">
+                            <a href="./products.html" data-en="Products" data-mr="उत्पादने">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./products.html" data-en="All Products" data-mr="सर्व उत्पादने">All Products</a></li>
+                                <li><a href="./collections/best-sellers.html" data-en="Best Sellers" data-mr="बेस्ट सेलर">Best Sellers</a></li>
+                                <li><a href="./farmer-marketplace.html" data-en="Farmer Marketplace" data-mr="शेतकरी बाजार">Farmer Marketplace</a></li>
+                                <li><a href="./knowledge-hub.html" class="active" data-en="Knowledge Hub" data-mr="ज्ञान केंद्र">Knowledge Hub</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="./testimonials.html" data-en="Testimonials" data-mr="प्रशंसापत्रे">Testimonials</a></li>
+                        <li><a href="./contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Dashboards" data-mr="डॅशबोर्ड">Dashboards</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./dashboard/buyer.html" data-en="Buyer Dashboard" data-mr="खरेदीदार डॅशबोर्ड">Buyer Dashboard</a></li>
+                                <li><a href="./dashboard/seller.html" data-en="Seller Dashboard" data-mr="विक्रेता डॅशबोर्ड">Seller Dashboard</a></li>
+                                <li><a href="./dashboard/farmer.html" data-en="Farmer Dashboard" data-mr="शेतकरी डॅशबोर्ड">Farmer Dashboard</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu-toggle" id="mobile-menu-toggle"><span></span><span></span><span></span></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero -->
+        <section class="knowledge-hero">
+            <div class="container">
+                <div class="knowledge-hero-content">
+                    <div class="hero-badge" data-en="Free Resources" data-mr="विनामूल्य संसाधने">Free Resources</div>
+                    <h1 data-en="Agricultural Knowledge Hub" data-mr="कृषी ज्ञान केंद्र">Agricultural Knowledge Hub</h1>
+                    <p data-en="Market prices, crop advisory, farming guides, government schemes — everything a farmer needs, in one place." data-mr="बाजारभाव, पीक सल्ला, शेती मार्गदर्शिका, सरकारी योजना — शेतकऱ्याला लागणारे सर्व काही एकाच ठिकाणी.">
+                        Market prices, crop advisory, farming guides, government schemes — everything a farmer needs, in one place.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Access Grid -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Quick Access" data-mr="द्रुत प्रवेश">Quick Access</h2>
+                </div>
+                <div class="knowledge-grid">
+                    <a href="#market-prices" class="knowledge-card">
+                        <div class="knowledge-card-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3 data-en="Market Prices" data-mr="बाजारभाव">Market Prices</h3>
+                        <p data-en="Live mandi rates for 50+ crops" data-mr="५०+ पिकांसाठी थेट मंडी दर">Live mandi rates for 50+ crops</p>
+                    </a>
+                    <a href="#crop-calendar" class="knowledge-card">
+                        <div class="knowledge-card-icon" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);color:#2e7d32"><i class="fas fa-calendar-alt"></i></div>
+                        <h3 data-en="Crop Calendar" data-mr="पीक कॅलेंडर">Crop Calendar</h3>
+                        <p data-en="Sowing &amp; harvesting schedule" data-mr="पेरणी आणि कापणी वेळापत्रक">Sowing &amp; harvesting schedule</p>
+                    </a>
+                    <a href="#articles" class="knowledge-card">
+                        <div class="knowledge-card-icon" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2);color:#e65100"><i class="fas fa-book-open"></i></div>
+                        <h3 data-en="Farming Guides" data-mr="शेती मार्गदर्शिका">Farming Guides</h3>
+                        <p data-en="Expert articles on organic farming" data-mr="सेंद्रिय शेतीवरील तज्ञ लेख">Expert articles on organic farming</p>
+                    </a>
+                    <a href="#schemes" class="knowledge-card">
+                        <div class="knowledge-card-icon" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);color:#1565c0"><i class="fas fa-landmark"></i></div>
+                        <h3 data-en="Govt Schemes" data-mr="सरकारी योजना">Govt Schemes</h3>
+                        <p data-en="Subsidies, insurance, loans" data-mr="अनुदान, विमा, कर्ज">Subsidies, insurance, loans</p>
+                    </a>
+                    <a href="#" class="knowledge-card">
+                        <div class="knowledge-card-icon" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);color:#c62828"><i class="fas fa-user-md"></i></div>
+                        <h3 data-en="Expert Advice" data-mr="तज्ञ सल्ला">Expert Advice</h3>
+                        <p data-en="Ask agronomists for free" data-mr="कृषीशास्त्रज्ञांना विनामूल्य विचारा">Ask agronomists for free</p>
+                    </a>
+                    <a href="#" class="knowledge-card">
+                        <div class="knowledge-card-icon" style="background:linear-gradient(135deg,#f3e5f5,#e1bee7);color:#6a1b9a"><i class="fas fa-microscope"></i></div>
+                        <h3 data-en="Disease Detection" data-mr="रोग ओळख">Disease Detection</h3>
+                        <p data-en="AI photo-based crop diagnosis" data-mr="AI फोटो-आधारित पीक निदान">AI photo-based crop diagnosis</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Prices -->
+        <section class="section" id="market-prices" style="background:var(--light-gray)">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Live Market Prices" data-mr="थेट बाजारभाव">Live Market Prices</h2>
+                    <p data-en="Maharashtra APMC mandi prices — updated daily at 8:00 AM" data-mr="महाराष्ट्र APMC मंडी दर — दररोज सकाळी ८:०० वाजता अपडेट">Maharashtra APMC mandi prices — updated daily at 8:00 AM</p>
+                </div>
+                <div class="market-table-wrapper">
+                    <table class="market-table">
+                        <thead>
+                            <tr>
+                                <th data-en="Crop" data-mr="पीक">Crop</th>
+                                <th data-en="Market" data-mr="बाजार">Market</th>
+                                <th data-en="Today (₹/kg)" data-mr="आज (₹/किलो)">Today (₹/kg)</th>
+                                <th data-en="Yesterday" data-mr="काल">Yesterday</th>
+                                <th data-en="Min" data-mr="किमान">Min</th>
+                                <th data-en="Max" data-mr="जास्तीत जास्त">Max</th>
+                                <th data-en="Change" data-mr="बदल">Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><i class="fas fa-circle" style="color:#e53935;font-size:0.6rem"></i> Red Onion</td><td>Nashik APMC</td><td>₹28</td><td>₹26</td><td>₹24</td><td>₹32</td><td><span class="price-up">↑ +7.7%</span></td></tr>
+                            <tr><td><i class="fas fa-circle" style="color:#e53935;font-size:0.6rem"></i> Tomato</td><td>Pune APMC</td><td>₹42</td><td>₹45</td><td>₹35</td><td>₹50</td><td><span class="price-down">↓ -6.7%</span></td></tr>
+                            <tr><td><i class="fas fa-circle" style="color:#8bc34a;font-size:0.6rem"></i> Pomegranate</td><td>Solapur APMC</td><td>₹148</td><td>₹140</td><td>₹120</td><td>₹180</td><td><span class="price-up">↑ +5.7%</span></td></tr>
+                            <tr><td><i class="fas fa-circle" style="color:#ffeb3b;font-size:0.6rem"></i> Banana</td><td>Jalgaon APMC</td><td>₹55/dz</td><td>₹55/dz</td><td>₹45/dz</td><td>₹65/dz</td><td><span style="color:var(--gray)">→ 0%</span></td></tr>
+                            <tr><td><i class="fas fa-circle" style="color:#ff9800;font-size:0.6rem"></i> Turmeric</td><td>Sangli APMC</td><td>₹350</td><td>₹355</td><td>₹320</td><td>₹380</td><td><span class="price-down">↓ -1.4%</span></td></tr>
+                            <tr><td><i class="fas fa-circle" style="color:#f5f5f5;border:1px solid #ccc;font-size:0.6rem"></i> Rice (Basmati)</td><td>Kolhapur APMC</td><td>₹120</td><td>₹118</td><td>₹110</td><td>₹140</td><td><span class="price-up">↑ +1.7%</span></td></tr>
+                            <tr><td><i class="fas fa-circle" style="color:#8d6e63;font-size:0.6rem"></i> Soybean</td><td>Latur APMC</td><td>₹42</td><td>₹40</td><td>₹38</td><td>₹48</td><td><span class="price-up">↑ +5.0%</span></td></tr>
+                            <tr><td><i class="fas fa-circle" style="color:#4caf50;font-size:0.6rem"></i> Coriander</td><td>Pune APMC</td><td>₹120</td><td>₹115</td><td>₹100</td><td>₹140</td><td><span class="price-up">↑ +4.3%</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crop Calendar -->
+        <section class="section" id="crop-calendar">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Crop Calendar — Maharashtra" data-mr="पीक कॅलेंडर — महाराष्ट्र">Crop Calendar — Maharashtra</h2>
+                    <p data-en="Sowing and harvesting guide for major crops" data-mr="प्रमुख पिकांसाठी पेरणी आणि कापणी मार्गदर्शिका">Sowing and harvesting guide for major crops</p>
+                </div>
+                <div class="crop-calendar-wrapper">
+                    <table class="crop-calendar">
+                        <thead>
+                            <tr>
+                                <th class="crop-col">Crop</th>
+                                <th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th>
+                                <th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov</th><th>Dec</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="crop-name">Onion (Rabi)</td>
+                                <td class="cal-harvest"></td><td class="cal-harvest"></td><td class="cal-harvest"></td><td></td><td></td><td></td>
+                                <td></td><td></td><td></td><td class="cal-sow"></td><td class="cal-sow"></td><td class="cal-sow"></td>
+                            </tr>
+                            <tr>
+                                <td class="crop-name">Tomato</td>
+                                <td class="cal-harvest"></td><td></td><td class="cal-sow"></td><td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-harvest"></td>
+                                <td class="cal-sow"></td><td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-harvest"></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="crop-name">Soybean (Kharif)</td>
+                                <td></td><td></td><td></td><td></td><td></td><td class="cal-sow"></td>
+                                <td class="cal-sow"></td><td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-harvest"></td><td class="cal-harvest"></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="crop-name">Pomegranate</td>
+                                <td></td><td class="cal-sow"></td><td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-grow"></td>
+                                <td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-harvest"></td><td class="cal-harvest"></td><td class="cal-harvest"></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="crop-name">Turmeric</td>
+                                <td></td><td></td><td></td><td></td><td class="cal-sow"></td><td class="cal-sow"></td>
+                                <td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-harvest"></td><td class="cal-harvest"></td>
+                            </tr>
+                            <tr>
+                                <td class="crop-name">Banana</td>
+                                <td class="cal-harvest"></td><td class="cal-harvest"></td><td class="cal-sow"></td><td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-grow"></td>
+                                <td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-grow"></td><td class="cal-harvest"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="calendar-legend">
+                        <div class="legend-item"><span class="cal-sow legend-box"></span> <span data-en="Sowing" data-mr="पेरणी">Sowing</span></div>
+                        <div class="legend-item"><span class="cal-grow legend-box"></span> <span data-en="Growing" data-mr="वाढ">Growing</span></div>
+                        <div class="legend-item"><span class="cal-harvest legend-box"></span> <span data-en="Harvesting" data-mr="कापणी">Harvesting</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles -->
+        <section class="section" id="articles" style="background:var(--light-gray)">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Farming Guides &amp; Articles" data-mr="शेती मार्गदर्शिका आणि लेख">Farming Guides &amp; Articles</h2>
+                    <p data-en="Expert knowledge for modern and organic farming" data-mr="आधुनिक आणि सेंद्रिय शेतीसाठी तज्ञ ज्ञान">Expert knowledge for modern and organic farming</p>
+                </div>
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <div class="article-img" style="background:linear-gradient(135deg,#2d5016,#4a7c59)"><i class="fas fa-leaf" style="font-size:2.5rem;color:rgba(255,255,255,0.5)"></i></div>
+                        <div class="article-body">
+                            <span class="article-category organic-tag">Organic Farming</span>
+                            <h3 data-en="How to Start Organic Farming in Maharashtra" data-mr="महाराष्ट्रात सेंद्रिय शेती कशी सुरू करावी">How to Start Organic Farming in Maharashtra</h3>
+                            <p data-en="Step-by-step guide to transition from conventional to organic farming — soil preparation, certification, and market access." data-mr="पारंपारिक ते सेंद्रिय शेतीकडे संक्रमणासाठी चरण-दर-चरण मार्गदर्शिका.">Step-by-step guide to transition from conventional to organic farming — soil preparation, certification, and market access.</p>
+                            <div class="article-meta"><span><i class="fas fa-clock"></i> 8 min read</span><a href="#" class="btn btn-sm btn-outline">Read More</a></div>
+                        </div>
+                    </article>
+                    <article class="article-card">
+                        <div class="article-img" style="background:linear-gradient(135deg,#1565c0,#0288d1)"><i class="fas fa-tint" style="font-size:2.5rem;color:rgba(255,255,255,0.5)"></i></div>
+                        <div class="article-body">
+                            <span class="article-category water-tag">Water Management</span>
+                            <h3 data-en="Drip Irrigation: Save 60% Water &amp; Increase Yield" data-mr="ठिबक सिंचन: ६०% पाणी वाचवा आणि उत्पन्न वाढवा">Drip Irrigation: Save 60% Water &amp; Increase Yield</h3>
+                            <p>Complete guide to setting up drip irrigation for onion, tomato, and pomegranate farms with subsidy information.</p>
+                            <div class="article-meta"><span><i class="fas fa-clock"></i> 12 min read</span><a href="#" class="btn btn-sm btn-outline">Read More</a></div>
+                        </div>
+                    </article>
+                    <article class="article-card">
+                        <div class="article-img" style="background:linear-gradient(135deg,#e65100,#ff9800)"><i class="fas fa-bug" style="font-size:2.5rem;color:rgba(255,255,255,0.5)"></i></div>
+                        <div class="article-body">
+                            <span class="article-category pest-tag">Pest Management</span>
+                            <h3 data-en="Organic Pest Control: Neem Oil &amp; Bio Pesticides" data-mr="सेंद्रिय कीड नियंत्रण: कडुलिंब तेल आणि जैव कीटकनाशके">Organic Pest Control: Neem Oil &amp; Bio Pesticides</h3>
+                            <p>How to identify common pests and use organic solutions without harming soil health or certification status.</p>
+                            <div class="article-meta"><span><i class="fas fa-clock"></i> 10 min read</span><a href="#" class="btn btn-sm btn-outline">Read More</a></div>
+                        </div>
+                    </article>
+                    <article class="article-card">
+                        <div class="article-img" style="background:linear-gradient(135deg,#4a148c,#7b1fa2)"><i class="fas fa-certificate" style="font-size:2.5rem;color:rgba(255,255,255,0.5)"></i></div>
+                        <div class="article-body">
+                            <span class="article-category cert-tag">Certification</span>
+                            <h3 data-en="How to Get Organic Certification in India (2024)" data-mr="भारतात सेंद्रिय प्रमाणपत्र कसे मिळवावे (२०२४)">How to Get Organic Certification in India (2024)</h3>
+                            <p>NPOP, PGS-India, and APEDA certification — which one to choose, cost, timeline, and renewal process.</p>
+                            <div class="article-meta"><span><i class="fas fa-clock"></i> 15 min read</span><a href="#" class="btn btn-sm btn-outline">Read More</a></div>
+                        </div>
+                    </article>
+                    <article class="article-card">
+                        <div class="article-img" style="background:linear-gradient(135deg,#006064,#00838f)"><i class="fas fa-seedling" style="font-size:2.5rem;color:rgba(255,255,255,0.5)"></i></div>
+                        <div class="article-body">
+                            <span class="article-category organic-tag">Soil Health</span>
+                            <h3 data-en="Building Soil Health with Vermicompost" data-mr="गांडूळखताने मातीची सुपीकता वाढवा">Building Soil Health with Vermicompost</h3>
+                            <p>How to make and use vermicompost to improve yield by 25-40% without chemical fertilizers.</p>
+                            <div class="article-meta"><span><i class="fas fa-clock"></i> 7 min read</span><a href="#" class="btn btn-sm btn-outline">Read More</a></div>
+                        </div>
+                    </article>
+                    <article class="article-card">
+                        <div class="article-img" style="background:linear-gradient(135deg,#bf360c,#f4511e)"><i class="fas fa-rupee-sign" style="font-size:2.5rem;color:rgba(255,255,255,0.5)"></i></div>
+                        <div class="article-body">
+                            <span class="article-category market-tag">Market Access</span>
+                            <h3 data-en="Direct Selling: How Farmers Get Better Prices" data-mr="थेट विक्री: शेतकरी चांगले दर कसे मिळवतात">Direct Selling: How Farmers Get Better Prices</h3>
+                            <p>Strategies for direct-to-consumer selling, FPO formation, and export linkage to maximize farm income.</p>
+                            <div class="article-meta"><span><i class="fas fa-clock"></i> 9 min read</span><a href="#" class="btn btn-sm btn-outline">Read More</a></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Government Schemes -->
+        <section class="section" id="schemes">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Government Schemes for Farmers" data-mr="शेतकऱ्यांसाठी सरकारी योजना">Government Schemes for Farmers</h2>
+                    <p data-en="Subsidies, insurance, and financial support you may be eligible for" data-mr="अनुदान, विमा आणि आर्थिक सहाय्य ज्यासाठी तुम्ही पात्र असाल">Subsidies, insurance, and financial support you may be eligible for</p>
+                </div>
+                <div class="schemes-grid">
+                    <div class="scheme-card">
+                        <div class="scheme-header">
+                            <div class="scheme-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                            <span class="scheme-badge central">Central Govt</span>
+                        </div>
+                        <h3>PM Kisan Samman Nidhi</h3>
+                        <p>Direct income support of ₹6,000/year in three installments to all farmer families.</p>
+                        <div class="scheme-details">
+                            <div class="scheme-detail"><i class="fas fa-user-check"></i><span data-en="Eligibility: All land-holding farmers" data-mr="पात्रता: सर्व जमीनधारक शेतकरी">Eligibility: All land-holding farmers</span></div>
+                            <div class="scheme-detail"><i class="fas fa-rupee-sign"></i><span>Benefit: ₹6,000/year</span></div>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm" data-en="Check Status / Apply" data-mr="स्थिती तपासा / अर्ज करा">Check Status / Apply</a>
+                    </div>
+                    <div class="scheme-card">
+                        <div class="scheme-header">
+                            <div class="scheme-icon" style="background:#e3f2fd;color:#1565c0"><i class="fas fa-shield-alt"></i></div>
+                            <span class="scheme-badge central">Central Govt</span>
+                        </div>
+                        <h3>PM Fasal Bima Yojana</h3>
+                        <p>Crop insurance scheme providing financial support to farmers suffering crop loss or damage due to unforeseen events.</p>
+                        <div class="scheme-details">
+                            <div class="scheme-detail"><i class="fas fa-user-check"></i><span>Eligibility: All farmers growing notified crops</span></div>
+                            <div class="scheme-detail"><i class="fas fa-rupee-sign"></i><span>Premium: 1.5-5% of sum insured</span></div>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm">Apply Before Kharif Cutoff</a>
+                    </div>
+                    <div class="scheme-card">
+                        <div class="scheme-header">
+                            <div class="scheme-icon" style="background:#fff3e0;color:#e65100"><i class="fas fa-tint"></i></div>
+                            <span class="scheme-badge state">Maharashtra Govt</span>
+                        </div>
+                        <h3>Micro-Irrigation Scheme (MIS)</h3>
+                        <p>Subsidy up to 55% for small/marginal farmers on drip and sprinkler irrigation systems.</p>
+                        <div class="scheme-details">
+                            <div class="scheme-detail"><i class="fas fa-user-check"></i><span>Eligibility: Small &amp; marginal farmers</span></div>
+                            <div class="scheme-detail"><i class="fas fa-percentage"></i><span>Subsidy: Up to 55% on equipment cost</span></div>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm">Apply Online</a>
+                    </div>
+                    <div class="scheme-card">
+                        <div class="scheme-header">
+                            <div class="scheme-icon" style="background:#f3e5f5;color:#6a1b9a"><i class="fas fa-certificate"></i></div>
+                            <span class="scheme-badge state">APEDA</span>
+                        </div>
+                        <h3>Organic Certification Assistance</h3>
+                        <p>Financial assistance for obtaining NPOP and PGS-India organic certification, training, and market linkage.</p>
+                        <div class="scheme-details">
+                            <div class="scheme-detail"><i class="fas fa-user-check"></i><span>Eligibility: Farmers practicing organic methods</span></div>
+                            <div class="scheme-detail"><i class="fas fa-rupee-sign"></i><span>Benefit: Up to ₹50,000 assistance</span></div>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo"><img src="../images/logo.png" alt="KisanBox"><h3><span>KisanBox</span></h3></div>
+                    <p>India's trusted agri commerce ecosystem.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./farmer-marketplace.html">Farmer Marketplace</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Knowledge</h4>
+                    <ul>
+                        <li><a href="#market-prices">Market Prices</a></li>
+                        <li><a href="#crop-calendar">Crop Calendar</a></li>
+                        <li><a href="#articles">Farming Guides</a></li>
+                        <li><a href="#schemes">Govt Schemes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item"><i class="fas fa-phone"></i><span>+91 9221591156</span></div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i><span>info@kisanbox.com</span></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 KisanBox. All rights reserved.</p>
+                    <div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/language-toggle.js"></script>
+</body>
+</html>

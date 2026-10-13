@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Services - KisanBox | Agricultural Trading Solutions" data-mr="सेवा - किसानबॉक्स | कृषी व्यापार समाधाने">Services - KisanBox | Agricultural Trading Solutions</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore KisanBox's comprehensive agricultural trading services: direct trading facilitation, bulk supply, export assistance, and quality assurance.">
+    <meta name="keywords" content="agricultural trading services, bulk supply, export assistance, mandi services, farmer support, quality assurance">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Agricultural Trading Services - KisanBox">
+    <meta property="og:description" content="Comprehensive trading solutions for farmers, wholesalers, and exporters in Maharashtra.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="contact-info">
+                        <span class="phone">
+                            <i class="fas fa-phone"></i>
+                            <span data-en="+91 9221591156" data-mr="+९१ ९२२१५९११५६">+91 9221591156</span>
+                        </span>
+                        <span class="email">
+                            <i class="fas fa-envelope"></i>
+                            info@kisanbox.com
+                        </span>
+                    </div>
+                    <div class="language-toggle">
+                        <button id="language-btn" class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">English</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="logo">
+                        <img src="../images/logo.png" alt="KisanBox Logo">
+                        <h2>
+                            <span data-en="KisanBox" data-mr="किसानबॉक्स">KisanBox</span>
+                            <small data-en="शेती बाजार" data-mr="शेती बाजार">शेती बाजार</small>
+                        </h2>
+                    </div>
+                    
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                        <li><a href="./about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="#" class="active" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Products" data-mr="उत्पादने">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./products.html" data-en="All Products" data-mr="सर्व उत्पादने">All Products</a></li>
+                                <li><a href="./products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                                <li><a href="./products.html?category=fruits" data-en="Fruits" data-mr="फळे">Fruits</a></li>
+                                <li><a href="./farmer-marketplace.html" data-en="Farmer Marketplace" data-mr="शेतकरी बाजार">Farmer Marketplace</a></li>
+                                <li><a href="./knowledge-hub.html" data-en="Knowledge Hub" data-mr="ज्ञान केंद्र">Knowledge Hub</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="./testimonials.html" data-en="Testimonials" data-mr="प्रशंसापत्रे">Testimonials</a></li>
+                        <li><a href="./contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Dashboards" data-mr="डॅशबोर्ड">Dashboards</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./dashboard/buyer.html" data-en="Buyer Dashboard" data-mr="खरेदीदार डॅशबोर्ड">Buyer Dashboard</a></li>
+                                <li><a href="./dashboard/seller.html" data-en="Seller Dashboard" data-mr="विक्रेता डॅशबोर्ड">Seller Dashboard</a></li>
+                                <li><a href="./dashboard/farmer.html" data-en="Farmer Dashboard" data-mr="शेतकरी डॅशबोर्ड">Farmer Dashboard</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1 data-en="Our Services" data-mr="आमच्या सेवा">Our Services</h1>
+                    <p data-en="Comprehensive agricultural trading solutions for farmers, wholesalers, and exporters" data-mr="शेतकरी, घाऊक विक्रेते आणि निर्यातकर्त्यांसाठी सर्वसमावेशक कृषी व्यापार समाधाने">
+                        Comprehensive agricultural trading solutions for farmers, wholesalers, and exporters
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="How We Serve You" data-mr="आम्ही तुमची सेवा कशी करतो">How We Serve You</h2>
+                    <p data-en="From farm to global markets, we provide end-to-end agricultural trading solutions" data-mr="शेतातून जागतिक बाजारापर्यंत, आम्ही संपूर्ण कृषी व्यापार समाधाने प्रदान करतो">
+                        From farm to global markets, we provide end-to-end agricultural trading solutions
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Direct Trading Service -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 data-en="Direct Trading Facilitation" data-mr="थेट व्यापार सुविधा">Direct Trading Facilitation</h3>
+                        <p data-en="Connect directly with buyers and sellers, eliminating middlemen for better profit margins." data-mr="चांगल्या नफा मार्जिनसाठी मध्यस्थांना वगळून खरेदीदार आणि विक्रेत्यांशी थेट जुडा.">
+                            Connect directly with buyers and sellers, eliminating middlemen for better profit margins.
+                        </p>
+                        <ul class="service-features">
+                            <li data-en="Real-time price matching" data-mr="रिअल-टाइम दर जुळणी">Real-time price matching</li>
+                            <li data-en="Secure payment processing" data-mr="सुरक्षित पेमेंट प्रक्रिया">Secure payment processing</li>
+                            <li data-en="Quality verification" data-mr="गुणवत्ता पडताळणी">Quality verification</li>
+                            <li data-en="Contract management" data-mr="करार व्यवस्थापन">Contract management</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-outline" data-en="Learn More" data-mr="अधिक जाणा">Learn More</a>
+                    </div>
+
+                    <!-- Bulk Supply Service -->
+                    <div class="service-card featured">
+                        <div class="service-badge" data-en="Most Popular" data-mr="सर्वाधिक लोकप्रिय">Most Popular</div>
+                        <div class="service-icon">
+                            <i class="fas fa-truck-loading"></i>
+                        </div>
+                        <h3 data-en="Bulk Supply Solutions" data-mr="मोठ्या प्रमाणात पुरवठा समाधाने">Bulk Supply Solutions</h3>
+                        <p data-en="Large-scale produce supply for wholesalers, retailers, and institutional buyers." data-mr="घाऊक विक्रेते, किरकोळ विक्रेते आणि संस्थात्मक खरेदीदारांसाठी मोठ्या प्रमाणात उत्पादन पुरवठा.">
+                            Large-scale produce supply for wholesalers, retailers, and institutional buyers.
+                        </p>
+                        <ul class="service-features">
+                            <li data-en="Consistent quality & quantity" data-mr="सातत्यपूर्ण गुणवत्ता आणि प्रमाण">Consistent quality & quantity</li>
+                            <li data-en="Flexible delivery schedules" data-mr="लवचिक डिलिव्हरी वेळापत्रक">Flexible delivery schedules</li>
+                            <li data-en="Competitive bulk pricing" data-mr="स्पर्धात्मक मोठ्या प्रमाणात किंमत">Competitive bulk pricing</li>
+                            <li data-en="Custom packaging options" data-mr="सानुकूल पॅकेजिंग पर्याय">Custom packaging options</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-primary" data-en="Get Quote" data-mr="कोटेशन मिळवा">Get Quote</a>
+                    </div>
+
+                    <!-- Export Assistance Service -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3 data-en="Export Assistance" data-mr="निर्यात सहायता">Export Assistance</h3>
+                        <p data-en="Complete support for international trade, from documentation to logistics management." data-mr="कागदपत्रांपासून ते लॉजिस्टिक्स व्यवस्थापनापर्यंत आंतरराष्ट्रीय व्यापारासाठी संपूर्ण समर्थन.">
+                            Complete support for international trade, from documentation to logistics management.
+                        </p>
+                        <ul class="service-features">
+                            <li data-en="Export documentation" data-mr="निर्यात कागदपत्रे">Export documentation</li>
+                            <li data-en="Quality certifications" data-mr="गुणवत्ता प्रमाणपत्रे">Quality certifications</li>
+                            <li data-en="International logistics" data-mr="आंतरराष्ट्रीय लॉजिस्टिक्स">International logistics</li>
+                            <li data-en="Market intelligence" data-mr="बाजार बुद्धिमत्ता">Market intelligence</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-outline" data-en="Explore Export" data-mr="निर्यात एक्सप्लोर करा">Explore Export</a>
+                    </div>
+
+                    <!-- Quality Assurance Service -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 data-en="Quality Assurance" data-mr="गुणवत्ता हमी">Quality Assurance</h3>
+                        <p data-en="Rigorous quality testing and certification to meet national and international standards." data-mr="राष्ट्रीय आणि आंतरराष्ट्रीय मानकांची पूर्तता करण्यासाठी कडक गुणवत्ता चाचणी आणि प्रमाणीकरण.">
+                            Rigorous quality testing and certification to meet national and international standards.
+                        </p>
+                        <ul class="service-features">
+                            <li data-en="Lab testing facilities" data-mr="प्रयोगशाळा चाचणी सुविधा">Lab testing facilities</li>
+                            <li data-en="Organic certification" data-mr="सेंद्रिय प्रमाणपत्र">Organic certification</li>
+                            <li data-en="Pesticide residue testing" data-mr="कीटकनाशक अवशेष चाचणी">Pesticide residue testing</li>
+                            <li data-en="Nutritional analysis" data-mr="पोषणीय विश्लेषण">Nutritional analysis</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-outline" data-en="Quality Standards" data-mr="गुणवत्ता मानके">Quality Standards</a>
+                    </div>
+
+                    <!-- Market Intelligence Service -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 data-en="Market Intelligence" data-mr="बाजार बुद्धिमत्ता">Market Intelligence</h3>
+                        <p data-en="Real-time market data, price trends, and demand forecasting for informed decision making." data-mr="माहितीपूर्ण निर्णय घेण्यासाठी रिअल-टाइम मार्केट डेटा, किंमत ट्रेंड आणि मागणी अंदाज.">
+                            Real-time market data, price trends, and demand forecasting for informed decision making.
+                        </p>
+                        <ul class="service-features">
+                            <li data-en="Daily price updates" data-mr="दैनिक दर अपडेट">Daily price updates</li>
+                            <li data-en="Market trend analysis" data-mr="बाजार ट्रेंड विश्लेषण">Market trend analysis</li>
+                            <li data-en="Demand forecasting" data-mr="मागणी अंदाज">Demand forecasting</li>
+                            <li data-en="Seasonal insights" data-mr="हंगामी अंतर्दृष्टी">Seasonal insights</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-outline" data-en="Market Data" data-mr="बाजार डेटा">Market Data</a>
+                    </div>
+
+                    <!-- Logistics Support Service -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3 data-en="Logistics Support" data-mr="लॉजिस्टिक्स सहायता">Logistics Support</h3>
+                        <p data-en="Comprehensive logistics solutions including storage, transportation, and cold chain management." data-mr="साठवण, वाहतूक आणि कोल्ड चेन व्यवस्थापनासह सर्वसमावेशक लॉजिस्टिक्स समाधाने.">
+                            Comprehensive logistics solutions including storage, transportation, and cold chain management.
+                        </p>
+                        <ul class="service-features">
+                            <li data-en="Temperature-controlled transport" data-mr="तापमान-नियंत्रित वाहतूक">Temperature-controlled transport</li>
+                            <li data-en="Warehouse facilities" data-mr="गोदाम सुविधा">Warehouse facilities</li>
+                            <li data-en="GPS tracking" data-mr="GPS ट्रॅकिंग">GPS tracking</li>
+                            <li data-en="Last-mile delivery" data-mr="लास्ट-माइल डिलिव्हरी">Last-mile delivery</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-outline" data-en="Logistics Info" data-mr="लॉजिस्टिक्स माहिती">Logistics Info</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Process -->
+        <section class="service-process section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="How It Works" data-mr="हे कसे काम करते">How It Works</h2>
+                    <p data-en="Simple steps to get started with KisanBox services" data-mr="किसानबॉक्स सेवांसह सुरुवात करण्यासाठी सोप्या पायऱ्या">
+                        Simple steps to get started with KisanBox services
+                    </p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 data-en="Register & Verify" data-mr="नोंदणी आणि पडताळणी">Register & Verify</h3>
+                            <p data-en="Create your account and complete the verification process to access our platform." data-mr="तुमचे खाते तयार करा आणि आमच्या प्लॅटफॉर्मवर प्रवेश मिळवण्यासाठी पडताळणी प्रक्रिया पूर्ण करा.">
+                                Create your account and complete the verification process to access our platform.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 data-en="List or Browse Products" data-mr="उत्पादने सूचीबद्ध करा किंवा ब्राउझ करा">List or Browse Products</h3>
+                            <p data-en="Farmers can list their produce while buyers can browse available products with quality details." data-mr="शेतकरी त्यांची उत्पादने सूचीबद्ध करू शकतात तर खरेदीदार गुणवत्तेच्या तपशिलांसह उपलब्ध उत्पादने ब्राउझ करू शकतात.">
+                                Farmers can list their produce while buyers can browse available products with quality details.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 data-en="Connect & Negotiate" data-mr="जुडा आणि वाटाघाटी करा">Connect & Negotiate</h3>
+                            <p data-en="Direct communication between buyers and sellers for price negotiation and deal finalization." data-mr="किंमत वाटाघाटी आणि डील फायनालायझेशनसाठी खरेदीदार आणि विक्रेत्यांमधील थेट संवाद.">
+                                Direct communication between buyers and sellers for price negotiation and deal finalization.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3 data-en="Quality Check & Delivery" data-mr="गुणवत्ता तपासणी आणि डिलिव्हरी">Quality Check & Delivery</h3>
+                            <p data-en="Our team ensures quality verification and manages logistics for safe, timely delivery." data-mr="आमची टीम गुणवत्ता पडताळणी सुनिश्चित करते आणि सुरक्षित, वेळेवर डिलिव्हरीसाठी लॉजिस्टिक्स व्यवस्थापित करते.">
+                                Our team ensures quality verification and manages logistics for safe, timely delivery.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Plans -->
+        <section class="pricing-plans section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Service Packages" data-mr="सेवा पॅकेजेस">Service Packages</h2>
+                    <p data-en="Choose the right package for your agricultural trading needs" data-mr="तुमच्या कृषी व्यापार गरजांसाठी योग्य पॅकेज निवडा">
+                        Choose the right package for your agricultural trading needs
+                    </p>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card basic">
+                        <div class="plan-header">
+                            <h3 data-en="Basic" data-mr="मूलभूत">Basic</h3>
+                            <div class="price">
+                                <span class="currency">₹</span>
+                                <span class="amount">999</span>
+                                <span class="period" data-en="/month" data-mr="/महिना">/month</span>
+                            </div>
+                            <p data-en="Perfect for small farmers" data-mr="छोट्या शेतकऱ्यांसाठी योग्य">Perfect for small farmers</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> <span data-en="Direct trading access" data-mr="थेट ट्रेडिंग प्रवेश">Direct trading access</span></li>
+                            <li><i class="fas fa-check"></i> <span data-en="Basic quality verification" data-mr="मूलभूत गुणवत्ता पडताळणी">Basic quality verification</span></li>
+                            <li><i class="fas fa-check"></i> <span data-en="Market price alerts" data-mr="बाजार दर अलर्ट">Market price alerts</span></li>
+                            <li><i class="fas fa-check"></i> <span data-en="Customer support" data-mr="ग्राहक सहायता">Customer support</span></li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-outline btn-lg" data-en="Get Started" data-mr="सुरुवात करा">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card professional featured">
+                        <div class="plan-badge" data-en="Most Popular" data-mr="सर्वाधिक लोकप्रिय">Most Popular</div>
+                        <div class="plan-header">
+                            <h3 data-en="Professional" data-mr="व्यावसायिक">Professional</h3>
+                            <div class="price">
+                                <span class="currency">₹</span>
+                                <span class="amount">2,999</span>
+                                <span class="period" data-en="/month" data-mr="/महिना">/month</span>
+                            </div>
+                            <p data-en="Ideal for medium to large farmers" data-mr="मध्यम ते मोठ्या शेतकऱ्यांसाठी आदर्श">Ideal for medium to large farmers</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> <span data-en="Everything in Basic" data-mr="मूलभूतमध्ये सर्वकाही">Everything in Basic</span></li>
+                            <li><i class="fas fa-check"></i> <span data-en="Bulk supply facilitation" data-mr="मोठ्या प्रमाणात पुरवठा सुविधा">Bulk supply facilitation</span></li>
+                            <li><i class="fas fa-check"></i> <span data-en="Advanced analytics" data-mr="प्रगत विश्लेषणे">Advanced analytics</span></li>
+                            <li><i class="fas fa-check"></i> <span data-en="Priority logistics support" data-mr="प्राधान्य लॉजिस्टिक्स सहायता">Priority logistics support</span></li>
+                            <li><i class="fas fa-check"></i> <span data-en="Export documentation" data-mr="निर्यात कागदपत्रे">Export documentation</span></li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-primary btn-lg" data-en="Choose Plan" data-mr="योजना निवडा">Choose Plan</a>
+                    </div>
+
+                    <div class="pricing-card enterprise">
+                        <div class="plan-header">
+                            <h3 data-en="Enterprise" data-mr="एंटरप्राइज">Enterprise</h3>
+                            <div class="price">
+                                <span class="currency">₹</span>
+                                <span class="amount">9,999</span>
+                                <span class="period" data-en="/month" data-mr="/महिना">/month</span>
+                            </div>
+                            <p data-en="For large organizations & exporters" data-mr="मोठ्या संस्था आणि निर्यातकर्त्यांसाठी">For large organizations & exporters</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> <span data-en="Everything in Professional" data-mr="व्यावसायिकमध्ये सर्वकाही">Everything in Professional</span></li>
+                            <li><i class="fas fa-check"></i> <span data-en="Dedicated account manager" data-mr="समर्पित खाते व्यवस्थापक">Dedicated account manager</span></li>
+                            <li><i class="fas fa-check"></i> <span data-en="Custom logistics solutions" data-mr="सानुकूल लॉजिस्टिक्स समाधाने">Custom logistics solutions</span></li>
+                            <li><i class="fas fa-check"></i> <span data-en="International market access" data-mr="आंतरराष्ट्रीय बाजार प्रवेश">International market access</span></li>
+                            <li><i class="fas fa-check"></i> <span data-en="API integration" data-mr="API एकीकरण">API integration</span></li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-outline btn-lg" data-en="Contact Sales" data-mr="सेल्सशी संपर्क साधा">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Why Choose Our Services" data-mr="आमच्या सेवा का निवडाव्यात">Why Choose Our Services</h2>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 data-en="Trusted Network" data-mr="विश्वासू नेटवर्क">Trusted Network</h3>
+                        <p data-en="Over 1,000 verified farmers and hundreds of trusted buyers in our network." data-mr="आमच्या नेटवर्कमध्ये १,००० हून अधिक सत्यापित शेतकरी आणि शेकडो विश्वासू खरेदीदार.">
+                            Over 1,000 verified farmers and hundreds of trusted buyers in our network.
+                        </p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 data-en="24/7 Support" data-mr="२४/७ समर्थन">24/7 Support</h3>
+                        <p data-en="Round-the-clock customer support for all your trading and logistics needs." data-mr="तुमच्या सर्व ट्रेडिंग आणि लॉजिस्टिक्स गरजांसाठी गोल-दिवसाचे ग्राहक समर्थन.">
+                            Round-the-clock customer support for all your trading and logistics needs.
+                        </p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 data-en="Secure Transactions" data-mr="सुरक्षित व्यवहार">Secure Transactions</h3>
+                        <p data-en="Bank-grade security for all payments and transactions on our platform." data-mr="आमच्या प्लॅटफॉर्मवरील सर्व पेमेंट्स आणि ट्रान्झॅक्शनसाठी बँक-ग्रेड सिक्युरिटी.">
+                            Bank-grade security for all payments and transactions on our platform.
+                        </p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 data-en="Market Insights" data-mr="बाजार अंतर्दृष्टी">Market Insights</h3>
+                        <p data-en="Real-time market data and analytics to help you make informed decisions." data-mr="माहितीपूर्ण निर्णय घेण्यास मदत करण्यासाठी रिअल-टाइम मार्केट डेटा आणि अॅनालिटिक्स.">
+                            Real-time market data and analytics to help you make informed decisions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 data-en="Ready to Transform Your Agricultural Business?" data-mr="तुमच्या कृषी व्यवसायाचे रूपांतर करण्यास तयार आहात?">Ready to Transform Your Agricultural Business?</h2>
+                    <p data-en="Join thousands of farmers and traders who trust KisanBox for their agricultural trading needs." data-mr="त्यांच्या कृषी व्यापाराच्या गरजांसाठी किसानबॉक्सवर भरवसा ठेवणाऱ्या हजारो शेतकरी आणि व्यापाऱ्यांमध्ये सामील व्हा.">
+                        Join thousands of farmers and traders who trust KisanBox for their agricultural trading needs.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="./contact.html" class="btn btn-primary btn-lg" data-en="Get Started Today" data-mr="आज सुरुवात करा">Get Started Today</a>
+                        <a href="../index.html#featured-products" class="btn btn-outline btn-lg" data-en="Browse Products" data-mr="उत्पादने ब्राउझ करा">Browse Products</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../images/logo.png" alt="KisanBox Logo">
+                        <h3>
+                            <span data-en="KisanBox" data-mr="किसानबॉक्स">KisanBox</span>
+                            <small data-en="शेती बाजार" data-mr="शेती बाजार">शेती बाजार</small>
+                        </h3>
+                    </div>
+                    <p data-en="Connecting Maharashtra farmers with global markets through trusted agricultural trading platform." data-mr="विश्वासू कृषी व्यापार व्यासपीठाद्वारे महाराष्ट्रातील शेतकऱ्यांना जागतिक बाजारपेठेशी जोडणे.">
+                        Connecting Maharashtra farmers with global markets through trusted agricultural trading platform.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-mr="द्रुत दुवे">Quick Links</h4>
+                    <ul>
+                        <li><a href="./about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="#" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li><a href="./products.html" data-en="Products" data-mr="उत्पादने">Products</a></li>
+                        <li><a href="./blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="./contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Dashboards" data-mr="डॅशबोर्ड">Dashboards</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./dashboard/buyer.html" data-en="Buyer Dashboard" data-mr="खरेदीदार डॅशबोर्ड">Buyer Dashboard</a></li>
+                                <li><a href="./dashboard/seller.html" data-en="Seller Dashboard" data-mr="विक्रेता डॅशबोर्ड">Seller Dashboard</a></li>
+                                <li><a href="./dashboard/farmer.html" data-en="Farmer Dashboard" data-mr="शेतकरी डॅशबोर्ड">Farmer Dashboard</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Categories" data-mr="श्रेण्या">Categories</h4>
+                    <ul>
+                        <li><a href="./products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                        <li><a href="./products.html?category=fruits" data-mr="फळे" data-en="Fruits">Fruits</a></li>
+                        <li><a href="./products.html?category=grains" data-en="Grains" data-mr="धान्य">Grains</a></li>
+                        <li><a href="./products.html?category=spices" data-en="Spices" data-mr="मसाले">Spices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Contact Info" data-mr="संपर्क माहिती">Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-en="123 Agriculture Market, Pune, Maharashtra 411001" data-mr="१२३ कृषी बाजार, पुणे, महाराष्ट्र ४११००१">123 Agriculture Market, Pune, Maharashtra 411001</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9221591156</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@kisanbox.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 KisanBox. <span data-en="All rights reserved." data-mr="सर्व हक्क राखीव.">All rights reserved.</span></p>
+                    <div class="footer-links">
+                        <a href="#" data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</a>
+                        <a href="#" data-en="Terms of Service" data-mr="सेवा अटी">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/main.js"></script>
+    <script src="../js/language-toggle.js"></script>
+    
+    <!-- Page-specific CSS -->
+
+</body>
+</html>

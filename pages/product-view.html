@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Tomatoes - KisanBox | शेती बाजार</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Fresh premium tomatoes from Pune district farms. High quality, farm-fresh produce available at KisanBox - Maharashtra's trusted agricultural trading platform.">
+    <meta name="keywords" content="tomatoes, fresh vegetables, premium tomatoes, Pune farms, KisanBox, शेती बाजार">
+    <meta name="author" content="KisanBox">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Premium Tomatoes - KisanBox">
+    <meta property="og:description" content="Fresh premium tomatoes from Pune district farms.">
+    <meta property="og:type" content="product">
+    <meta property="og:image" content="../images/tomatoes.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Product View Specific Styles */
+        .product-view {
+            padding: 2rem 0;
+            background: #f8f9fa;
+        }
+        
+        .breadcrumb {
+            padding: 1rem 0;
+            background: white;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .breadcrumb-list {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .breadcrumb-list li {
+            color: #666;
+        }
+        
+        .breadcrumb-list li a {
+            color: #2c5530;
+            text-decoration: none;
+        }
+        
+        .breadcrumb-list li a:hover {
+            text-decoration: underline;
+        }
+        
+        .product-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+        
+        .product-main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            padding: 2rem;
+        }
+        
+        .product-gallery {
+            position: relative;
+        }
+        
+        .main-image {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        
+        .main-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .main-image img:hover {
+            transform: scale(1.05);
+        }
+        
+        .image-thumbnails {
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+        }
+        
+        .thumbnail {
+            min-width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .thumbnail.active {
+            border-color: #2c5530;
+        }
+        
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 1rem 0;
+        }
+        
+        .product-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2c5530;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .stars {
+            color: #ffa500;
+        }
+        
+        .rating-count {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .current-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c5530;
+        }
+        
+        .original-price {
+            font-size: 1.2rem;
+            color: #999;
+            text-decoration: line-through;
+        }
+        
+        .discount-badge {
+            background: #e74c3c;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .product-badges {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .badge {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .badge-fresh {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .badge-organic {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .product-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .product-options {
+            margin-bottom: 2rem;
+        }
+        
+        .option-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .option-label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+            color: #333;
+        }
+        
+        .size-options {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .size-option {
+            padding: 0.75rem 1rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: white;
+            min-width: 80px;
+            text-align: center;
+        }
+        
+        .size-option.active {
+            border-color: #2c5530;
+            background: #2c5530;
+            color: white;
+        }
+        
+        .size-option:hover {
+            border-color: #2c5530;
+        }
+        
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .quantity-btn {
+            background: #f8f9fa;
+            border: none;
+            padding: 0.75rem;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background 0.3s ease;
+        }
+        
+        .quantity-btn:hover {
+            background: #e9ecef;
+        }
+        
+        .quantity-input {
+            border: none;
+            width: 60px;
+            text-align: center;
+            padding: 0.75rem 0;
+            font-size: 1rem;
+            background: white;
+        }
+        
+        .add-to-cart-section {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn-add-cart {
+            flex: 1;
+            background: #2c5530;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-add-cart:hover {
+            background: #1e3a21;
+            transform: translateY(-2px);
+        }
+        
+        .btn-wishlist {
+            background: white;
+            border: 2px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        .btn-wishlist:hover {
+            border-color: #2c5530;
+            color: #2c5530;
+        }
+        
+        .product-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: #2c5530;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .feature-text {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .product-details-tabs {
+            margin-top: 3rem;
+        }
+        
+        .tab-buttons {
+            display: flex;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 2rem;
+        }
+        
+        .tab-button {
+            background: none;
+            border: none;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .tab-button.active {
+            color: #2c5530;
+            border-bottom-color: #2c5530;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .nutrition-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        .nutrition-table th,
+        .nutrition-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .nutrition-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+        
+        .reviews-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .review-item {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        
+        .reviewer-name {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .review-date {
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        .related-products {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .related-products h3 {
+            margin-bottom: 1.5rem;
+            color: #2c5530;
+        }
+        
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .related-item {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            border: 1px solid #eee;
+        }
+        
+        .related-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .related-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+        }
+        
+        .related-item h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .related-item .price {
+            font-weight: 600;
+            color: #2c5530;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product-main {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 1rem;
+            }
+            
+            .product-features {
+                grid-template-columns: 1fr;
+            }
+            
+            .tab-buttons {
+                flex-wrap: wrap;
+            }
+            
+            .tab-button {
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .add-to-cart-section {
+                flex-direction: column;
+            }
+            
+            .related-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="contact-info">
+                        <span class="phone">
+                            <i class="fas fa-phone"></i>
+                            <span data-en="+91 9221591156" data-mr="+९१ ९२२१५९११५६">+91 9221591156</span>
+                        </span>
+                        <span class="email">
+                            <i class="fas fa-envelope"></i>
+                            info@kisanbox.com
+                        </span>
+                    </div>
+                    <div class="language-toggle">
+                        <button id="language-btn" class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">English</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="logo">
+                        <img src="../images/logo.png" alt="KisanBox Logo">
+                        <h2>
+                            <span data-en="KisanBox" data-mr="किसानबॉक्स">KisanBox</span>
+                            <small data-en="शेती बाजार" data-mr="शेती बाजार">शेती बाजार</small>
+                        </h2>
+                    </div>
+                    
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                        <li><a href="./about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="./services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Products" data-mr="उत्पादने">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./products.html" data-en="All Products" data-mr="सर्व उत्पादने">All Products</a></li>
+                                <li><a href="./products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                                <li><a href="./products.html?category=fruits" data-en="Fruits" data-mr="फळे">Fruits</a></li>
+                                <li><a href="./farmer-marketplace.html" data-en="Farmer Marketplace" data-mr="शेतकरी बाजार">Farmer Marketplace</a></li>
+                                <li><a href="./knowledge-hub.html" data-en="Knowledge Hub" data-mr="ज्ञान केंद्र">Knowledge Hub</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="./testimonials.html" data-en="Testimonials" data-mr="प्रशंसापत्रे">Testimonials</a></li>
+                        <li><a href="./contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Dashboards" data-mr="डॅशबोर्ड">Dashboards</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./dashboard/buyer.html" data-en="Buyer Dashboard" data-mr="खरेदीदार डॅशबोर्ड">Buyer Dashboard</a></li>
+                                <li><a href="./dashboard/seller.html" data-en="Seller Dashboard" data-mr="विक्रेता डॅशबोर्ड">Seller Dashboard</a></li>
+                                <li><a href="./dashboard/farmer.html" data-en="Farmer Dashboard" data-mr="शेतकरी डॅशबोर्ड">Farmer Dashboard</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb-list">
+                <li><a href="../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                <li><i class="fas fa-chevron-right"></i></li>
+                <li><a href="./products.html" data-en="Products" data-mr="उत्पादने">Products</a></li>
+                <li><i class="fas fa-chevron-right"></i></li>
+                <li><a href="./products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                <li><i class="fas fa-chevron-right"></i></li>
+                <li data-en="Premium Tomatoes" data-mr="प्रीमियम टमाटर">Premium Tomatoes</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Product View Section -->
+    <section class="product-view">
+        <div class="container">
+            <div class="product-container">
+                <div class="product-main">
+                    <!-- Product Gallery -->
+                    <div class="product-gallery">
+                        <div class="main-image">
+                            <img id="main-product-image" src="../images/products/tomatoes.jpg" alt="Premium Tomatoes">
+                        </div>
+                        <div class="image-thumbnails">
+                            <div class="thumbnail active" onclick="changeImage('../images/products/tomatoes.jpg')">
+                                <img src="../images/products/tomatoes.jpg" alt="Tomatoes View 1">
+                            </div>
+                            <div class="thumbnail" onclick="changeImage('../images/products/tomatoes.jpg')">
+                                <img src="../images/products/tomatoes.jpg" alt="Tomatoes View 2">
+                            </div>
+                            <div class="thumbnail" onclick="changeImage('../images/products/tomatoes.jpg')">
+                                <img src="../images/products/tomatoes.jpg" alt="Tomatoes View 3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Information -->
+                    <div class="product-info">
+                        <h1 class="product-title" data-en="Premium Fresh Tomatoes" data-mr="प्रीमियम ताजे टमाटर">Premium Fresh Tomatoes</h1>
+                        
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(4.5) 127 reviews</span>
+                        </div>
+
+                        <div class="product-price">
+                            <span class="current-price">₹40/kg</span>
+                            <span class="original-price">₹50/kg</span>
+                            <span class="discount-badge">20% OFF</span>
+                        </div>
+
+                        <div class="product-badges">
+                            <span class="badge badge-fresh" data-en="Farm Fresh" data-mr="शेतातले ताजे">Farm Fresh</span>
+                            <span class="badge badge-organic" data-en="Organic" data-mr="सेंद्रिय">Organic</span>
+                        </div>
+
+                        <p class="product-description" data-en="Fresh, juicy tomatoes sourced directly from organic farms in Pune district. Rich in vitamins and perfect for cooking, salads, and making fresh sauces. Harvested at peak ripeness to ensure maximum flavor and nutrition." data-mr="पुणे जिल्ह्यातील सेंद्रिय शेतातून थेट मिळणारे ताजे, रसाळ टमाटर. जीवनसत्त्वांनी भरपूर आणि स्वयंपाक, सॅलड आणि ताजे सॉस बनवण्यासाठी उत्तम. जास्तीत जास्त चव आणि पोषण मिळावे म्हणून योग्य पिकाच्या वेळी कापणी केली जाते.">
+                            Fresh, juicy tomatoes sourced directly from organic farms in Pune district. Rich in vitamins and perfect for cooking, salads, and making fresh sauces. Harvested at peak ripeness to ensure maximum flavor and nutrition.
+                        </p>
+
+                        <div class="product-options">
+                            <div class="option-group">
+                                <label class="option-label" data-en="Quantity Size:" data-mr="प्रमाण आकार:">Quantity Size:</label>
+                                <div class="size-options">
+                                    <div class="size-option active" data-price="40" data-unit="kg">
+                                        <div>1 kg</div>
+                                        <small>₹40</small>
+                                    </div>
+                                    <div class="size-option" data-price="75" data-unit="kg">
+                                        <div>2 kg</div>
+                                        <small>₹75</small>
+                                    </div>
+                                    <div class="size-option" data-price="180" data-unit="kg">
+                                        <div>5 kg</div>
+                                        <small>₹180</small>
+                                    </div>
+                                    <div class="size-option" data-price="320" data-unit="kg">
+                                        <div>10 kg</div>
+                                        <small>₹320</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quantity-selector">
+                                <label class="option-label" data-en="Quantity:" data-mr="संख्या:">Quantity:</label>
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                                    <input type="number" class="quantity-input" value="1" min="1" id="quantity">
+                                    <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add-to-cart-section">
+                            <button class="btn-add-cart" onclick="addToCart()">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span data-en="Add to Cart" data-mr="कार्टमध्ये टाका">Add to Cart</span>
+                            </button>
+                            <button class="btn-wishlist" onclick="addToWishlist()">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="feature-text" data-en="Free delivery on orders above ₹500" data-mr="₹५०० च्या वरील ऑर्डरवर विनामूल्य डिलिव्हरी">Free delivery on orders above ₹500</div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="feature-text" data-en="Quality guaranteed" data-mr="गुणवत्तेची हमी">Quality guaranteed</div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="feature-text" data-en="100% Organic" data-mr="१००% सेंद्रिय">100% Organic</div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-text" data-en="Same day delivery available" data-mr="त्याच दिवशी डिलिव्हरी उपलब्ध">Same day delivery available</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Details Tabs -->
+                <div class="product-details-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" onclick="showTab('description')" data-en="Description" data-mr="वर्णन">Description</button>
+                        <button class="tab-button" onclick="showTab('nutrition')" data-en="Nutrition" data-mr="पोषण">Nutrition</button>
+                        <button class="tab-button" onclick="showTab('benefits')" data-en="Benefits" data-mr="फायदे">Benefits</button>
+                        <button class="tab-button" onclick="showTab('storage')" data-en="Storage" data-mr="साठवणूक">Storage</button>
+                    </div>
+
+                    <div id="description-tab" class="tab-content active">
+                        <h3 data-en="Product Description" data-mr="उत्पादन वर्णन">Product Description</h3>
+                        <p data-en="Our premium tomatoes are carefully selected from the finest organic farms in Pune district. These tomatoes are grown using traditional farming methods without the use of harmful pesticides or chemicals. Each tomato is hand-picked at the perfect stage of ripeness to ensure maximum flavor, nutrition, and freshness." data-mr="आमचे प्रीमियम टमाटर पुणे जिल्ह्यातील उत्कृष्ट सेंद्रिय शेतातून काळजीपूर्वक निवडले जातात. हे टमाटर हानिकारक कीटकनाशके किंवा रसायने न वापरता पारंपारिक शेतीच्या पद्धतींनी पिकवले जातात. जास्तीत जास्त चव, पोषण आणि ताजेपणा सुनिश्चित करण्यासाठी प्रत्येक टमाटर योग्य पिकाच्या अवस्थेत हाताने निवडला जातो.">
+                            Our premium tomatoes are carefully selected from the finest organic farms in Pune district. These tomatoes are grown using traditional farming methods without the use of harmful pesticides or chemicals. Each tomato is hand-picked at the perfect stage of ripeness to ensure maximum flavor, nutrition, and freshness.
+                        </p>
+                        <p data-en="Perfect for making curries, salads, soups, and fresh sauces. These tomatoes have a rich, tangy flavor that enhances any dish." data-mr="भाज्या, सॅलड, सूप आणि ताजे सॉस बनवण्यासाठी उत्तम. या टमाटरांमध्ये समृद्ध, तिखट चव आहे जी कोणत्याही पदार्थाची चव वाढवते.">Perfect for making curries, salads, soups, and fresh sauces. These tomatoes have a rich, tangy flavor that enhances any dish.</p>
+                    </div>
+
+                    <div id="nutrition-tab" class="tab-content">
+                        <h3 data-en="Nutritional Information (per 100g)" data-mr="पौष्टिक माहिती (प्रति १००ग्रॅम)">Nutritional Information (per 100g)</h3>
+                        <table class="nutrition-table">
+                            <tr>
+                                <th data-en="Nutrient" data-mr="पोषक तत्त्व">Nutrient</th>
+                                <th data-en="Amount" data-mr="प्रमाण">Amount</th>
+                            </tr>
+                            <tr>
+                                <td data-en="Calories" data-mr="कॅलरीज">Calories</td>
+                                <td>18 kcal</td>
+                            </tr>
+                            <tr>
+                                <td data-en="Carbohydrates" data-mr="कार्बोहायड्रेट">Carbohydrates</td>
+                                <td>3.9g</td>
+                            </tr>
+                            <tr>
+                                <td data-en="Protein" data-mr="प्रथिने">Protein</td>
+                                <td>0.9g</td>
+                            </tr>
+                            <tr>
+                                <td data-en="Fat" data-mr="चरबी">Fat</td>
+                                <td>0.2g</td>
+                            </tr>
+                            <tr>
+                                <td data-en="Fiber" data-mr="फायबर">Fiber</td>
+                                <td>1.2g</td>
+                            </tr>
+                            <tr>
+                                <td data-en="Vitamin C" data-mr="व्हिटामिन सी">Vitamin C</td>
+                                <td>14mg</td>
+                            </tr>
+                            <tr>
+                                <td data-en="Potassium" data-mr="पोटॅशियम">Potassium</td>
+                                <td>237mg</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="benefits-tab" class="tab-content">
+                        <h3 data-en="Health Benefits" data-mr="आरोग्यदायी फायदे">Health Benefits</h3>
+                        <ul>
+                            <li data-en="Rich in antioxidants, especially lycopene, which may help prevent cancer" data-mr="अँटिऑक्सिडंट्सने भरपूर, विशेषतः लायकोपीन, जे कर्करोग प्रतिबंधित करू शकते">Rich in antioxidants, especially lycopene, which may help prevent cancer</li>
+                            <li data-en="High vitamin C content supports immune system" data-mr="उच्च व्हिटामिन सी सामग्री रोगप्रतिकारक शक्तीला सहाय्य करते">High vitamin C content supports immune system</li>
+                            <li data-en="Good source of potassium for heart health" data-mr="हृदयाच्या आरोग्यासाठी पोटॅशियमचा चांगला स्रोत">Good source of potassium for heart health</li>
+                            <li data-en="Low calorie, high water content helps with hydration" data-mr="कमी कॅलरी, उच्च पाणी सामग्री जलयोजनास मदत करते">Low calorie, high water content helps with hydration</li>
+                            <li data-en="Contains folate, important for pregnant women" data-mr="फोलेट असते, गर्भवती महिलांसाठी महत्त्वाचे">Contains folate, important for pregnant women</li>
+                        </ul>
+                    </div>
+
+                    <div id="storage-tab" class="tab-content">
+                        <h3 data-en="Storage Instructions" data-mr="साठवणूक सूचना">Storage Instructions</h3>
+                        <ul>
+                            <li data-en="Store at room temperature for 2-3 days for optimal ripeness" data-mr="इष्टतम पिकवण्यासाठी खोलीच्या तापमानात 2-3 दिवस ठेवा">Store at room temperature for 2-3 days for optimal ripeness</li>
+                            <li data-en="Refrigerate once ripe for up to 1 week" data-mr="पिकल्यावर 1 आठवड्यापर्यंत रेफ्रिजरेटरमध्ये ठेवा">Refrigerate once ripe for up to 1 week</li>
+                            <li data-en="Keep away from direct sunlight" data-mr="थेट सूर्यप्रकाशापासून दूर ठेवा">Keep away from direct sunlight</li>
+                            <li data-en="Do not store near bananas or apples as they speed up ripening" data-mr="केळी किंवा सफरचंदांजवळ साठवू नका कारण ते पिकवणे वेगवान करतात">Do not store near bananas or apples as they speed up ripening</li>
+                            <li data-en="Wash only before consumption" data-mr="केवळ खाण्यापूर्वी धुवा">Wash only before consumption</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews Section -->
+            <div class="reviews-section">
+                <h3 data-en="Customer Reviews" data-mr="ग्राहक प्रतिक्रिया">Customer Reviews</h3>
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="reviewer-name">Priya Sharma</span>
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-date">2 days ago</span>
+                        </div>
+                    </div>
+                    <p data-en="Excellent quality tomatoes! Very fresh and flavorful. Perfect for making curry." data-mr="उत्कृष्ट दर्जाचे टमाटर! अतिशय ताजे आणि चवदार. भाजी बनवण्यासाठी उत्तम.">Excellent quality tomatoes! Very fresh and flavorful. Perfect for making curry.</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="reviewer-name">Raj Patil</span>
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="review-date">1 week ago</span>
+                        </div>
+                    </div>
+                    <p data-en="Good quality produce. Delivery was on time. Will order again." data-mr="चांगल्या दर्जाची उत्पादने. डिलिव्हरी वेळेवर झाली. पुन्हा ऑर्डर करेन.">Good quality produce. Delivery was on time. Will order again.</p>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h3 data-en="Related Products" data-mr="संबंधित उत्पादने">Related Products</h3>
+                <div class="related-grid">
+                    <div class="related-item">
+                        <img src="../images/products/onions.jpg" alt="Red Onions">
+                        <h4 data-en="Red Onions" data-mr="लाल कांदा">Red Onions</h4>
+                        <p class="price">₹25/kg</p>
+                    </div>
+                    <div class="related-item">
+                        <img src="../images/products/bananas.jpg" alt="Organic Bananas">
+                        <h4 data-en="Organic Bananas" data-mr="जैविक केळी">Organic Bananas</h4>
+                        <p class="price">₹40/dozen</p>
+                    </div>
+                    <div class="related-item">
+                        <img src="../images/products/pomegranate.jpg" alt="Premium Pomegranates">
+                        <h4 data-en="Premium Pomegranates" data-mr="उत्कृष्ट डाळिंब">Premium Pomegranates</h4>
+                        <p class="price">₹120/kg</p>
+                    </div>
+                    <div class="related-item">
+                        <img src="../images/products/rice.jpg" alt="Basmati Rice">
+                        <h4 data-en="Basmati Rice" data-mr="बासमती तांदूळ">Basmati Rice</h4>
+                        <p class="price">₹80/kg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../images/logo.png" alt="KisanBox Logo">
+                        <h3>
+                            <span data-en="KisanBox" data-mr="किसानबॉक्स">KisanBox</span>
+                            <small data-en="शेती बाजार" data-mr="शेती बाजार">शेती बाजार</small>
+                        </h3>
+                    </div>
+                    <p data-en="Connecting Maharashtra farmers with global markets through trusted agricultural trading platform." data-mr="विश्वासू कृषी व्यापार व्यासपीठाद्वारे महाराष्ट्रातील शेतकऱ्यांना जागतिक बाजारपेठेशी जोडणे.">
+                        Connecting Maharashtra farmers with global markets through trusted agricultural trading platform.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-mr="द्रुत दुवे">Quick Links</h4>
+                    <ul>
+                        <li><a href="./about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="./services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li><a href="./products.html" data-en="Products" data-mr="उत्पादने">Products</a></li>
+                        <li><a href="./blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="./contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-en="Dashboards" data-mr="डॅशबोर्ड">Dashboards</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./dashboard/buyer.html" data-en="Buyer Dashboard" data-mr="खरेदीदार डॅशबोर्ड">Buyer Dashboard</a></li>
+                                <li><a href="./dashboard/seller.html" data-en="Seller Dashboard" data-mr="विक्रेता डॅशबोर्ड">Seller Dashboard</a></li>
+                                <li><a href="./dashboard/farmer.html" data-en="Farmer Dashboard" data-mr="शेतकरी डॅशबोर्ड">Farmer Dashboard</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Categories" data-mr="श्रेण्या">Categories</h4>
+                    <ul>
+                        <li><a href="./products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                        <li><a href="./products.html?category=fruits" data-mr="फळे" data-en="Fruits">Fruits</a></li>
+                        <li><a href="./products.html?category=grains" data-en="Grains" data-mr="धान्य">Grains</a></li>
+                        <li><a href="./products.html?category=spices" data-en="Spices" data-mr="मसाले">Spices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Contact Info" data-mr="संपर्क माहिती">Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-en="123 Agriculture Market, Pune, Maharashtra 411001" data-mr="१२३ कृषी बाजार, पुणे, महाराष्ट्र ४११००१">123 Agriculture Market, Pune, Maharashtra 411001</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9221591156</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@kisanbox.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 KisanBox. <span data-en="All rights reserved." data-mr="सर्व हक्क राखीव.">All rights reserved.</span></p>
+                    <div class="footer-links">
+                        <a href="#" data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</a>
+                        <a href="#" data-en="Terms of Service" data-mr="सेवा अटी">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Image Gallery Functions
+        function changeImage(src) {
+            document.getElementById('main-product-image').src = src;
+            
+            // Update active thumbnail
+            document.querySelectorAll('.thumbnail').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            event.target.closest('.thumbnail').classList.add('active');
+        }
+
+        // Quantity Functions
+        function increaseQuantity() {
+            const input = document.getElementById('quantity');
+            input.value = parseInt(input.value) + 1;
+        }
+
+        function decreaseQuantity() {
+            const input = document.getElementById('quantity');
+            if (parseInt(input.value) > 1) {
+                input.value = parseInt(input.value) - 1;
+            }
+        }
+
+        // Size Selection
+        document.querySelectorAll('.size-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.size-option').forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Update price display
+                const price = this.dataset.price;
+                const unit = this.dataset.unit;
+                document.querySelector('.current-price').textContent = `₹${price}/${unit}`;
+            });
+        });
+
+        // Tab Functions
+        function showTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tab buttons
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName + '-tab').classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Add to Cart Function
+        function addToCart() {
+            const quantity = document.getElementById('quantity').value;
+            const selectedSize = document.querySelector('.size-option.active');
+            const productName = document.querySelector('.product-title').textContent;
+            
+            alert(`Added ${quantity} x ${productName} (${selectedSize.textContent.trim()}) to cart!`);
+        }
+
+        // Add to Wishlist Function
+        function addToWishlist() {
+            const btn = event.target.closest('.btn-wishlist');
+            const icon = btn.querySelector('i');
+            
+            if (icon.classList.contains('fas')) {
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+                btn.style.color = '#666';
+            } else {
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+                btn.style.color = '#e74c3c';
+            }
+        }
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        });
+    </script>
+
+    <!-- Language Toggle Script -->
+    <script src="../js/language-toggle.js"></script>
+</body>
+</html>

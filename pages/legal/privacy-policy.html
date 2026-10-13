@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - KisanBox | Data Protection & Privacy | गोपनीयता धोरण</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="KisanBox Privacy Policy - Learn how we collect, use, and protect your personal information. Your privacy and data security are our top priorities.">
+    <meta name="keywords" content="privacy policy, data protection, personal information, KisanBox privacy, agricultural platform privacy">
+    <meta name="author" content="KisanBox">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Privacy Policy - KisanBox">
+    <meta property="og:description" content="Comprehensive privacy policy outlining data protection practices.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../../images/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    
+    <!-- External CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+            color: white;
+            padding: 1rem 0 0;
+            position: relative;
+        }
+
+        .header-top {
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 1rem;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-item i {
+            color: #90c695;
+        }
+
+        .language-toggle .lang-btn {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .language-toggle .lang-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* Navigation */
+        .navbar {
+            padding: 1rem 0;
+        }
+
+        .navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo i {
+            color: #90c695;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: #90c695;
+        }
+
+        .nav-menu .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 200px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .dropdown-menu li {
+            list-style: none;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: #333;
+            border-bottom: 1px solid #eee;
+        }
+
+        .dropdown-menu a:hover {
+            background: #f8f9fa;
+            color: #2c5530;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .page-header h1 i {
+            color: #bbdefb;
+        }
+
+        .page-header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .last-updated {
+            background: rgba(255,255,255,0.1);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            display: inline-block;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            opacity: 0.9;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: #bbdefb;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .table-of-contents {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+            border-left: 4px solid #1976d2;
+        }
+
+        .table-of-contents h3 {
+            color: #1976d2;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .toc-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc-list a {
+            color: #666;
+            text-decoration: none;
+            padding: 0.3rem 0;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .toc-list a:hover {
+            color: #1976d2;
+        }
+
+        .policy-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .policy-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #1976d2;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e3f2fd;
+        }
+
+        .section-content {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .section-content p {
+            margin-bottom: 1.2rem;
+        }
+
+        .section-content ul, .section-content ol {
+            margin-bottom: 1.2rem;
+            padding-left: 2rem;
+        }
+
+        .section-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #1976d2;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box .box-title {
+            font-weight: 700;
+            color: #1976d2;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info-box {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .contact-info-box h3 {
+            color: #1976d2;
+            margin-bottom: 1rem;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-detail i {
+            color: #1976d2;
+        }
+
+        .contact-detail a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-detail a:hover {
+            color: #1976d2;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a3b1e;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            color: #90c695;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #90c695;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo i {
+            color: #90c695;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #90c695;
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1rem;
+            text-align: center;
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #90c695;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .page-header h1 {
+                font-size: 2.2rem;
+                flex-direction: column;
+            }
+            
+            .contact-details {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content-container {
+                padding: 0 15px;
+            }
+            
+            .table-of-contents {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span data-en="+91 9221591156" data-mr="+91 9221591156">+91 9221591156</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span data-en="info@kisanbox.com" data-mr="info@kisanbox.com">info@kisanbox.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-en="Maharashtra, India" data-mr="महाराष्ट्र, भारत">Maharashtra, India</span>
+                        </div>
+                    </div>
+                    <div class="language-toggle">
+                        <button id="language-btn" class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">English</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>KisanBox</span>
+                    </div>
+                    
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="../../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                        <li><a href="../about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="../services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li class="dropdown">
+                            <a href="../products.html" data-en="Products" data-mr="उत्पादने">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../products.html" data-en="All Products" data-mr="सर्व उत्पादने">All Products</a></li>
+                                <li><a href="../products.html?category=vegetables" data-en="Vegetables" data-mr="भाज्या">Vegetables</a></li>
+                                <li><a href="../products.html?category=fruits" data-en="Fruits" data-mr="फळे">Fruits</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="../testimonials.html" data-en="Testimonials" data-mr="प्रशंसापत्रे">Testimonials</a></li>
+                        <li><a href="../contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                    </ul>
+                    
+                    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-shield-alt"></i> <span data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</span></h1>
+            <p class="subtitle" data-en="Your privacy matters to us. Learn how we collect, use, and protect your personal information on KisanBox platform." data-mr="तुमची गोपनीयता आमच्यासाठी महत्त्वाची आहे. KisanBox प्लॅटफॉर्मवर आम्ही तुमची वैयक्तिक माहिती कशी गोळा करतो, वापरतो आणि संरक्षण करतो ते जाणून घ्या.">Your privacy matters to us. Learn how we collect, use, and protect your personal information on KisanBox platform.</p>
+            
+            <div class="last-updated">
+                <i class="fas fa-calendar-alt"></i>
+                <span data-en="Last Updated: January 15, 2024" data-mr="शेवटचे अपडेट: जानेवारी 15, 2024">Last Updated: January 15, 2024</span>
+            </div>
+            
+            <div class="breadcrumb">
+                <a href="../../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
+                <span>/</span>
+                <span data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <main class="content-section">
+        <div class="content-container">
+            <!-- Table of Contents -->
+            <div class="table-of-contents">
+                <h3 data-en="Table of Contents" data-mr="अनुक्रमणिका">Table of Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#information-collection" data-en="1. Information We Collect" data-mr="1. आम्ही गोळा करतो ती माहिती">1. Information We Collect</a></li>
+                    <li><a href="#information-use" data-en="2. How We Use Your Information" data-mr="2. आम्ही तुमची माहिती कशी वापरतो">2. How We Use Your Information</a></li>
+                    <li><a href="#information-sharing" data-en="3. Information Sharing and Disclosure" data-mr="3. माहिती सामायिकरण आणि प्रकटीकरण">3. Information Sharing and Disclosure</a></li>
+                    <li><a href="#data-security" data-en="4. Data Security" data-mr="4. डेटा सुरक्षा">4. Data Security</a></li>
+                    <li><a href="#cookies-tracking" data-en="5. Cookies and Tracking Technologies" data-mr="5. कुकीज आणि ट्रॅकिंग तंत्रज्ञान">5. Cookies and Tracking Technologies</a></li>
+                    <li><a href="#your-rights" data-en="6. Your Rights and Choices" data-mr="6. तुमचे अधिकार आणि निवडी">6. Your Rights and Choices</a></li>
+                    <li><a href="#data-retention" data-en="7. Data Retention" data-mr="7. डेटा धारण">7. Data Retention</a></li>
+                    <li><a href="#third-party" data-en="8. Third-Party Links and Services" data-mr="8. तृतीय-पक्ष दुवे आणि सेवा">8. Third-Party Links and Services</a></li>
+                    <li><a href="#policy-updates" data-en="9. Policy Updates" data-mr="9. धोरण अपडेट">9. Policy Updates</a></li>
+                    <li><a href="#contact-us" data-en="10. Contact Information" data-mr="10. संपर्क माहिती">10. Contact Information</a></li>
+                </ul>
+            </div>
+
+            <!-- Policy Sections -->
+            <section id="information-collection" class="policy-section">
+                <h2 class="section-title" data-en="1. Information We Collect" data-mr="1. आम्ही गोळा करतो ती माहिती">1. Information We Collect</h2>
+                <div class="section-content">
+                    <p data-en="At KisanBox, we collect information to provide you with the best agricultural trading experience. The information we collect includes:" data-mr="KisanBox मध्ये, आम्ही तुम्हाला सर्वोत्तम कृषी व्यापार अनुभव देण्यासाठी माहिती गोळा करतो. आम्ही गोळा करत असलेल्या माहितीमध्ये समाविष्ट आहे:">At KisanBox, we collect information to provide you with the best agricultural trading experience. The information we collect includes:</p>
+                    
+                    <h4 data-en="Personal Information:" data-mr="वैयक्तिक माहिती:">Personal Information:</h4>
+                    <ul>
+                        <li data-en="Name, email address, and phone number" data-mr="नाव, ईमेल पत्ता आणि फोन नंबर">Name, email address, and phone number</li>
+                        <li data-en="Shipping and billing addresses" data-mr="पाठवणी आणि बिलिंग पत्ते">Shipping and billing addresses</li>
+                        <li data-en="Government identification (for farmer verification)" data-mr="सरकारी ओळख (शेतकरी सत्यापनासाठी)">Government identification (for farmer verification)</li>
+                        <li data-en="Bank account details for payments" data-mr="पेमेंटसाठी बँक खाते तपशील">Bank account details for payments</li>
+                    </ul>
+                    
+                    <h4 data-en="Agricultural Information:" data-mr="कृषी माहिती:">Agricultural Information:</h4>
+                    <ul>
+                        <li data-en="Farm location and size details" data-mr="शेत स्थान आणि आकार तपशील">Farm location and size details</li>
+                        <li data-en="Crop types and production capacity" data-mr="पीक प्रकार आणि उत्पादन क्षमता">Crop types and production capacity</li>
+                        <li data-en="Farming certifications and licenses" data-mr="शेती प्रमाणपत्रे आणि परवाने">Farming certifications and licenses</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <div class="box-title" data-en="Important Note:" data-mr="महत्त्वाची नोंद:">Important Note:</div>
+                        <p data-en="We only collect information that is necessary to provide our services. All sensitive information is encrypted and stored securely." data-mr="आम्ही फक्त आमच्या सेवा प्रदान करण्यासाठी आवश्यक असलेली माहिती गोळा करतो. सर्व संवेदनशील माहिती एन्क्रिप्ट केली जाते आणि सुरक्षितपणे संग्रहीत केली जाते.">We only collect information that is necessary to provide our services. All sensitive information is encrypted and stored securely.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="information-use" class="policy-section">
+                <h2 class="section-title" data-en="2. How We Use Your Information" data-mr="2. आम्ही तुमची माहिती कशी वापरतो">2. How We Use Your Information</h2>
+                <div class="section-content">
+                    <p data-en="We use the collected information for the following purposes:" data-mr="आम्ही गोळा केलेली माहिती खालील हेतूंसाठी वापरतो:">We use the collected information for the following purposes:</p>
+                    
+                    <ol>
+                        <li data-en="<strong>Service Delivery:</strong> Processing orders, managing transactions, and coordinating deliveries" data-mr="<strong>सेवा वितरण:</strong> ऑर्डर प्रक्रिया, व्यवहार व्यवस्थापन आणि डिलिव्हरी समन्वय">Service Delivery: Processing orders, managing transactions, and coordinating deliveries</li>
+                        <li data-en="<strong>Communication:</strong> Sending updates about orders, new products, and platform features" data-mr="<strong>संवाद:</strong> ऑर्डर, नवीन उत्पादने आणि प्लॅटफॉर्म वैशिष्ट्यांबद्दल अपडेट पाठवणे">Communication: Sending updates about orders, new products, and platform features</li>
+                        <li data-en="<strong>Platform Improvement:</strong> Analyzing usage patterns to enhance user experience" data-mr="<strong>प्लॅटफॉर्म सुधारणा:</strong> वापरकर्ता अनुभव वाढवण्यासाठी वापराच्या पॅटर्नचे विश्लेषण">Platform Improvement: Analyzing usage patterns to enhance user experience</li>
+                        <li data-en="<strong>Fraud Prevention:</strong> Detecting and preventing fraudulent activities" data-mr="<strong>फसवणूक प्रतिबंध:</strong> फसव्या क्रियाकलाप शोधणे आणि प्रतिबंध करणे">Fraud Prevention: Detecting and preventing fraudulent activities</li>
+                        <li data-en="<strong>Legal Compliance:</strong> Meeting regulatory requirements and legal obligations" data-mr="<strong>कायदेशीर अनुपालन:</strong> नियामक आवश्यकता आणि कायदेशीर दायित्वे पूर्ण करणे">Legal Compliance: Meeting regulatory requirements and legal obligations</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="information-sharing" class="policy-section">
+                <h2 class="section-title" data-en="3. Information Sharing and Disclosure" data-mr="3. माहिती सामायिकरण आणि प्रकटीकरण">3. Information Sharing and Disclosure</h2>
+                <div class="section-content">
+                    <p data-en="We respect your privacy and do not sell your personal information to third parties. We may share your information in the following circumstances:" data-mr="आम्ही तुमच्या गोपनीयतेचा आदर करतो आणि तृतीय पक्षांना तुमची वैयक्तिक माहिती विकत नाही. खालील परिस्थितींमध्ये आम्ही तुमची माहिती सामायिक करू शकतो:">We respect your privacy and do not sell your personal information to third parties. We may share your information in the following circumstances:</p>
+                    
+                    <ul>
+                        <li data-en="<strong>Service Partners:</strong> With logistics partners for delivery and payment processors for transactions" data-mr="<strong>सेवा भागीदार:</strong> डिलिव्हरीसाठी लॉजिस्टिक भागीदारांसह आणि व्यवहारांसाठी पेमेंट प्रोसेसरसह">Service Partners: With logistics partners for delivery and payment processors for transactions</li>
+                        <li data-en="<strong>Agricultural Authorities:</strong> For certification verification and compliance purposes" data-mr="<strong>कृषी प्राधिकरण:</strong> प्रमाणीकरण सत्यापन आणि अनुपालन हेतूंसाठी">Agricultural Authorities: For certification verification and compliance purposes</li>
+                        <li data-en="<strong>Legal Requirements:</strong> When required by law or to protect our rights and safety" data-mr="<strong>कायदेशीर आवश्यकता:</strong> जेव्हा कायद्याने आवश्यक असते किंवा आमचे अधिकार आणि सुरक्षा संरक्षित करण्यासाठी">Legal Requirements: When required by law or to protect our rights and safety</li>
+                        <li data-en="<strong>Business Transfers:</strong> In case of merger, acquisition, or sale of business assets" data-mr="<strong>व्यावसायिक हस्तांतरण:</strong> विलीनीकरण, अधिग्रहण किंवा व्यावसायिक मालमत्तेची विक्री झाल्यास">Business Transfers: In case of merger, acquisition, or sale of business assets</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <div class="box-title" data-en="Data Protection Commitment:" data-mr="डेटा संरक्षण वचनबद्धता:">Data Protection Commitment:</div>
+                        <p data-en="All our service partners are required to maintain the same level of data protection and privacy standards that we uphold." data-mr="आमच्या सर्व सेवा भागीदारांना आम्ही जे डेटा संरक्षण आणि गोपनीयता मानके पाळतो तेच स्तर राखणे आवश्यक आहे.">All our service partners are required to maintain the same level of data protection and privacy standards that we uphold.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="data-security" class="policy-section">
+                <h2 class="section-title" data-en="4. Data Security" data-mr="4. डेटा सुरक्षा">4. Data Security</h2>
+                <div class="section-content">
+                    <p data-en="We implement comprehensive security measures to protect your personal information:" data-mr="आम्ही तुमची वैयक्तिक माहिती संरक्षित करण्यासाठी व्यापक सुरक्षा उपाय लागू करतो:">We implement comprehensive security measures to protect your personal information:</p>
+                    
+                    <ul>
+                        <li data-en="<strong>Encryption:</strong> All data transmission uses SSL/TLS encryption" data-mr="<strong>एन्क्रिप्शन:</strong> सर्व डेटा ट्रांसमिशन SSL/TLS एन्क्रिप्शन वापरते">Encryption: All data transmission uses SSL/TLS encryption</li>
+                        <li data-en="<strong>Access Control:</strong> Limited access to personal data on need-to-know basis" data-mr="<strong>प्रवेश नियंत्रण:</strong> जाणून घेण्याची गरज आधारावर वैयक्तिक डेटामध्ये मर्यादित प्रवेश">Access Control: Limited access to personal data on need-to-know basis</li>
+                        <li data-en="<strong>Regular Audits:</strong> Periodic security assessments and vulnerability testing" data-mr="<strong>नियमित ऑडिट:</strong> नियतकालिक सुरक्षा मूल्यांकन आणि भेद्यता चाचणी">Regular Audits: Periodic security assessments and vulnerability testing</li>
+                        <li data-en="<strong>Secure Storage:</strong> Data stored in ISO 27001 certified data centers" data-mr="<strong>सुरक्षित संचयन:</strong> ISO 27001 प्रमाणित डेटा केंद्रांमध्ये डेटा संग्रहीत">Secure Storage: Data stored in ISO 27001 certified data centers</li>
+                        <li data-en="<strong>Backup Protection:</strong> Regular encrypted backups with disaster recovery plans" data-mr="<strong>बॅकअप संरक्षण:</strong> आपत्ति पुनर्प्राप्ती योजनांसह नियमित एन्क्रिप्टेड बॅकअप">Backup Protection: Regular encrypted backups with disaster recovery plans</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="cookies-tracking" class="policy-section">
+                <h2 class="section-title" data-en="5. Cookies and Tracking Technologies" data-mr="5. कुकीज आणि ट्रॅकिंग तंत्रज्ञान">5. Cookies and Tracking Technologies</h2>
+                <div class="section-content">
+                    <p data-en="We use cookies and similar technologies to improve your browsing experience:" data-mr="आम्ही तुमचा ब्राउझिंग अनुभव सुधारण्यासाठी कुकीज आणि समान तंत्रज्ञान वापरतो:">We use cookies and similar technologies to improve your browsing experience:</p>
+                    
+                    <ul>
+                        <li data-en="<strong>Essential Cookies:</strong> Required for basic website functionality" data-mr="<strong>आवश्यक कुकीज:</strong> मूलभूत वेबसाइट कार्यक्षमतेसाठी आवश्यक">Essential Cookies: Required for basic website functionality</li>
+                        <li data-en="<strong>Performance Cookies:</strong> Help us understand how you use our platform" data-mr="<strong>कार्यप्रदर्शन कुकीज:</strong> तुम्ही आमचे प्लॅटफॉर्म कसे वापरता हे समजून घेण्यास मदत करा">Performance Cookies: Help us understand how you use our platform</li>
+                        <li data-en="<strong>Functional Cookies:</strong> Remember your preferences and settings" data-mr="<strong>कार्यात्मक कुकीज:</strong> तुमच्या प्राधान्यक्रम आणि सेटिंग्ज लक्षात ठेवा">Functional Cookies: Remember your preferences and settings</li>
+                        <li data-en="<strong>Marketing Cookies:</strong> Deliver relevant advertisements (with your consent)" data-mr="<strong>मार्केटिंग कुकीज:</strong> संबंधित जाहिराती वितरित करा (तुमच्या संमतीने)">Marketing Cookies: Deliver relevant advertisements (with your consent)</li>
+                    </ul>
+                    
+                    <p data-en="You can control cookie preferences through your browser settings. However, disabling certain cookies may affect website functionality." data-mr="तुम्ही तुमच्या ब्राउझर सेटिंग्जद्वारे कुकी प्राधान्ये नियंत्रित करू शकता. तथापि, विशिष्ट कुकीज अक्षम केल्याने वेबसाइट कार्यक्षमता प्रभावित होऊ शकते.">You can control cookie preferences through your browser settings. However, disabling certain cookies may affect website functionality.</p>
+                </div>
+            </section>
+
+            <section id="your-rights" class="policy-section">
+                <h2 class="section-title" data-en="6. Your Rights and Choices" data-mr="6. तुमचे अधिकार आणि निवडी">6. Your Rights and Choices</h2>
+                <div class="section-content">
+                    <p data-en="You have the following rights regarding your personal information:" data-mr="तुमच्या वैयक्तिक माहितीबाबत तुम्हाला खालील अधिकार आहेत:">You have the following rights regarding your personal information:</p>
+                    
+                    <ul>
+                        <li data-en="<strong>Access:</strong> Request access to your personal data we hold" data-mr="<strong>प्रवेश:</strong> आमच्याकडे असलेल्या तुमच्या वैयक्तिक डेटाच्या प्रवेशासाठी विनंती करा">Access: Request access to your personal data we hold</li>
+                        <li data-en="<strong>Correction:</strong> Update or correct inaccurate personal information" data-mr="<strong>दुरुस्ती:</strong> चुकीची वैयक्तिक माहिती अपडेट करा किंवा दुरुस्त करा">Correction: Update or correct inaccurate personal information</li>
+                        <li data-en="<strong>Deletion:</strong> Request deletion of your personal data (subject to legal requirements)" data-mr="<strong>हटवणे:</strong> तुमच्या वैयक्तिक डेटा हटवण्याची विनंती करा (कायदेशीर आवश्यकतांच्या अधीन)">Deletion: Request deletion of your personal data (subject to legal requirements)</li>
+                        <li data-en="<strong>Portability:</strong> Receive your data in a structured, machine-readable format" data-mr="<strong>पोर्टेबिलिटी:</strong> संरचित, मशीन-वाचनीय स्वरूपात तुमचा डेटा प्राप्त करा">Portability: Receive your data in a structured, machine-readable format</li>
+                        <li data-en="<strong>Objection:</strong> Object to certain processing of your personal data" data-mr="<strong>आक्षेप:</strong> तुमच्या वैयक्तिक डेटाच्या विशिष्ट प्रक्रियेवर आक्षेप घ्या">Objection: Object to certain processing of your personal data</li>
+                        <li data-en="<strong>Restriction:</strong> Limit how we process your personal information" data-mr="<strong>निर्बंध:</strong> आम्ही तुमची वैयक्तिक माहिती कशी प्रक्रिया करतो यावर मर्यादा घाला">Restriction: Limit how we process your personal information</li>
+                    </ul>
+                    
+                    <p data-en="To exercise these rights, please contact our Data Protection Officer using the contact information provided below." data-mr="हे अधिकार वापरण्यासाठी, कृपया खाली दिलेल्या संपर्क माहितीचा वापर करून आमच्या डेटा संरक्षण अधिकाऱ्याशी संपर्क साधा.">To exercise these rights, please contact our Data Protection Officer using the contact information provided below.</p>
+                </div>
+            </section>
+
+            <section id="data-retention" class="policy-section">
+                <h2 class="section-title" data-en="7. Data Retention" data-mr="7. डेटा धारण">7. Data Retention</h2>
+                <div class="section-content">
+                    <p data-en="We retain your personal information for as long as necessary to provide our services and comply with legal obligations:" data-mr="आम्ही आमच्या सेवा प्रदान करण्यासाठी आणि कायदेशीर दायित्वांचे पालन करण्यासाठी आवश्यक असलेल्या कालावधीपर्यंत तुमची वैयक्तिक माहिती ठेवतो:">We retain your personal information for as long as necessary to provide our services and comply with legal obligations:</p>
+                    
+                    <ul>
+                        <li data-en="<strong>Account Information:</strong> Retained while your account is active and for 3 years after deactivation" data-mr="<strong>खाते माहिती:</strong> तुमचे खाते सक्रिय असताना आणि निष्क्रियीकरणानंतर 3 वर्षे ठेवले जाते">Account Information: Retained while your account is active and for 3 years after deactivation</li>
+                        <li data-en="<strong>Transaction Records:</strong> Kept for 7 years as required by financial regulations" data-mr="<strong>व्यवहार नोंदी:</strong> आर्थिक नियमांनुसार आवश्यकतेनुसार 7 वर्षे ठेवले जाते">Transaction Records: Kept for 7 years as required by financial regulations</li>
+                        <li data-en="<strong>Marketing Data:</strong> Deleted immediately upon unsubscription request" data-mr="<strong>मार्केटिंग डेटा:</strong> अनसब्स्क्रिप्शन विनंती झाल्यावर ताबडतोब हटवला जातो">Marketing Data: Deleted immediately upon unsubscription request</li>
+                        <li data-en="<strong>Audit Logs:</strong> Maintained for security purposes for 5 years" data-mr="<strong>ऑडिट लॉग:</strong> सुरक्षा हेतूंसाठी 5 वर्षे राखले जाते">Audit Logs: Maintained for security purposes for 5 years</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="third-party" class="policy-section">
+                <h2 class="section-title" data-en="8. Third-Party Links and Services" data-mr="8. तृतीय-पक्ष दुवे आणि सेवा">8. Third-Party Links and Services</h2>
+                <div class="section-content">
+                    <p data-en="Our platform may contain links to third-party websites or services. We are not responsible for their privacy practices. We recommend reviewing their privacy policies before providing any personal information." data-mr="आमच्या प्लॅटफॉर्ममध्ये तृतीय-पक्ष वेबसाइट्स किंवा सेवांचे दुवे असू शकतात. आम्ही त्यांच्या गोपनीयता पद्धतींसाठी जबाबदार नाही. कोणतीही वैयक्तिक माहिती देण्यापूर्वी त्यांच्या गोपनीयता धोरणांचे पुनरावलोकन करण्याची आम्ही शिफारस करतो.">Our platform may contain links to third-party websites or services. We are not responsible for their privacy practices. We recommend reviewing their privacy policies before providing any personal information.</p>
+                    
+                    <p data-en="Third-party services we integrate with include:" data-mr="आम्ही एकत्रित केलेल्या तृतीय-पक्ष सेवांमध्ये समाविष्ट आहे:">Third-party services we integrate with include:</p>
+                    <ul>
+                        <li data-en="Payment gateways (Razorpay, PayU, etc.)" data-mr="पेमेंट गेटवे (Razorpay, PayU, इ.)">Payment gateways (Razorpay, PayU, etc.)</li>
+                        <li data-en="Logistics partners (Delhivery, Blue Dart, etc.)" data-mr="लॉजिस्टिक भागीदार (Delhivery, Blue Dart, इ.)">Logistics partners (Delhivery, Blue Dart, etc.)</li>
+                        <li data-en="Analytics services (Google Analytics)" data-mr="विश्लेषण सेवा (Google Analytics)">Analytics services (Google Analytics)</li>
+                        <li data-en="Communication platforms (SMS, Email services)" data-mr="संवाद प्लॅटफॉर्म (SMS, ईमेल सेवा)">Communication platforms (SMS, Email services)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="policy-updates" class="policy-section">
+                <h2 class="section-title" data-en="9. Policy Updates" data-mr="9. धोरण अपडेट">9. Policy Updates</h2>
+                <div class="section-content">
+                    <p data-en="We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. When we make significant changes, we will:" data-mr="आमच्या पद्धतींमध्ये किंवा कायदेशीर आवश्यकतांमध्ये बदल दिसून येण्यासाठी आम्ही वेळोवेळी हे गोपनीयता धोरण अपडेट करू शकतो. जेव्हा आम्ही महत्त्वपूर्ण बदल करतो तेव्हा आम्ही:">We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. When we make significant changes, we will:</p>
+                    
+                    <ul>
+                        <li data-en="Notify you via email or platform notifications" data-mr="ईमेल किंवा प्लॅटफॉर्म सूचनांद्वारे तुम्हाला सूचित करा">Notify you via email or platform notifications</li>
+                        <li data-en="Update the 'Last Updated' date at the top of this policy" data-mr="या धोरणाच्या शीर्षस्थानी 'शेवटचे अपडेट' दिनांक अपडेट करा">Update the 'Last Updated' date at the top of this policy</li>
+                        <li data-en="Provide a summary of key changes" data-mr="मुख्य बदलांचा सारांश प्रदान करा">Provide a summary of key changes</li>
+                        <li data-en="Request your consent for material changes affecting your rights" data-mr="तुमच्या अधिकारांवर परिणाम करणाऱ्या भौतिक बदलांसाठी तुमच्या संमतीची विनंती करा">Request your consent for material changes affecting your rights</li>
+                    </ul>
+                    
+                    <p data-en="Continued use of our platform after policy updates constitutes acceptance of the revised terms." data-mr="धोरण अपडेट केल्यानंतर आमच्या प्लॅटफॉर्मचा निरंतर वापर हा सुधारित अटींचा स्वीकार मानला जातो.">Continued use of our platform after policy updates constitutes acceptance of the revised terms.</p>
+                </div>
+            </section>
+
+            <section id="contact-us" class="policy-section">
+                <h2 class="section-title" data-en="10. Contact Information" data-mr="10. संपर्क माहिती">10. Contact Information</h2>
+                <div class="section-content">
+                    <p data-en="For any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:" data-mr="या गोपनीयता धोरणाबद्दल किंवा तुमच्या वैयक्तिक डेटाबद्दल कोणतेही प्रश्न, चिंता किंवा विनंत्यांसाठी, कृपया आमच्याशी संपर्क साधा:">For any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
+                    
+                    <div class="contact-info-box">
+                        <h3 data-en="Data Protection Officer" data-mr="डेटा संरक्षण अधिकारी">Data Protection Officer</h3>
+                        <p data-en="KisanBox Agricultural Trading Platform" data-mr="KisanBox कृषी व्यापार प्लॅटफॉर्म">KisanBox Agricultural Trading Platform</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:privacy@kisanbox.com">privacy@kisanbox.com</a>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+919221591156">+91 9221591156</a>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span data-en="Maharashtra, India - 411001" data-mr="महाराष्ट्र, भारत - 411001">Maharashtra, India - 411001</span>
+                            </div>
+                        </div>
+                        
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;" data-en="We aim to respond to all privacy-related inquiries within 30 days." data-mr="आम्ही 30 दिवसांच्या आत सर्व गोपनीयता-संबंधित चौकशींना प्रतिसाद देण्याचे लक्ष्य ठेवतो.">We aim to respond to all privacy-related inquiries within 30 days.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>KisanBox</span>
+                    </div>
+                    <p data-en="Maharashtra's trusted agricultural trading platform connecting farmers with quality produce buyers across India." data-mr="महाराष्ट्राचा विश्वासार्ह कृषी व्यापार प्लॅटफॉर्म जो शेतकर्यांना संपूर्ण भारतातील गुणवत्तापूर्ण उत्पादन खरेदीदारांशी जोडतो.">Maharashtra's trusted agricultural trading platform connecting farmers with quality produce buyers across India.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-mr="द्रुत दुवे">Quick Links</h4>
+                    <ul>
+                        <li><a href="../about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="../services.html" data-en="Services" data-mr="सेवा">Services</a></li>
+                        <li><a href="../products.html" data-en="Products" data-mr="उत्पादने">Products</a></li>
+                        <li><a href="../blog.html" data-en="Blog" data-mr="ब्लॉग">Blog</a></li>
+                        <li><a href="../contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Legal" data-mr="कायदेशीर">Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html" data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" data-en="Terms of Service" data-mr="सेवा अटी">Terms of Service</a></li>
+                        <li><a href="shipping-policy.html" data-en="Shipping Policy" data-mr="शिपिंग धोरण">Shipping Policy</a></li>
+                        <li><a href="return-policy.html" data-en="Return Policy" data-mr="परतावा धोरण">Return Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Contact Info" data-mr="संपर्क माहिती">Contact Info</h4>
+                    <div class="contact-item">
+                        <p><strong data-en="Address:" data-mr="पत्ता:">Address:</strong><br>
+                        <span data-en="123 Agricultural Hub, Maharashtra, India - 411001" data-mr="123 कृषी हब, महाराष्ट्र, भारत - 411001">123 Agricultural Hub, Maharashtra, India - 411001</span></p>
+                        
+                        <p><strong data-en="Phone:" data-mr="फोन:">Phone:</strong><br>
+                        <a href="tel:+919221591156">+91 9221591156</a></p>
+                        
+                        <p><strong data-en="Email:" data-mr="ईमेल:">Email:</strong><br>
+                        <a href="mailto:info@kisanbox.com">info@kisanbox.com</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 KisanBox. <span data-en="All rights reserved." data-mr="सर्व हक्क राखीव.">All rights reserved.</span></p>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html" data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</a>
+                        <a href="terms-of-service.html" data-en="Terms of Service" data-mr="सेवा अटी">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        let currentLanguage = 'en';
+
+        // Language toggle
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'en' ? 'mr' : 'en';
+            
+            const elements = document.querySelectorAll('[data-en][data-mr]');
+            elements.forEach(element => {
+                const text = element.getAttribute(`data-${currentLanguage}`);
+                if (text) {
+                    element.innerHTML = text;
+                }
+            });
+            
+            // Update language button text
+            document.getElementById('current-lang').textContent = currentLanguage === 'en' ? 'English' : 'मराठी';
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Mobile menu toggle
+            document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+                document.getElementById('nav-menu').classList.toggle('active');
+            });
+            
+            // Language toggle
+            document.getElementById('language-btn').addEventListener('click', toggleLanguage);
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', setupEventListeners);
+    </script>
+</body>
+</html>

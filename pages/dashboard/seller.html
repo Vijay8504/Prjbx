@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard - KisanBox</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
+</head>
+<body>
+<div class="dashboard-wrapper">
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar">
+        <a href="../../index.html" class="sidebar-brand">
+            <img src="../../images/logo.png" alt="KisanBox">
+            <div>
+                <div class="sidebar-brand-name">KisanBox</div>
+                <div class="sidebar-brand-role">Seller Portal</div>
+            </div>
+        </a>
+        <nav class="sidebar-nav">
+            <span class="nav-section-label">Store</span>
+            <a href="#" class="nav-item active"><i class="fas fa-chart-line"></i> Dashboard</a>
+            <a href="#" class="nav-item"><i class="fas fa-box-open"></i> Products <span style="background:#e53935;color:#fff;border-radius:10px;padding:0 6px;font-size:0.7rem;margin-left:auto">3 Low</span></a>
+            <a href="#" class="nav-item"><i class="fas fa-shopping-cart"></i> Orders</a>
+            <a href="#" class="nav-item"><i class="fas fa-warehouse"></i> Inventory</a>
+            <a href="#" class="nav-item"><i class="fas fa-rupee-sign"></i> Payments</a>
+            <span class="nav-section-label">Marketing</span>
+            <a href="#" class="nav-item"><i class="fas fa-chart-bar"></i> Analytics</a>
+            <a href="#" class="nav-item"><i class="fas fa-tag"></i> Coupons</a>
+            <a href="#" class="nav-item"><i class="fas fa-bullhorn"></i> Promotions</a>
+            <a href="#" class="nav-item"><i class="fas fa-file-invoice"></i> Invoices</a>
+            <span class="nav-section-label">Account</span>
+            <a href="#" class="nav-item"><i class="fas fa-headset"></i> Support</a>
+            <a href="#" class="nav-item"><i class="fas fa-cog"></i> Settings</a>
+            <a href="#" class="nav-item logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="sidebar-user">
+                <div class="user-avatar">GE</div>
+                <div class="user-info">
+                    <strong>GreenEarth Organics</strong>
+                    <small>Premium Seller</small>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+        <div class="dashboard-topbar">
+            <div class="dashboard-title">Seller Dashboard</div>
+            <div class="topbar-actions">
+                <button class="topbar-icon-btn"><i class="fas fa-bell"></i><span class="notif-badge">5</span></button>
+                <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add Product</a>
+            </div>
+        </div>
+
+        <div class="dashboard-content">
+            <!-- Stats Row -->
+            <div class="stats-row">
+                <div class="stat-card accent-purple">
+                    <div class="stat-icon"><i class="fas fa-rupee-sign"></i></div>
+                    <div class="stat-body">
+                        <div class="stat-value">₹84,200</div>
+                        <div class="stat-label">Revenue (June)</div>
+                        <div class="stat-change">↑ 18% vs last month</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="stat-body">
+                        <div class="stat-value">142</div>
+                        <div class="stat-label">Orders This Month</div>
+                        <div class="stat-change">↑ 24 new today</div>
+                    </div>
+                </div>
+                <div class="stat-card accent-orange">
+                    <div class="stat-icon"><i class="fas fa-box-open"></i></div>
+                    <div class="stat-body">
+                        <div class="stat-value">38</div>
+                        <div class="stat-label">Products Listed</div>
+                        <div class="stat-change down">3 low stock</div>
+                    </div>
+                </div>
+                <div class="stat-card accent-blue">
+                    <div class="stat-icon"><i class="fas fa-star"></i></div>
+                    <div class="stat-body">
+                        <div class="stat-value">4.7</div>
+                        <div class="stat-label">Average Rating</div>
+                        <div class="stat-change">↑ from 4.5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Revenue Chart -->
+            <div class="section-card" style="margin-bottom:var(--spacing-lg)">
+                <div class="section-card-header">
+                    <span class="table-title">Revenue — Last 7 Days</span>
+                    <select style="border:1px solid #ddd;border-radius:6px;padding:0.3rem 0.7rem;font-family:inherit;font-size:0.85rem">
+                        <option>Last 7 days</option>
+                        <option>Last 30 days</option>
+                        <option>Last 3 months</option>
+                    </select>
+                </div>
+                <div class="section-card-body chart-container">
+                    <div class="bar-chart" style="height:160px">
+                        <div class="bar" style="height:60%"><span class="bar-value">₹8.2k</span><span class="bar-label">Mon</span></div>
+                        <div class="bar" style="height:80%"><span class="bar-value">₹11k</span><span class="bar-label">Tue</span></div>
+                        <div class="bar" style="height:45%"><span class="bar-value">₹6.1k</span><span class="bar-label">Wed</span></div>
+                        <div class="bar" style="height:95%"><span class="bar-value">₹13k</span><span class="bar-label">Thu</span></div>
+                        <div class="bar" style="height:70%"><span class="bar-value">₹9.5k</span><span class="bar-label">Fri</span></div>
+                        <div class="bar" style="height:100%"><span class="bar-value">₹14k</span><span class="bar-label">Sat</span></div>
+                        <div class="bar" style="height:55%"><span class="bar-value">₹7.4k</span><span class="bar-label">Sun</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Orders -->
+            <div class="data-table-wrapper">
+                <div class="table-header">
+                    <div class="table-title">Recent Orders</div>
+                    <a href="#" class="btn btn-outline btn-sm">View All (142)</a>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>Order ID</th><th>Customer</th><th>Product</th><th>Qty</th><th>Amount</th><th>Status</th><th>Action</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>#KB-2024-0901</strong></td><td>Sunita M.</td><td>Organic Turmeric</td><td>2 kg</td><td>₹360</td><td><span class="status-badge pending">Pending</span></td><td><button class="btn btn-sm btn-primary">Accept</button></td></tr>
+                        <tr><td><strong>#KB-2024-0895</strong></td><td>Anil K.</td><td>Vermicompost</td><td>100 kg</td><td>₹1,200</td><td><span class="status-badge processing">Processing</span></td><td><button class="btn btn-sm btn-outline">Ship</button></td></tr>
+                        <tr><td><strong>#KB-2024-0890</strong></td><td>Priya S.</td><td>Neem Oil</td><td>10 L</td><td>₹1,800</td><td><span class="status-badge shipped">Shipped</span></td><td><button class="btn btn-sm btn-outline">Track</button></td></tr>
+                        <tr><td><strong>#KB-2024-0882</strong></td><td>Ramesh T.</td><td>Organic Rice</td><td>50 kg</td><td>₹6,000</td><td><span class="status-badge delivered">Delivered</span></td><td><button class="btn btn-sm btn-outline">Invoice</button></td></tr>
+                        <tr><td><strong>#KB-2024-0875</strong></td><td>Kavita P.</td><td>Hybrid Seeds</td><td>5 pkt</td><td>₹1,400</td><td><span class="status-badge delivered">Delivered</span></td><td><button class="btn btn-sm btn-outline">Invoice</button></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Top Products -->
+            <div class="section-card">
+                <div class="section-card-header">
+                    <span class="table-title">Top Products</span>
+                    <a href="#" class="btn btn-sm btn-outline">Manage All</a>
+                </div>
+                <div class="section-card-body">
+                    <table class="data-table">
+                        <thead><tr><th>Product</th><th>Sold</th><th>Revenue</th><th>Stock</th><th>Rating</th></tr></thead>
+                        <tbody>
+                            <tr><td>Premium Vermicompost</td><td>840 kg</td><td>₹10,080</td><td><span class="status-badge delivered">450 kg</span></td><td>⭐ 4.2</td></tr>
+                            <tr><td>Cold Pressed Neem Oil</td><td>124 L</td><td>₹22,320</td><td><span class="status-badge pending">8 L</span></td><td>⭐ 4.7</td></tr>
+                            <tr><td>Organic Turmeric</td><td>62 kg</td><td>₹21,700</td><td><span class="status-badge delivered">200 kg</span></td><td>⭐ 4.8</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
