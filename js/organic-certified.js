@@ -19,8 +19,8 @@ const organicProducts = [
         features: ["NPOP Certified", "Zero Chemicals", "3-Year Organic"],
         featuresMr: ["NPOP प्रमाणित", "शून्य रसायने", "3 वर्ष सेंद्रिय"],
         image: "../../images/organic-basmati.jpg",
-        farmer: "Rajesh Patil, Solapur",
-        farmerMr: "राजेश पाटील, सोलापूर"
+        farmer: "AB, Solapur",
+        farmerMr: "AB, सोलापूर"
     },
     {
         id: 2,
@@ -39,8 +39,8 @@ const organicProducts = [
         features: ["Jaivik Certified", "Pesticide Free", "Fresh Harvest"],
         featuresMr: ["जैविक प्रमाणित", "कीटकनाशक मुक्त", "ताजी कापणी"],
         image: "../../images/organic-tomatoes.jpg",
-        farmer: "Sunita Deshmukh, Pune",
-        farmerMr: "सुनिता देशमुख, पुणे"
+        farmer: "SDC, Pune",
+        farmerMr: "SDC, पुणे"
     },
     {
         id: 3,
@@ -59,8 +59,8 @@ const organicProducts = [
         features: ["NPOP Certified", "Lab Tested", "High Curcumin"],
         featuresMr: ["NPOP प्रमाणित", "प्रयोगशाळा तपासणी", "उच्च कर्क्यूमिन"],
         image: "../../images/organic-turmeric.jpg",
-        farmer: "Ramesh Jadhav, Sangli",
-        farmerMr: "रमेश जाधव, सांगली"
+        farmer: "WDS, Sangli",
+        farmerMr: "WDS, सांगली"
     },
     {
         id: 4,
@@ -79,8 +79,8 @@ const organicProducts = [
         features: ["USDA Organic", "Chemical Free", "Premium Grade"],
         featuresMr: ["USDA सेंद्रिय", "रसायन मुक्त", "प्रीमियम दर्जा"],
         image: "../../images/organic-mangoes.jpg",
-        farmer: "Prakash Sawant, Ratnagiri",
-        farmerMr: "प्रकाश सावंत, रत्नागिरी"
+        farmer: "PS, Ratnagiri",
+        farmerMr: "PS, रत्नागिरी"
     },
     {
         id: 5,
@@ -99,8 +99,8 @@ const organicProducts = [
         features: ["Jaivik Certified", "High Protein", "Natural Processing"],
         featuresMr: ["जैविक प्रमाणित", "उच्च प्रथिन", "नैसर्गिक प्रक्रिया"],
         image: "../../images/organic-toor-dal.jpg",
-        farmer: "Vijay Kale, Kolhapur",
-        farmerMr: "विजय काळे, कोल्हापूर"
+        farmer: "VK, Kolhapur",
+        farmerMr: "VK, कोल्हापूर"
     },
     {
         id: 6,
@@ -119,8 +119,8 @@ const organicProducts = [
         features: ["NPOP Certified", "Intense Flavor", "Farm Fresh"],
         featuresMr: ["NPOP प्रमाणित", "तीव्र चव", "शेत ताजी"],
         image: "../../images/organic-chillies.jpg",
-        farmer: "Anita Bhosale, Nashik",
-        farmerMr: "अनिता भोसले, नाशिक"
+        farmer: "ABC, Nashik",
+        farmerMr: "ABC, नाशिक"
     },
     {
         id: 7,
@@ -139,8 +139,8 @@ const organicProducts = [
         features: ["Stone Ground", "High Fiber", "Fresh Milled"],
         featuresMr: ["दगडी दळलेले", "उच्च फायबर", "ताजे दळलेले"],
         image: "../../images/organic-wheat-flour.jpg",
-        farmer: "Balkrishna Patil, Ahmednagar",
-        farmerMr: "बाळकृष्ण पाटील, अहमदनगर"
+        farmer: "BB, Ahmednagar",
+        farmerMr: "BB, अहमदनगर"
     },
     {
         id: 8,
@@ -159,8 +159,8 @@ const organicProducts = [
         features: ["NPOP Certified", "Long Shelf Life", "Strong Flavor"],
         featuresMr: ["NPOP प्रमाणित", "दीर्घ शेल्फ लाइफ", "मजबूत चव"],
         image: "../../images/organic-onions.jpg",
-        farmer: "Sanjay More, Nashik",
-        farmerMr: "संजय मोरे, नाशिक"
+        farmer: "SRR, Nashik",
+        farmerMr: "SRR, नाशिक"
     },
     {
         id: 9,
