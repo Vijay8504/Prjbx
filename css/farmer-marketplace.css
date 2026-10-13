@@ -1,0 +1,239 @@
+/* ===== FARMER MARKETPLACE STYLES ===== */
+
+body { padding-top: 120px; }
+
+/* Hero */
+.marketplace-hero {
+    background: linear-gradient(135deg, #1a3a0a 0%, var(--primary-green) 60%, var(--secondary-green) 100%);
+    padding: 80px 0 60px;
+    color: var(--white);
+}
+.hero-badge {
+    display: inline-block;
+    background: var(--golden-yellow);
+    color: #1a1a1a;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--spacing-sm);
+}
+.marketplace-hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--white);
+}
+.marketplace-hero-content > p {
+    color: rgba(255,255,255,0.85);
+    font-size: 1.1rem;
+    max-width: 680px;
+    margin-bottom: var(--spacing-lg);
+}
+.hero-stats {
+    display: flex;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+.hero-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.hero-stat strong {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--golden-yellow);
+}
+.hero-stat span {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+}
+
+/* Tabs */
+.marketplace-tabs-section {
+    background: var(--white);
+    border-bottom: 2px solid var(--light-gray);
+    position: sticky;
+    top: 120px;
+    z-index: 50;
+}
+.marketplace-tabs {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.marketplace-tabs::-webkit-scrollbar { display: none; }
+.tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--gray);
+    cursor: pointer;
+    font-family: var(--font-primary);
+    white-space: nowrap;
+    transition: var(--transition-fast);
+}
+.tab-btn:hover { color: var(--primary-green); background: #f0f7eb; }
+.tab-btn.active {
+    color: var(--primary-green);
+    border-bottom-color: var(--primary-green);
+    background: #f0f7eb;
+}
+
+/* Supplier card extras */
+.moq-badge {
+    position: absolute;
+    bottom: var(--spacing-xs);
+    right: var(--spacing-xs);
+    background: rgba(0,0,0,0.7);
+    color: var(--white);
+    font-size: 0.72rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-sm);
+    z-index: 2;
+}
+.supplier-card .product-image { height: 200px; }
+
+/* Tab content */
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* Requirement Section */
+.requirement-section { background: var(--light-gray); }
+.requirement-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--spacing-xxl);
+    align-items: start;
+}
+.requirement-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-green);
+}
+.requirement-info > p {
+    color: var(--gray);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.05rem;
+}
+.req-benefits {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+.req-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--dark-gray);
+}
+.req-benefits .fa-check-circle { color: var(--primary-green); }
+.requirement-form {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+}
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: var(--spacing-sm);
+}
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    border: 1px solid #ddd;
+    border-radius: var(--radius-md);
+    padding: 0.65rem 0.9rem;
+    font-size: 0.95rem;
+    font-family: var(--font-primary);
+    color: var(--dark-gray);
+    outline: none;
+    transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-green);
+}
+
+/* Quote Modal */
+.quote-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quote-modal-inner {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    max-width: 420px;
+    width: 90%;
+    position: relative;
+    z-index: 2001;
+    text-align: center;
+    box-shadow: var(--shadow-xl);
+}
+.quote-modal-inner h3 {
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-xs);
+    color: var(--primary-green);
+}
+.quote-modal-inner p {
+    color: var(--gray);
+    margin-bottom: var(--spacing-md);
+}
+.quote-contact {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+}
+.modal-close {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--gray);
+    cursor: pointer;
+}
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 2000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .marketplace-hero-content h1 { font-size: 1.8rem; }
+    .hero-stats { gap: var(--spacing-lg); }
+    .requirement-wrapper { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+}
